@@ -1,0 +1,36 @@
+.picker__date-display {
+  text-align: center;
+  background-color: #0592BF !important;
+  color: #fff;
+  padding-bottom: 15px;
+  font-weight: 300; }
+
+.picker__day.picker__day--today {
+  color: #0592BF !important; }
+
+.picker__day.picker__day--today.picker__day--selected {
+  color: #fff; }
+
+.picker__weekday {
+  font-size: .9rem; }
+
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+  border-radius: 50%;
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  -ms-transform: scale(.9);
+  -o-transform: scale(.9);
+  transform: scale(.9);
+  background-color: #0592BF !important;
+  color: #ffffff; }
+  .picker__day--selected.picker__day--outfocus, .picker__day--selected:hover.picker__day--outfocus, .picker--focused .picker__day--selected.picker__day--outfocus {
+    background-color: #a1ded8; }
+
+.picker__footer {
+  text-align: right;
+  padding: 5px 10px; }
+
+.picker__close, .picker__today {
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  color: #0592BF !important; }
