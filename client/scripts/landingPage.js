@@ -6,7 +6,7 @@ Template.landing.helpers({
 
 Template.landing.onRendered(function() {
 	$( document ).ready(function() {
-    	$('input#input_text, textarea#textarea1').characterCounter();
+    $('input#input_text, textarea#textarea1').characterCounter();
 	});
     $(".button-collapse").sideNav();  
     $('.datepicker').pickadate({

@@ -14,3 +14,7 @@ Router.route('/submission', function() {
 	this.render('content');
 });
 
+Router.route('/contact', function() {
+	this.render('contact');
+});
+

@@ -4,17 +4,7 @@ Generic Element Styling
 ===================================  
 */
 
-.eventColor1 {
-	height: 30px;
-	background-color: #86E167;
-}
-
-.eventColor2 {
-	height: 30px;
-	background-color: #FF5B4B;
-}
-
-.eventColor3 {
+.eventColor {
 	height: 30px;
 	background-color: #0592BF;
 }

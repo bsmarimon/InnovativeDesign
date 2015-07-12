@@ -1,0 +1,12 @@
+.contactIcons {
+	color: #0592BF;
+	font-size: 25px !important;
+}
+
+.tabs .indicator {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	background-color: #0592BF;
+	will-change: left, right; 
+}

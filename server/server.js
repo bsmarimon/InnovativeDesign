@@ -40,6 +40,6 @@ Meteor.methods({
 		});
 
 	return true;
-
 	},
+	
 });
