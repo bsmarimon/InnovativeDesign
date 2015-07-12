@@ -1,6 +1,7 @@
 MyImages = new FS.Collection('myImages', {
     stores: [new FS.Store.GridFS("myImages")]
 });
+
 Tiers = new Mongo.Collection("tiers");
 Officers = new Mongo.Collection("officers");
 

@@ -4,18 +4,65 @@ Generic Element Styling
 ===================================  
 */
 
+.eventColor1 {
+	height: 30px;
+	background-color: #86E167;
+}
+
+.eventColor2 {
+	height: 30px;
+	background-color: #FF5B4B;
+}
+
+.eventColor3 {
+	height: 30px;
+	background-color: #0592BF;
+}
+
+.event {
+	min-height: 100%;
+	height: 245px;
+}
+
+.location-icon {
+	font-size: 36px !important;
+	color: #0592BF !important;
+	position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.about, .request {
+	height: 100%;
+}
+
 .removeLeftPadding {
 	padding-left: 0px !important;
+}
+
+.removeBottomMargin {
+	margin-bottom: 0px !important;
+}
+
+.removeRightPadding {
+	padding-right: 0px !important;
 }
 
 p {
 	font-family: 'Open Sans';
 }
 
+.btn {
+	background-color: #0592BF !important;
+	margin-bottom: 25px;
+}
+
 h2 {
 	font-family: Montserrat;
 	font-size: 15px;
-	margin: 0px;
+	margin-top: 0px;
 }
 
 h3 {
@@ -24,31 +71,32 @@ h3 {
 	margin-top: 0px;
 }
 
-html {
+.fa {
+	color: #0592BF;
+	font-size: 15px;
+}
+
+.main {
+	margin-bottom: 100px;
+}
+
+nav {
 	background-color: #0592BF;
+	margin-bottom: 50px;
+}
+
+html {
+	background-color: #F1F1F1;
+	/*background-color: #0592BF;*/
 	/*background-image: -webkit-gradient(linear,0 50%,100% 50%,color-stop(0,#FBD133),color-stop(35%,#F44336),color-stop(65%,#0592BF),color-stop(100%,#2f4f4f));*/
 }
 
-.portfolioImg {
-	max-width:100%;
-	max-height:100%;
-	display: block;
+label {
+	font-size: 13px;
 }
 
 .rowFix {
 	margin-bottom: 0px;
-}
-
-.dividerVert {
-	background-color: #0592BF;
-	width: 1px;
-	height: 810px;
-	margin-top: 45px;
-	margin-right: 20px;
-}
-
-.divider {
-	background-color: #0592BF;
 }
 
 .card {
@@ -58,50 +106,6 @@ html {
 .topMargin {
 	margin-top: 10px;
 }
-
-.teamSpacing, .faqSpacing {
-	margin-top: 25px;
-}
-
-/* 
-===================================  
-Media Queries
-===================================  
-*/
-
-@media (max-width: 600px) {
-	.imagesMobile {
-		display: none;
-	}
-}
-
-@media (max-width: 992px) {
-	.clubEmail {
-		font-size: 15px;
-	}
-	.about {
-		height: 100% !important;
-	}
-	.aboutText {
-		padding-bottom: 20px;
-	}
-}
-
-/* 
-===================================  
-Footer Section
-===================================  
-*/
-
-.footer {
-	text-align: center;
-	width: 90%;
-}
-
-.copyright {
-	font-family: Montserrat;
-}
-
 
 /* 
 ===================================  
@@ -113,45 +117,11 @@ About Section
 	font-size: 13px;
 }
 
-.headerImg {
-	max-width:100%;
-	max-height:100%;
-	display: block;
-}
-
-/* 
-===================================  
-Logo
-===================================  
-*/
-
-
 .logo {
-	width: 75px;
-	height: 75px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-/* 
-===================================  
-Contact Section
-===================================  
-*/
-
-.clubEmail {
-	margin-top: 20px !important;
-	margin-bottom: 45px !important;
-	text-decoration: underline;
-}
-
-.fa {
-	color: #0592BF !important;
-	float: right;
-}
-
-.icon {
-	padding-right: 0px !important;
+	width: 45px;
+	height: 45px;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
 /* 
@@ -164,10 +134,10 @@ Cards
 	font-size: 13px;
 }
 
-.goldtier, .phototier, .bluetier, .webtier, .producttier, .videotier {
+/*.goldtier, .phototier, .bluetier, .webtier, .producttier, .videotier {
 	float: left !important;
 
-}
+}*/
 
 .goldtier {
 	color: #E7B03A !important;
@@ -197,36 +167,9 @@ Cards
 	color: #0592BF;
 }
 
-.about {
-	height: 100%;
-}
-
-.request {
-	height: 820px;
-}
-
 .portfolio {
 	height: 820px;
 	overflow-y: scroll;
-}
-
-.events {
-	height: 263px;
-}
-
-.contact {
-	height: 263px;
-}
-
-.eventHeader {
-	background-color: #0592BF;
-	color: white;
-	height: 15px;
-	line-height: 0px !important;
-	font-size: 25px;
-	text-align: center;
-	margin-top: auto !important;
-	padding: 0px !important;
 }
 
 /* 
@@ -260,11 +203,6 @@ Requests Section
 .eventLocation {
 	font-size: 13px;
 	color: black !important;
-}
-
-.outline {
-	font-size: 14.5px !important;
-	margin-top: 25px;
 }
 
 .projAd {
@@ -311,11 +249,6 @@ input[type=text].invalid, input[type=text]:focus.invalid, input[type=password].i
 border-bottom: 1px solid #F44336;
 box-shadow: 0 1px 0 0 #F44336; }
 
-.btn {
-	background-color: #0592BF !important;
-	margin-top: 25px;
-}
-
 .picker__weekday-display {
 	background-color: #0592BF;
 }
@@ -348,6 +281,7 @@ box-shadow: 0 1px 0 0 #F44336; }
 	color: #0592BF;
 }
 
-.material-icons {
-	color: #0592BF;
+.mdi-navigation-menu {
+	color: white;
+	margin-left: 25px;
 }

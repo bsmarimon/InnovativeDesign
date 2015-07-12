@@ -21,7 +21,7 @@
   -ms-transform: scale(.9);
   -o-transform: scale(.9);
   transform: scale(.9);
-  background-color: #0592BF !important;
+  background-color: #0592BF;
   color: #ffffff; }
   .picker__day--selected.picker__day--outfocus, .picker__day--selected:hover.picker__day--outfocus, .picker--focused .picker__day--selected.picker__day--outfocus {
     background-color: #a1ded8; }
@@ -34,3 +34,11 @@
   font-size: 1.1rem;
   padding: 0 1rem;
   color: #0592BF !important; }
+
+.picker__weekday-display {
+  background-color: #0592BF !important;
+}
+
+.picker__day--highlighted {
+  color: white !important;
+}

@@ -5,13 +5,13 @@ Template.landing.helpers({
 });
 
 Template.landing.onRendered(function() {
-	$(document).ready(function() {
-		$('ul.tabs').tabs();
-    $('input#input_text, textarea#textarea1').characterCounter();
+	$( document ).ready(function() {
+    	$('input#input_text, textarea#textarea1').characterCounter();
+	});
+    $(".button-collapse").sideNav();  
     $('.datepicker').pickadate({
-		    selectMonths: true,
-		    selectYears: 15 
-		  });
-	})
+		selectMonths: true,
+		selectYears: 15 
+	});
 });
 

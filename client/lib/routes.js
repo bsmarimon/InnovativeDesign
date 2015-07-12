@@ -9,3 +9,8 @@ Router.route('/officers', function() {
 Router.route('/image', function() {
 	this.render('imageUpload');
 });
+
+Router.route('/submission', function() {
+	this.render('content');
+});
+
