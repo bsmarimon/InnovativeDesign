@@ -18,3 +18,6 @@ Router.route('/contact', function() {
 	this.render('contact');
 });
 
+Router.route('/teams', function() {
+	this.render('teams');
+});

@@ -1,0 +1,28 @@
+.fa-square {
+	font-size: 20px;
+	margin-right: 15px;
+}
+
+.goldtier {
+	color: #E7B03A !important;
+}
+
+.webtier {
+	color: #468966 !important;
+}
+
+.phototier {
+	color: #C83353 !important;
+}
+
+.bluetier {
+	color: #0592BF !important;
+}
+
+.videotier {
+	color: black !important;
+}
+
+.producttier {
+	color: #FF0894 !important;
+}

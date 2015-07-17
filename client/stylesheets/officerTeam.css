@@ -1,8 +1,27 @@
 .icon-text {
 	font-size: 12px;
 	font-family: 'Open Sans';
+	margin-top: 0px;
 }
 
 .officerBios {
 	height: 250px;
+}
+
+h4 {
+	font-family: Montserrat;
+	font-size: 13px;
+	margin-top: 0px;
+}
+
+.material-icons {
+	color: #0592BF;
+}
+
+.addMarginTop75	 {
+	margin-top: 75px !important;
+}
+
+.info-btn {
+	cursor: pointer;
 }
