@@ -3,7 +3,6 @@
 	max-height: 100%;
 }
 
-
 /* 
 ===================================  
 Generic Element Styling 
@@ -17,7 +16,8 @@ Generic Element Styling
 
 .event {
 	min-height: 100%;
-	height: 250px;
+	height: 200px;
+	line-height: 10px !important;
 }
 
 .location-icon {
@@ -40,6 +40,10 @@ Generic Element Styling
 
 .removeBottomMargin {
 	margin-bottom: 0px !important;
+}
+
+.removeTopMargin {
+	margin-top: 0px !important;
 }
 
 .removeRightPadding {
@@ -184,7 +188,7 @@ Requests Section
 }
 
 .additionalInfo {
-	height: 200px !important;
+	height: 150px !important;
 }
 
 .submitbtn {
