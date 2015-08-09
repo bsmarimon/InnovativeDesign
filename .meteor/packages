@@ -9,7 +9,11 @@ autopublish
 insecure
 iron:router
 materialize:materialize
-dbarrett:dropzonejs
-cfs:standard-packages
-cfs:gridfs
 fortawesome:fontawesome
+orionjs:core
+orionjs:materialize
+orionjs:filesystem
+orionjs:file-attribute
+orionjs:summernote
+orionjs:relationships
+orionjs:image-attribute

@@ -43,9 +43,20 @@ Template.landing.helpers({
 
 Template.landing.onRendered(function() {
 	$( document ).ready(function() {
+    $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: true // Displays dropdown below the button
+    });
+    $('.modal-trigger').leanModal();
     $('.button-collapse').sideNav('hide');
     $('input#input_text, textarea#textarea1').characterCounter();
+    $('input#input_text, textarea#textarea2').characterCounter();
 	});
+
     $(".button-collapse").sideNav();  
     $('.datepicker').pickadate({
 		selectMonths: true,
@@ -56,7 +67,6 @@ Template.landing.onRendered(function() {
 Template.landing.events({
   "change #dropdown": function(event) {
     var newValue = $(event.target).val();
-    console.log(newValue);
     Session.set("type", newValue);
   }
 });

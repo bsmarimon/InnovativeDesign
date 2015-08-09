@@ -1,0 +1,95 @@
+html {
+	background-color: #eeeeee !important;
+}
+
+nav {
+	box-shadow: none !important;
+	background-color: #eeeeee !important;
+	font-family: Montserrat;
+	margin-bottom: 0px !important;
+	margin-top: 40px !important;
+	line-height: 32px;
+}
+
+nav::hover {
+	background-color: #eeeeee !important;
+}
+
+.navText li > a {
+	color: black !important;
+	font-size: 15px !important;
+	background-color: #eeeeee !important;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.dropdown-content li > a {
+	margin-left: 0px !important;
+}
+
+li {
+	background-color: #eeeeee !important;
+}
+
+.openRequests {
+	border-style: solid;
+	border-color: #0592BF;
+	margin-right: 0px !important;
+}
+
+.openRequests:hover {
+	background-color: #eeeeee !important;
+}
+
+ul > li > a:hover {
+	color: #0592BF !important;
+	background-color: #eeeeee !important;
+}
+
+.logo {
+	width: 45px;
+	height: 45px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.bottom-sheet {
+	max-height: 100% !important;
+	height: 100% !important;
+
+}
+
+.submitbtn {
+	background-color: #0592BF !important;
+	margin-bottom: 25px;
+	color: white;
+}
+
+.closeFormBtn {
+	float: right;
+	font-size: 30px;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+.requestsFormPadding {
+	margin-top: 150px;
+}
+
+.picker__nav--prev:hover {
+	background-color: #0592BF !important;
+}
+
+.picker__nav--next:hover {
+	background-color: #0592BF !important;
+}
+
+.additionalInfo {
+	height: 150px !important;
+}
+
+.placeholder {
+	width: 100%;
+	max-width: 100%;
+	height: 500px;
+}
