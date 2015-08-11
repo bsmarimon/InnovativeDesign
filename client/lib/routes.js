@@ -22,6 +22,9 @@ Router.route('/photo', function() {
   this.render('photo');
 });
 
+Router.configure({
+	layoutTemplate: 'navbar'
+});
 
 Options.set('forbidClientAccountCreation', true);
 

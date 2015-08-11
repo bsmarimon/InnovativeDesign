@@ -1,4 +1,4 @@
-Template.officers.helpers({
+Template.navbar.helpers({
   submitted: function() {
     var tobeRtn = Session.get("submitted")
     return tobeRtn;
@@ -41,7 +41,7 @@ Template.officers.helpers({
 
 });
 
-Template.officers.onRendered(function() {
+Template.navbar.onRendered(function() {
   $( document ).ready(function() {
     $('.dropdown-button').dropdown({
       inDuration: 300,
@@ -51,7 +51,12 @@ Template.officers.onRendered(function() {
       gutter: 0, // Spacing from edge
       belowOrigin: false // Displays dropdown below the button
     });
-    $('.modal-trigger').leanModal();
+      $('.modal-trigger').leanModal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
+      in_duration: 300, // Transition in duration
+      out_duration: 200, // Transition out duration
+    });
     $('.button-collapse').sideNav('hide');
     $('input#input_text, textarea#textarea1').characterCounter();
     $('input#input_text, textarea#textarea2').characterCounter();
@@ -64,7 +69,7 @@ Template.officers.onRendered(function() {
   });
 });
 
-Template.officers.events({
+Template.navbar.events({
   "change #dropdown": function(event) {
     var newValue = $(event.target).val();
     Session.set("type", newValue);
