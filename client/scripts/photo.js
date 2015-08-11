@@ -1,4 +1,4 @@
-Template.officers.helpers({
+Template.photo.helpers({
   submitted: function() {
     var tobeRtn = Session.get("submitted")
     return tobeRtn;
@@ -41,7 +41,7 @@ Template.officers.helpers({
 
 });
 
-Template.officers.onRendered(function() {
+Template.photo.onRendered(function() {
   $( document ).ready(function() {
     $('.dropdown-button').dropdown({
       inDuration: 300,
@@ -55,16 +55,17 @@ Template.officers.onRendered(function() {
     $('.button-collapse').sideNav('hide');
     $('input#input_text, textarea#textarea1').characterCounter();
     $('input#input_text, textarea#textarea2').characterCounter();
-  });
-
+    $('ul.tabs').tabs();
+    $('.materialboxed').materialbox();
     $(".button-collapse").sideNav();  
     $('.datepicker').pickadate({
-    selectMonths: true,
-    selectYears: 15 
+      selectMonths: true,
+      selectYears: 15 
+    });
   });
 });
 
-Template.officers.events({
+Template.photo.events({
   "change #dropdown": function(event) {
     var newValue = $(event.target).val();
     Session.set("type", newValue);
