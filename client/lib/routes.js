@@ -1,9 +1,9 @@
 Router.route('/', function() {
-	this.render('landing');
+  this.render('landing');
 });
 
 Router.route('/officers', function() {
-	this.render('officers');
+  this.render('officers');
 });
 
 Router.route('/about', function() {
@@ -11,11 +11,11 @@ Router.route('/about', function() {
 });
 
 Router.route('/contact', function() {
-	this.render('contact');
+  this.render('contact');
 });
 
 Router.route('/teams', function() {
-	this.render('teams');
+  this.render('teams');
 });
 
 Router.route('/photo', function() {
@@ -23,7 +23,7 @@ Router.route('/photo', function() {
 });
 
 Router.configure({
-	layoutTemplate: 'navbar'
+  layoutTemplate: 'navbar'
 });
 
 Options.set('forbidClientAccountCreation', true);
