@@ -1,4 +1,4 @@
-Template.officers.helpers({
+Template.about.helpers({
   submitted: function() {
     var tobeRtn = Session.get("submitted")
     return tobeRtn;
@@ -41,7 +41,7 @@ Template.officers.helpers({
 
 });
 
-Template.officers.onRendered(function() {
+Template.about.onRendered(function() {
   $( document ).ready(function() {
     $('.dropdown-button').dropdown({
       inDuration: 300,
@@ -64,7 +64,7 @@ Template.officers.onRendered(function() {
   });
 });
 
-Template.officers.events({
+Template.about.events({
   "change #dropdown": function(event) {
     var newValue = $(event.target).val();
     Session.set("type", newValue);

@@ -2,6 +2,32 @@ html {
 	background-color: #eeeeee !important;
 }
 
+#dropdown1 > li > a {
+	background-color: white !important;
+}
+
+#dropdown1 > li > a:hover {
+	color: #0592BF !important;
+}
+
+#dropdown1 > li {
+	background-color: white !important;
+}
+
+.cardHeaderBlue { 
+	height: 20px;
+	background-color: #0592BF !important;
+}
+
+.requestThanks {
+	max-height: 50%;
+	max-width: 50%;
+}
+
+.navText > li {
+	background-color: #eeeeee !important;
+}
+
 nav {
 	box-shadow: none !important;
 	background-color: #eeeeee !important;
@@ -11,7 +37,7 @@ nav {
 	line-height: 32px;
 }
 
-nav::hover {
+nav:hover {
 	background-color: #eeeeee !important;
 }
 
@@ -27,10 +53,6 @@ nav::hover {
 	margin-left: 0px !important;
 }
 
-li {
-	background-color: #eeeeee !important;
-}
-
 .openRequests {
 	border-style: solid;
 	border-color: #0592BF;
@@ -41,7 +63,7 @@ li {
 	background-color: #eeeeee !important;
 }
 
-ul > li > a:hover {
+.navText > li > a:hover {
 	color: #0592BF !important;
 	background-color: #eeeeee !important;
 }

@@ -10,3 +10,7 @@
 	background-color: #0592BF;
 	will-change: left, right; 
 }
+
+.contactTopSpacing {
+	margin-top: 200px;
+}

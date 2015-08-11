@@ -4,32 +4,48 @@
 	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  	<nav>
-  		<div class="nav-wrapper">
-	     	<a href="/" class="brand-logo"><img class="logo" src="img/logo-white.png"></a>
-			<ul class="right hide-on-med-and-down">
-		    	<li><a href="#!">Work</a></li>
-		    	<li><a href="/teams">Teams</a></li>
-		    	<li><a href="/officers">Officers</a></li>
-		    	<li><a href="/contact">Contact</a></li>
-		  	</ul>
-		  	<ul id="slide-out" class="side-nav">
-			    <li><a href="#!">Work</a></li>
-		    	<li><a href="/teams">Teams</a></li>
-		    	<li><a href="/officers">Officers</a></li>
-		    	<li><a href="/contact">Contact</a></li>
-		  	</ul>
-	  		<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-	  	</div>
-	</nav>
-	<div class="row main">
+	<div class="row">
+		<div class="col l8 offset-l2">
+			<ul id="dropdown1" class="dropdown-content">
+			 	<li><a href="/photo">Photo</a></li>
+			  	<li><a href="/graphic">Graphic</a></li>
+			  	<li><a href="/video">Video</a></li>
+			  	<li><a href="/web">Web</a></li>
+			  	<li><a href="/product">Product</a></li>
+			</ul>
+			<nav>
+		  		<div class="nav-wrapper">
+					<ul class="right hide-on-med-and-down navText">
+				    	<li><a href="/about">About</a></li>
+				    	<li><a href="/officers">Officers</a></li>
+				    	<li><a href="/contact">Contact</a></li>
+				    	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Teams</a></li>
+				    	<li><a class="modal-trigger openRequests" href="#modal1">Requests</a></li>
+				  	</ul>
+				  	<ul id="slide-out" class="side-nav">
+						<li><a href="/about">About</a></li>
+						<li><a href="/officers">Officers</a></li>
+						<li><a href="/contact">Contact</a></li>
+						<li><a class="modal-trigger" href="#modal1">Requests</a></li>
+					 	<li><a href="/photo">Photo</a></li>
+					  	<li><a href="/graphic">Graphic</a></li>
+					  	<li><a href="/video">Video</a></li>
+					  	<li><a href="/web">Web</a></li>
+					  	<li><a href="/product">Product</a></li>
+				  	</ul>
+			  		<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+			  	</div>
+			</nav>
+		</div>
+	</div>
+	<div class="row contactTopSpacing">
 		<div class="col l4 offset-l4">
-	
+			<div class="card">
 		  		<div class="card-content">
 		  			<div class="row">
 			  			<div class="col l12">
 			  				<h3>Hey!</h3>
-		  					<p>Please send any design requests through the requests form, which can be found on the home page. For all other inqueries, feel free to send us an email or Facebook message. An officer should get back to you with a response within a couple days.</p>
+		  					<p>Please send any design requests through the requests form, which can be found at the top of this page. For all other inqueries, feel free to send us an email or Facebook message. An officer should get back to you with a response within a couple days.</p>
 		  				</div>
 		  			</div>
 					
@@ -60,7 +76,201 @@
 						<div id="test3" class="col l12 m12 center">@InnoDatCAL</div>
 					</div>
 		  		</div>
-	
+		  	</div>
 		</div>
 	</div>
+
+
+	<div id="modal1" class="modal bottom-sheet">
+		<div class="modal-footer">
+	      	<a href="#!" class="modal-action modal-close"><i class="material-icons right closeFormBtn">close</i></a>
+	    </div>
+    	<div class="row requestsFormPadding">
+			<div class="col l6 offset-l3">
+		  		<div class="card-content request">
+		  			{{#if submitted}}
+		  			  	<div class="row rowFix">
+			  				<div class="col l12 center">
+				  				<h2>Your request is currently being delivered by a squad of intelligent owls. <br><br> An officer should be reaching out to you in a couple days to discuss the details of the project.</h2>.
+			  				</div>
+			  			</div>
+		  			{{else}}
+	  			  	<div class="row rowFix">
+		  				<div class="col l12">
+			  				<h2>Please submit design requests through the form below.</h2>
+		  				</div>
+		  			</div>
+		  			<form class="col l12 requestForm">
+				       	<div class="row rowFix">  
+				        	<div class="input-field col l6">	        		
+				          		<input id="first_name" type="text">
+				          		<label for="first_name">Name</label>
+				        	</div>
+				   
+					        <div class="input-field col l6">
+				        	  	<input id="email" type="email">
+				          		<label for="email">Email</label>
+				        	</div>
+				        </div>
+						<div class="row rowFix">  
+					        <div class="input-field col l6">
+				        	  	<input id="phone" type="text">
+				          		<label for="phone">Phone</label>
+				        	</div>
+				
+				        	<div class="input-field col l6">
+				        	  	<input id="organization" type="text">
+				          		<label for="organization">Organization</label>
+				        	</div>
+				        </div>
+				        <div class="row rowFix">  
+					    	<div class="input-field col s12">
+				            	<textarea id="textarea1" class="materialize-textarea" length="250"></textarea>
+	        					<label for="textarea1">Organization Description</label>
+					      	</div>
+					    </div>
+				        <div class="row rowFix">    
+				        	<div class="input-field col l6">
+				        		<input type="date" placeholder="Proposed Deadline" class="datepicker">
+				        		<label for="date"></label>
+				        	</div> 
+				        	<div class="col l6">
+					        	<label class="tierSelect">&nbsp;</label>
+							    <select id="dropdown" class="browser-default tierSelect">
+								      <option value="" disabled="" selected="">Project Category</option>
+								      <option value="videography">Videography</option>
+								      <option value="photography">Photography</option>
+								      <option value="graphicdesign">Graphic Design</option>
+								      <option value="webdesign">Web Design</option>
+							    </select>
+							</div>
+						</div>
+						{{#if graphic}}
+							<div class="row">  
+						        <div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="banner"/>
+								      	<label for="banner">Banner</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="poster"/>
+								      	<label for="poster">Poster</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="logo"/>
+								      	<label for="logo">Logo</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="pamphlet"/>
+								      	<label for="pamphlet">Pamphlet</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="other"/>
+								      	<label for="other">Other</label>
+								    </p>
+					        	</div>
+					        </div>
+						{{/if}}
+						{{#if video}}
+							<div class="row">  
+						        <div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="Documentary"/>
+								      	<label for="Documentary">Documentary</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="Promotional"/>
+								      	<label for="Promotional">Promotional</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="other"/>
+								      	<label for="other">Other</label>
+								    </p>
+					        	</div>
+					        </div>
+						{{/if}}
+						{{#if photo}}
+							<div class="row">  
+						        <div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="Documentary"/>
+								      	<label for="Documentary">Club Photos</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="Promotional"/>
+								      	<label for="Promotional">Event Photos</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="other"/>
+								      	<label for="other">Other</label>
+								    </p>
+					        	</div>
+					        </div>
+						{{/if}}
+						{{#if web}}
+							<div class="row">  
+						        <div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="Documentary"/>
+								      	<label for="Documentary">Single Page Site</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="Promotional"/>
+								      	<label for="Promotional">Multi-Page Site</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="Promotional"/>
+								      	<label for="Promotional">Blog</label>
+								    </p>
+					        	</div>
+					        	<div class="input-field col l6">
+					        	  	<p class="removeTopMargin">
+								    	<input type="checkbox" class="filled-in" id="other"/>
+								      	<label for="other">Other</label>
+								    </p>
+					        	</div>
+					        </div>
+						{{/if}}
+						<div class="row rowFix">  
+					    	<div class="input-field col s12">
+				            	<textarea id="textarea2" class="materialize-textarea" length="500"></textarea>
+	        					<label for="textarea2">Project Description</label>
+					      	</div>
+					    </div>
+					    <div class="row rowFix">  
+					      	<div id="submitbtn" class="col s12">
+						      	<button class="btn-flat waves-effect waves-light submitbtn" type="submit" name="action">Send
+									<i class="mdi-content-send right"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					{{/if}}
+		  		</div>
+			</div>
+		</div>
+  	</div>	
+
+
+
 </template>
