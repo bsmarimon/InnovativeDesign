@@ -1,17 +1,17 @@
 html {
-	background-color: #eeeeee !important;
+	background-color: #0592BF !important;
 }
 
 #dropdown1 > li > a {
-	background-color: white !important;
-}
-
-#dropdown1 > li > a:hover {
-	color: #0592BF !important;
+	color: white !important;
+	font-size: 15px !important;
+	background-color: #0592BF !important;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #dropdown1 > li {
-	background-color: white !important;
+	background-color: #0592BF !important;
 }
 
 .cardHeaderBlue { 
@@ -25,12 +25,12 @@ html {
 }
 
 .navText > li {
-	background-color: #eeeeee !important;
+	background-color: #0592BF !important;
 }
 
 nav {
 	box-shadow: none !important;
-	background-color: #eeeeee !important;
+	background-color: #0592BF !important;
 	font-family: Montserrat;
 	margin-bottom: 0px !important;
 	margin-top: 40px !important;
@@ -38,13 +38,13 @@ nav {
 }
 
 nav:hover {
-	background-color: #eeeeee !important;
+	background-color: #0592BF !important;
 }
 
-.navText li > a {
-	color: black !important;
+.navText > li > a {
+	color: white !important;
 	font-size: 15px !important;
-	background-color: #eeeeee !important;
+	background-color: #0592BF !important;
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -55,17 +55,12 @@ nav:hover {
 
 .openRequests {
 	border-style: solid;
-	border-color: #0592BF;
+	border-color: white;
 	margin-right: 0px !important;
 }
 
 .openRequests:hover {
-	background-color: #eeeeee !important;
-}
-
-.navText > li > a:hover {
-	color: #0592BF !important;
-	background-color: #eeeeee !important;
+	background-color: #0592BF !important;
 }
 
 .logo {
