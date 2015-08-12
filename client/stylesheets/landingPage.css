@@ -34,21 +34,7 @@ Generic Element Styling
 	height: 100%;
 }
 
-.removeLeftPadding {
-	padding-left: 0px !important;
-}
 
-.removeBottomMargin {
-	margin-bottom: 0px !important;
-}
-
-.removeTopMargin {
-	margin-top: 0px !important;
-}
-
-.removeRightPadding {
-	padding-right: 0px !important;
-}
 
 p {
 	font-family: 'Open Sans';

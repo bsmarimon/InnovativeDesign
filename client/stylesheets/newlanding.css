@@ -2,8 +2,29 @@ html {
 	background-color: #0592BF !important;
 }
 
+.removeLeftPadding {
+	padding-left: 0px !important;
+}
+
+.removeBottomMargin {
+	margin-bottom: 0px !important;
+}
+
+.removeTopMargin {
+	margin-top: 0px !important;
+}
+
+.removeRightPadding {
+	padding-right: 0px !important;
+}
+
 .landingCard {
 	height: 435px;
+}
+
+.mdi-navigation-menu {
+  color: white;
+  margin-left: 50px;
 }
 
 video {
