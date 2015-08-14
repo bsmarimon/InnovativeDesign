@@ -26,7 +26,6 @@ Router.configure({
   layoutTemplate: 'navbar'
 });
 
-Options.set('forbidClientAccountCreation', true);
 
 
 

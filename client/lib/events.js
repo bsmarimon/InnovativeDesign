@@ -10,7 +10,6 @@ Events = new orion.collection('events', {
       { data: "location", title: "Location" },
       { data: "time", title: "Time" },
       { data: "facebook_url", title: "Facebook Link" },
-      orion.attributeColumn('createdBy', 'createdBy', 'Created By')
     ]
   }
 });
@@ -33,5 +32,4 @@ Events.attachSchema(new SimpleSchema({
   facebook_url: {
     type: String
   },
-  createdBy: orion.attribute('createdBy') 
 }));
