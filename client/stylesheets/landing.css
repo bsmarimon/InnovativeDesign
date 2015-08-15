@@ -1,5 +1,25 @@
+.landingCard {
+	box-shadow: none;
+	height: 435px;
+	background-color: black;
+	color: white;
+}
+
+	
+video {
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+
+
+
+
+
+
+
 html {
-	background-color: #0592BF !important;
+	background-color: white !important;
 }
 
 a {
@@ -23,34 +43,28 @@ a {
 	padding-right: 0px !important;
 }
 
-.landingCard {
-	height: 435px;
-}
 
 .mdi-navigation-menu {
   color: white;
 }
 
 video {
-	max-width: 100%;
-	max-height: 100%;
+	height: 250px !important;
 }
 
 #dropdown1 > li > a {
-	color: white !important;
+	color: white;
 	font-size: 15px !important;
-	background-color: #0592BF !important;
-	margin-left: 10px;
-	margin-right: 10px;
+	background-color: black !important;
+	text-align: center;
+}
+
+#dropdown1 > li > a:hover {
+	color: #0592BF !important;
 }
 
 #dropdown1 > li {
-	background-color: #0592BF !important;
-}
-
-.cardHeaderBlue { 
-	height: 20px;
-	background-color: #0592BF !important;
+	background-color: black !important;
 }
 
 .requestThanks {
@@ -59,28 +73,35 @@ video {
 }
 
 .navText > li {
-	background-color: #0592BF !important;
+	background-color: black !important;
 }
 
 nav {
 	box-shadow: none !important;
-	background-color: #0592BF !important;
+	background-color: black !important;
 	font-family: Montserrat;
+	padding-top: 40px;
+	padding-bottom: 72px !important;
 	margin-bottom: 0px !important;
-	margin-top: 40px !important;
 	line-height: 32px;
+	padding-right: 150px;
 }
 
 nav:hover {
-	background-color: #0592BF !important;
+	background-color: black !important;
+	color: #0592BF !important;
 }
 
 .navText > li > a {
-	color: white !important;
+	color: white;
 	font-size: 15px !important;
-	background-color: #0592BF !important;
-	margin-left: 10px;
-	margin-right: 10px;
+	background-color: black !important;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.navText > li > a:hover {
+	color: #0592BF !important
 }
 
 .dropdown-content li > a {
@@ -90,11 +111,12 @@ nav:hover {
 .openRequests {
 	border-style: solid;
 	border-color: white;
-	margin-right: 0px !important;
 }
 
 .openRequests:hover {
-	background-color: #0592BF !important;
+	background-color: black !important;
+	color: #0592BF !important;
+	border-color: #0592BF !important;
 }
 
 .logo {

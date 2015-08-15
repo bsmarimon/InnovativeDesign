@@ -1,6 +1,5 @@
 Meteor.subscribe("events");
 
-
 Template.landing.helpers({
 	events: function() {
 		return Session.get("events");
