@@ -7,16 +7,10 @@
 
 	
 video {
-	margin-bottom: 0px !important;
-	padding-bottom: 0px !important;
+	margin: 0px;
+	padding: 0px;
+	display: block;
 }
-
-
-
-
-
-
-
 
 html {
 	background-color: white !important;
@@ -76,6 +70,10 @@ video {
 	background-color: black !important;
 }
 
+.nav-wrapper {
+	padding-bottom: 10px;
+}
+
 nav {
 	box-shadow: none !important;
 	background-color: black !important;
@@ -120,10 +118,9 @@ nav:hover {
 }
 
 .logo {
-	width: 45px;
-	height: 45px;
-	margin-top: 10px;
-	margin-left: 10px;
+	height: 100%;
+	width: 50px;
+	margin-left: 15px;
 }
 
 .bottom-sheet {
