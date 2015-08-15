@@ -8,6 +8,7 @@ Events = new orion.collection('events', {
     columns: [
       { data: "title", title: "Title" },
       { data: "location", title: "Location" },
+      { data: "date", title: "Date" },
       { data: "time", title: "Time" },
       { data: "facebook_url", title: "Facebook Link" },
     ]
@@ -24,6 +25,9 @@ Events.attachSchema(new SimpleSchema({
     type: String
   },
   location: {
+    type: String
+  },
+  date: {
     type: String
   },
   time: {

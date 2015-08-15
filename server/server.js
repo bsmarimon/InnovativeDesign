@@ -23,6 +23,7 @@ Events = new orion.collection('events', {
     columns: [
       { data: "title", title: "Title" },
       { data: "location", title: "Location" },
+      { data: "date", title: "Date" },
       { data: "time", title: "Time" },
       { data: "facebook_url", title: "Facebook Link" },
     ]
