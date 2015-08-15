@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <div class="row">
-    <div class="col l8 offset-l2">
+    <div class="col l8 offset-l2 m11 offset-m1">
       <ul id="dropdown1" class="dropdown-content">
         <li><a href="/photo">Photo</a></li>
           <li><a href="/graphic">Graphic</a></li>
@@ -44,39 +44,39 @@
           <a href="" class="modal-action modal-close"><i class="material-icons right closeFormBtn">close</i></a>
       </div>
       <div class="row requestsFormPadding">
-      <div class="col l6 offset-l3 m6 offset-m3">
+        <div class="col l6 offset-l3 m12">
           <div class="card-content request">
             {{#if submitted}}
-                <div class="row rowFix">
+              <div class="row rowFix">
                 <div class="col l12 center">
                   <h2>Your request is currently being delivered by a squad of intelligent owls. <br><br> An officer should be reaching out to you in a couple days to discuss the details of the project.</h2>.
                 </div>
               </div>
             {{else}}
-              <div class="row rowFix">
-              <div class="col l12">
+            <div class="row rowFix">
+              <div class="col l12 m10 offset-m1">
                 <h2>Please submit design requests through the form below.</h2>
               </div>
             </div>
-            <form class="col l12 requestForm">
+            <form class="col l12 m10 offset-m1 requestForm">
                 <div class="row rowFix">  
-                  <div class="input-field col l6">              
+                  <div class="input-field col l6 m6">              
                       <input id="first_name" type="text">
                       <label for="first_name">Name</label>
                   </div>
            
-                  <div class="input-field col l6">
+                  <div class="input-field col l6 m6">
                       <input id="email" type="email">
                       <label for="email">Email</label>
                   </div>
                 </div>
                 <div class="row rowFix">  
-                  <div class="input-field col l6">
+                  <div class="input-field col l6 m6">
                       <input id="phone" type="text">
                       <label for="phone">Phone</label>
                   </div>
         
-                  <div class="input-field col l6">
+                  <div class="input-field col l6 m6">
                       <input id="organization" type="text">
                       <label for="organization">Organization</label>
                   </div>
@@ -88,11 +88,11 @@
                     </div>
                 </div>
                 <div class="row rowFix">    
-                  <div class="input-field col l6">
+                  <div class="input-field col l6 m6">
                     <input type="date" placeholder="Proposed Deadline" class="datepicker">
                     <label for="date"></label>
                   </div> 
-                  <div class="col l6">
+                  <div class="col l6 m6">
                     <label class="tierSelect">&nbsp;</label>
                     <select id="dropdown" class="browser-default tierSelect">
                         <option value="" disabled="" selected="">Project Category</option>
@@ -210,13 +210,13 @@
                   </div>
             {{/if}}
             <div class="row rowFix">  
-                <div class="input-field col s12">
+                <div class="input-field col l12 m12">
                       <textarea id="textarea2" class="materialize-textarea" length="500"></textarea>
                     <label for="textarea2">Project Description</label>
                   </div>
               </div>
               <div class="row rowFix">  
-                  <div id="submitbtn" class="col s12">
+                  <div id="submitbtn" class="col l12 m12">
                     <button class="btn-flat waves-effect waves-light submitbtn" type="submit" name="action">Send
                   <i class="mdi-content-send right"></i>
                 </button>
