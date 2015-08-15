@@ -1,14 +1,24 @@
 .landingCard {
 	box-shadow: none;
-	height: 435px;
+	height: 200px;
 	background-color: black;
 	color: white;
 }
 
+.cardAd {
+	margin-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-style: solid;
+	border-color: white;
+	display: inline-block;
+}
 	
 video {
-	margin: 0px;
-	padding: 0px;
+	max-height: 100%;
+	max-width: 100%;
 	display: block;
 }
 
@@ -42,13 +52,9 @@ a {
   color: white;
 }
 
-video {
-	height: 250px !important;
-}
-
 #dropdown1 > li > a {
 	color: white;
-	font-size: 15px !important;
+	font-size: 20px !important;
 	background-color: black !important;
 	text-align: center;
 }
@@ -92,7 +98,7 @@ nav:hover {
 
 .navText > li > a {
 	color: white;
-	font-size: 15px !important;
+	font-size: 20px !important;
 	background-color: black !important;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -115,6 +121,7 @@ nav:hover {
 	background-color: black !important;
 	color: #0592BF !important;
 	border-color: #0592BF !important;
+	cursor: pointer;
 }
 
 .logo {
