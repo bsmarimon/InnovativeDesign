@@ -47,4 +47,10 @@ Meteor.methods({
 		return eventList;
 	},
 
+	getDesigns: function() {
+		var designList = Designs.find({}).fetch();
+		console.log(designsList);
+		return designList;
+	},
+
 });

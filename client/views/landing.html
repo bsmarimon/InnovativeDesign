@@ -11,14 +11,14 @@
     <div class="col l8 offset-l2 m12 removeLeftPadding removeRightPadding">
       <div class="row">
         <div class="col l3 m6 offset-m3">
-
-
           <div class="card landingCard">
             <div class="card-content">
-              <br>
+
+              {{#each events}}
+
               <div class="row rowFix">
                 <div class="col l12">
-                  <h2>Club Infosession</h2>
+                  <h2>{{this.title}}</h2>
                 </div>
               </div>
               <div class="row rowFix">
@@ -26,7 +26,7 @@
                   <i class="fa fa-2x fa-location-arrow"></i>
                 </div>
                 <div class="col l10">
-                  <p class="icon-text">Dwinelle Hall</p>
+                  <p class="icon-text">{{this.location}}</p>
                 </div>
               </div>
               <div class="row rowFix">
@@ -42,7 +42,7 @@
                   <i class="fa fa-2x fa-clock-o"></i>
                 </div>
                 <div class="col l10">
-                  <p class="icon-text">7-8 PM</p>
+                  <p class="icon-text">{{this.time}}</p>
                 </div>
               </div>
               <div class="row">
@@ -50,47 +50,13 @@
                   <i class="fa fa-2x fa-facebook"></i>
                 </div>
                 <div class="col l10">
-                  <p class="icon-text">Event Page</p>
+                  <a href="{{this.facebook_url}}" target="_blank" class="icon-text"><p>Event Page</p></a>
                 </div>
               </div>
               <br>
-              <div class="row rowFix">
-                <div class="col l12">
-                  <h2>DeCal Infosession</h2>
-                </div>
-              </div>
-              <div class="row rowFix">
-                <div class="col l2">
-                  <i class="fa fa-2x fa-location-arrow"></i>
-                </div>
-                <div class="col l10">
-                  <p class="icon-text">Wheeler Hall</p>
-                </div>
-              </div>
-              <div class="row rowFix">
-                <div class="col l2">
-                  <i class="fa fa-2x fa-calendar"></i>
-                </div>
-                <div class="col l10">
-                  <p class="icon-text">September 3</p>
-                </div>
-              </div>
-              <div class="row rowFix">
-                <div class="col l2">
-                  <i class="fa fa-2x fa-clock-o"></i>
-                </div>
-                <div class="col l10">
-                  <p class="icon-text">7-8 PM</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col l2">
-                  <i class="fa fa-2x fa-facebook"></i>
-                </div>
-                <div class="col l10">
-                  <p class="icon-text">Event Page</p>
-                </div>
-              </div>
+
+              {{/each}}
+
             </div>
           </div>
         </div>

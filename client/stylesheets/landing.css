@@ -2,6 +2,11 @@ html {
 	background-color: #0592BF !important;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 .removeLeftPadding {
 	padding-left: 0px !important;
 }
