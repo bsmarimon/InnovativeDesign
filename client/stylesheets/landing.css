@@ -13,7 +13,7 @@
 	visibility: hidden;
 }
 
-.landingCard:hover h2 {
+.landingCard:hover h3 {
 	background-color: #0493BF;
 }
 

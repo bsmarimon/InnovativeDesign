@@ -39,11 +39,11 @@ u {
 .blue {
 	background-color: white !important;
 	line-height: 0px !important;
-	width: 40% !important;
+	width: 90% !important;
 	padding-right: 0px !important;
 	padding-bottom: 0px !important;
 	padding-left: 0px !important;
-	padding-top: 5px;
+	padding-top: 7px;
 	text-align: center;
 	height: 50px !important;
 	border: 2px solid #0493BF;
@@ -63,11 +63,11 @@ u {
 .blue.active {
 	background-color: #0493BF !important;
 	line-height: 0px !important;
-	width: 200px !important;
+	width: 90% !important;
 	padding-right: 0px !important;
 	padding-left: 0px !important;
 	padding-bottom: 0px !important;
-	padding-top: 5px;
+	padding-top: 7px;
 	text-align: center;
 	height: 50px !important;
 }
@@ -80,5 +80,56 @@ u {
 .blue.active:hover {
 	background-color: #0493BF !important;
 	color: white !important;
+}
+
+.gold {
+	background-color: white !important;
+	line-height: 0px !important;
+	width: 90% !important;
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-top: 7px;
+	text-align: center;
+	height: 50px !important;
+	border: 2px solid #FEAF27;
+}
+
+.gold > p {
+	color: #FEAF27 !important;
+	text-transform: none !important;
+	position: relative;
+}
+
+.gold:hover {
+	background-color: white !important;
+	color: #FEAF27 !important;
+}
+
+.gold.active {
+	background-color: #FEAF27 !important;
+	line-height: 0px !important;
+	width: 90% !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	padding-bottom: 0px !important;
+	padding-top: 7px;
+	text-align: center;
+	height: 50px !important;
+}
+
+.gold.active > p {
+	color: white !important;
+	text-transform: none !important;
+}
+
+.gold.active:hover {
+	background-color: #FEAF27 !important;
+	color: white !important;
+}
+
+.flow-text {
+	font-family: 'Open Sans' !important;
+	font-size: 15px !important;
 }
 
