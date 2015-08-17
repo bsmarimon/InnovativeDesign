@@ -26,6 +26,19 @@ Router.route('/graphic', function() {
   this.render('graphic');
 });
 
+Router.route('/video', function() {
+  this.render('video');
+});
+
+Router.route('/web', function() {
+  this.render('web');
+});
+
+Router.route('/product', function() {
+  this.render('product');
+});
+
+
 Router.configure({
   layoutTemplate: 'navbar'
 });
