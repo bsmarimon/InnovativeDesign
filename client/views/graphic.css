@@ -5,7 +5,11 @@ u {
     text-decoration: none;
 }
 
-.tabs .tab a p {
+.tabs .tab {
+	text-transform: none !important;
+}
+
+.tabs100 .tab a p {
 	color: #0493BF !important;
 	text-decoration: none;
 }
@@ -14,7 +18,7 @@ u {
 	text-decoration: none:
 }
 
-.tabs {
+.tabs100 {
 	width: 100px !important;
 }
 
@@ -22,6 +26,59 @@ u {
 	visibility: hidden;
 }
 
-.tab .active {
+.tabs100 .active {
 	font-weight: bold;
 }
+
+.tierTabs .tab {
+	text-align: left !important;
+	width: 20% !important;
+}
+
+
+.blue {
+	background-color: white !important;
+	line-height: 0px !important;
+	width: 40% !important;
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-top: 5px;
+	text-align: center;
+	height: 50px !important;
+	border: 2px solid #0493BF;
+}
+
+.blue > p {
+	color: #0493BF !important;
+	text-transform: none !important;
+	position: relative;
+}
+
+.blue:hover {
+	background-color: white !important;
+	color: #0493BF !important;
+}
+
+.blue.active {
+	background-color: #0493BF !important;
+	line-height: 0px !important;
+	width: 200px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	padding-bottom: 0px !important;
+	padding-top: 5px;
+	text-align: center;
+	height: 50px !important;
+}
+
+.blue.active > p {
+	color: white !important;
+	text-transform: none !important;
+}
+
+.blue.active:hover {
+	background-color: #0493BF !important;
+	color: white !important;
+}
+
