@@ -1,8 +1,20 @@
 .landingCard {
 	box-shadow: none;
 	height: 200px;
-	background-color: black;
+	background-color: #262930;
 	color: white;
+}
+
+.landingCard:hover {
+	background-image: url("img/bluetier2.jpg");
+}
+
+.landingCard:hover p {
+	visibility: hidden;
+}
+
+.landingCard:hover h2 {
+	background-color: #0493BF;
 }
 
 .cardAd {
@@ -15,158 +27,12 @@
 	border-color: white;
 	display: inline-block;
 }
-	
-video {
-	max-height: 100%;
-	max-width: 100%;
-	display: block;
+
+.footerIcons {
+	color: #262930;
+	font-size: 20px !important;	
 }
 
-html {
-	background-color: white !important;
-}
-
-a {
-	text-decoration: none;
-	color: black;
-}
-
-.removeLeftPadding {
-	padding-left: 0px !important;
-}
-
-.removeBottomMargin {
-	margin-bottom: 0px !important;
-}
-
-.removeTopMargin {
-	margin-top: 0px !important;
-}
-
-.removeRightPadding {
-	padding-right: 0px !important;
-}
-
-
-.mdi-navigation-menu {
-  color: white;
-}
-
-#dropdown1 > li > a {
-	color: white;
-	font-size: 20px !important;
-	background-color: black !important;
-	text-align: center;
-}
-
-#dropdown1 > li > a:hover {
-	color: #0592BF !important;
-}
-
-#dropdown1 > li {
-	background-color: black !important;
-}
-
-.requestThanks {
-	max-height: 50%;
-	max-width: 50%;
-}
-
-.navText > li {
-	background-color: black !important;
-}
-
-.nav-wrapper {
-	padding-bottom: 10px;
-}
-
-nav {
-	box-shadow: none !important;
-	background-color: black !important;
-	font-family: Montserrat;
-	padding-top: 40px;
-	padding-bottom: 72px !important;
-	margin-bottom: 0px !important;
-	line-height: 32px;
-	padding-right: 150px;
-}
-
-nav:hover {
-	background-color: black !important;
-	color: #0592BF !important;
-}
-
-.navText > li > a {
-	color: white;
-	font-size: 20px !important;
-	background-color: black !important;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.navText > li > a:hover {
-	color: #0592BF !important
-}
-
-.dropdown-content li > a {
-	margin-left: 0px !important;
-}
-
-.openRequests {
-	border-style: solid;
-	border-color: white;
-}
-
-.openRequests:hover {
-	background-color: black !important;
-	color: #0592BF !important;
-	border-color: #0592BF !important;
-	cursor: pointer;
-}
-
-.logo {
-	height: 100%;
-	width: 50px;
-	margin-left: 15px;
-}
-
-.bottom-sheet {
-	max-height: 100% !important;
-	height: 100% !important;
-
-}
-
-.submitbtn {
-	background-color: #0592BF !important;
-	margin-bottom: 25px;
-	color: white;
-}
-
-.closeFormBtn {
+.copyright {
 	float: right;
-	font-size: 30px;
-	margin-top: 15px;
-	margin-right: 15px;
-}
-
-.requestsFormPadding {
-	margin-top: 150px;
-}
-
-.picker__nav--prev:hover {
-	background-color: #0592BF !important;
-}
-
-.picker__nav--next:hover {
-	background-color: #0592BF !important;
-}
-
-.additionalInfo {
-	height: 150px !important;
-}
-
-.placeholder {
-	width: 100%;
-	max-width: 100%;
-	height: 500px;
 }

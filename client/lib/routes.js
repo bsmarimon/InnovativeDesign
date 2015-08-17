@@ -22,6 +22,10 @@ Router.route('/photo', function() {
   this.render('photo');
 });
 
+Router.route('/graphic', function() {
+  this.render('graphic');
+});
+
 Router.configure({
   layoutTemplate: 'navbar'
 });

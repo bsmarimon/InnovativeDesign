@@ -1,0 +1,113 @@
+video {
+	
+	height: 300px !important;
+	display: block;
+}
+
+html {
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.removeLeftPadding {
+	padding-left: 0px !important;
+}
+
+.removeBottomMargin {
+	margin-bottom: 0px !important;
+}
+
+.removeTopMargin {
+	margin-top: 0px !important;
+}
+
+.removeRightPadding {
+	padding-right: 0px !important;
+}
+
+h4 {
+	font-family: Montserrat;
+	font-size: 13px;
+	margin-top: 0px;
+}
+
+p {
+	font-family: 'Open Sans';
+	font-size: 15px;
+}
+
+.btn {
+	background-color: #0592BF !important;
+	margin-bottom: 25px;
+}
+
+.h2white {
+	font-family: Montserrat;
+	font-size: 20px;
+	margin-top: 0px;
+	color: white;
+}
+
+.h3white {
+	font-family: Montserrat;
+	font-size: 15px;
+	margin-top: 0px;
+	color: white;
+}
+
+h2 {
+	font-family: Montserrat;
+	font-size: 20px;
+	margin-top: 0px;
+	color: black;
+}
+
+h3 {
+	font-family: Montserrat;
+	font-size: 15px;
+	margin-top: 0px;
+	color: black;
+}
+
+label {
+	font-size: 13px;
+}
+
+.fa {
+	color: #0592BF;
+	font-size: 15px;
+}
+
+.rowFix {
+	margin-bottom: 0px;
+}
+
+.card {
+	margin-top: 0px !important;
+}
+
+.datepicker {
+	margin-bottom: 40px;
+}
+
+.tierSelect {
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+.requestSpacing {
+	margin-bottom: 25px;
+}
+
+.requestForm {
+	padding: 0px !important;
+}
+
+.submitbtn {
+	margin-top: 5px !important;
+}
+

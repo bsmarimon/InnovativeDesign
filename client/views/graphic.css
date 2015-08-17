@@ -1,0 +1,27 @@
+u {
+	border-bottom: solid 2px #000000;
+    display: inline;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.tabs .tab a p {
+	color: #0493BF !important;
+	text-decoration: none;
+}
+
+.tabs .tab a p {
+	text-decoration: none:
+}
+
+.tabs {
+	width: 100px !important;
+}
+
+.indicator {
+	visibility: hidden;
+}
+
+.tab .active {
+	font-weight: bold;
+}

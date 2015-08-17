@@ -5,3 +5,9 @@ Template.photo.onRendered(function() {
   });
 });
 
+Template.graphic.onRendered(function() {
+  $( document ).ready(function() {
+    $('.materialboxed').materialbox();
+    $('ul.tabs').tabs();
+  });
+});
