@@ -12,7 +12,6 @@ Meteor.methods({
 
   getEvents: function() {
     var eventList = Events.find({}).fetch();
-    console.log(eventList);
     return eventList;
   },
 
