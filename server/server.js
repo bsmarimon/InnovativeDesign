@@ -1,8 +1,38 @@
-Designs = new orion.collection('designs', {
-  singularName: 'design',
-  pluralName: 'designs',
+Meteor.startup(function () {
+  console.log("Successful startup");
+  Meteor.publish("events", function() {
+    return Events.find();
+  });
+  Meteor.publish("blue", function() {
+    return Blue.find();
+  });
+});
+
+Meteor.methods({
+
+  getEvents: function() {
+    var eventList = Events.find({}).fetch();
+    console.log(eventList);
+    return eventList;
+  },
+
+  getBlueTier: function() {
+    var designList = Blue.find({}).fetch();
+    return designList;
+  },
+
+  getGoldTier: function() {
+    var designList = Gold.find({}).fetch();
+    return designList;
+  },
+
+});
+
+Blue = new orion.collection('blue', {
+  singularName: 'blue',
+  pluralName: 'blues',
   link: {
-    title: 'Designs' 
+    title: 'Blue Tier' 
   },
   tabular: {
     columns: [
@@ -30,28 +60,18 @@ Events = new orion.collection('events', {
   }
 });
 
-Meteor.startup(function () {
-	console.log("Successful startup");
-	Meteor.publish("events", function() {
-		return Events.find();
-	});
-	Meteor.publish("designs", function() {
-		return Designs.find();
-	});
+Gold = new orion.collection('gold', {
+  singularName: 'gold',
+  pluralName: 'golds',
+  link: {
+    title: 'Gold Tier' 
+  },
+  tabular: {
+    columns: [
+      { data: "title", title: "Title" },
+      orion.attributeColumn('image', 'image', 'Image'),
+      orion.attributeColumn('createdBy', 'createdBy', 'Created By')
+    ]
+  }
 });
 
-Meteor.methods({
-
-	getEvents: function() {
-		var eventList = Events.find({}).fetch();
-		console.log(eventList);
-		return eventList;
-	},
-
-	getDesigns: function() {
-		var designList = Designs.find({}).fetch();
-		console.log(designsList);
-		return designList;
-	},
-
-});

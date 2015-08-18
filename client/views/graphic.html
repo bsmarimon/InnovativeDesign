@@ -9,60 +9,86 @@
     <div class="col l8 offset-l2">
       <div class="row">
         <ul class="tabs tierTabs">
+
           <li class="tab">
-            <a class="btn-flat blue active" href="#blue"><p class="flow-text">Blue: Off Campus</p></a>
+            <a class="btn-flat goldtier active" href="#gold"><p class="flow-text">Gold: On Campus</p></a>
           </li>
           <li class="tab">
-            <a class="btn-flat gold" href="#gold"><p class="flow-text">Gold: On Campus</p></a>
+            <a class="btn-flat bluetier" href="#blue"><p class="flow-text">Blue: Off Campus</p></a>
           </li>
         </ul>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col l8 offset-l2">
-      <div class="row">
-
+    <div class="col l8 offset-l2 removeLeftPadding removeRightPadding">
+      <div class="row">     
+        {{#with blue}}
         <div id="blue" class="col l12 removeLeftPadding removeRightPadding">
           <div class="row">
-            <div class="col l12 removeLeftPadding removeRightPadding">
+            <div class="col l12 removeLeftPadding removeRightPadding"> 
               <div class="row">
-                <div id="test1" class="col l12 removeLeftPadding removeRightPadding">
+                {{#with this.page1}}
+                <div id="test1" class="col l12">
                   <div class="col l4 removeLeftPadding">
-                    <img class="work responsive-img" src="img/photo/davinci2.png">
-                    <img class="work responsive-img" src="img/photo/davinci1.jpg">
-                    <img class="work responsive-img" src="img/photo/davinci3.jpg">
-                    <img class="work responsive-img" src="img/photo/img5.jpg">
-                    <img class="work " src="img/photo/neil5.jpg">
+                    {{#each this.column1}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
                   </div>
                   <div class="col l4">
-                    <img class="work responsive-img" src="img/photo/brandon2.jpg">
-                    <img class="work responsive-img" src="img/photo/brandon4.jpg">
-                    <img class="work responsive-img" src="img/photo/brandon6.jpg">
-                    <img class="work responsive-img" src="img/photo/neil1.jpg">
-                    <img class="work responsive-img" src="img/photo/shota2.jpg">
+                    {{#each this.column2}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
                   </div>
                   <div class="col l4 removeRightPadding">
-                    <img class="work responsive-img" src="img/photo/neil5.jpg">
-                    <img class="work responsive-img" src="img/photo/janel2.jpg">
-                    <img class="work responsive-img" src="img/photo/brandon1.jpg">
-                    <img class="work responsive-img" src="img/photo/shota4.jpg">
-                    <img class="work responsive-img" src="img/photo/janel1.jpg">
+                    {{#each this.column3}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
                   </div>
                 </div>
-                <div id="test2" class="col l12 m12 removeLeftPadding">
-                  <div class="col l4 removeLeftPadding">
-                    <img class="work responsive-img" src="img/photo/janel3.jpg">
-                    <img class="work responsive-img" src="img/photo/shota1.jpg">
-                    <img class="work responsive-img" src="img/photo/img3.jpg">
-                    <img class="work responsive-img" src="img/photo/janel5.jpg">
-                  </div>
-                </div>
-                <div id="test3" class="col l12 m12 removeLeftPadding">
-                  <p>Oops! Check back later for more work.</p>
-                </div>
-              </div>
+                {{/with}}
 
+                {{#with this.page2}}
+                <div id="test2" class="col l12">
+                  <div class="col l4 removeLeftPadding">
+                    {{#each this.column1}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                  <div class="col l4">
+                    {{#each this.column2}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                  <div class="col l4 removeRightPadding">
+                    {{#each this.column3}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                </div>
+                {{/with}}
+
+                {{#with this.page3}}
+                <div id="test3" class="col l12">
+                  <div class="col l4 removeLeftPadding">
+                    {{#each this.column1}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                  <div class="col l4">
+                    {{#each this.column2}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                  <div class="col l4 removeRightPadding">
+                    {{#each this.column3}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                </div>
+                {{/with}}
+              </div>
+             
               <div class="row">
                 <ul class="tabs tabs100">
                   <li class="tab col l1">
@@ -85,41 +111,75 @@
             </div>
           </div>
         </div>
+        {{/with}}
+     
 
+        {{#with gold}}
         <div id="gold" class="col l12 removeLeftPadding removeRightPadding">
           <div class="row">
-            <div class="col l12 removeLeftPadding removeRightPadding">
+            <div class="col l12 removeLeftPadding removeRightPadding"> 
               <div class="row">
-                <div id="gold1" class="col l12 removeLeftPadding removeRightPadding">
+                {{#with this.page1}}
+                <div id="gold1" class="col l12">
                   <div class="col l4 removeLeftPadding">
-                    <img class="work responsive-img" src="img/graphic/img1.png">
-                    <img class="work responsive-img" src="img/graphic/img0.png">
-                    <img class="work responsive-img" src="img/graphic/img2.png">
-                    <img class="work responsive-img" src="img/graphic/shoe.jpg">
-                    <img class="work responsive-img" src="img/graphic/hpb_sonia.jpg">
+                    {{#each this.column1}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
                   </div>
                   <div class="col l4">
-                    <img class="work responsive-img" src="img/graphic/vrb_sonia.jpg">
-                    <img class="work responsive-img" src="img/graphic/logo_deena.jpg">
-                    <img class="work responsive-img" src="img/graphic/itsabirdie.png">
-                    <img class="work responsive-img" src="img/graphic/brian2.png">
-                    <img class="work responsive-img" src="img/graphic/img0.jpg">
+                    {{#each this.column2}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
                   </div>
                   <div class="col l4 removeRightPadding">
-                    <img class="work responsive-img" src="img/graphic/scollective2.jpg">
-                    <img class="work responsive-img" src="img/graphic/fruit.jpg">
-                    <img class="work responsive-img" src="img/graphic/banquet.png">
-                    <img class="work responsive-img" src="img/graphic/fashion.png">
+                    {{#each this.column3}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
                   </div>
                 </div>
-                <div id="gold2" class="col l12 m12 removeLeftPadding">
-                  <p>Oops! Check back later for more work.</p>
-                </div>
-                <div id="gold3" class="col l12 m12 removeLeftPadding">
-                  <p>Oops! Check back later for more work.</p>
-                </div>
-              </div>
+                {{/with}}
 
+                {{#with this.page2}}
+                <div id="gold2" class="col l12">
+                  <div class="col l4 removeLeftPadding">
+                    {{#each this.column1}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                  <div class="col l4">
+                    {{#each this.column2}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                  <div class="col l4 removeRightPadding">
+                    {{#each this.column3}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                </div>
+                {{/with}}
+
+                {{#with this.page3}}
+                <div id="gold3" class="col l12">
+                  <div class="col l4 removeLeftPadding">
+                    {{#each this.column1}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                  <div class="col l4">
+                    {{#each this.column2}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                  <div class="col l4 removeRightPadding">
+                    {{#each this.column3}}
+                    <img class="work responsive-img" src="{{this.image.url}}">
+                    {{/each}}
+                  </div>
+                </div>
+                {{/with}}
+              </div>
+             
               <div class="row">
                 <ul class="tabs tabs100">
                   <li class="tab col l1">
@@ -142,6 +202,9 @@
             </div>
           </div>
         </div>
+        {{/with}}
+
+
 
       </div>
     </div>

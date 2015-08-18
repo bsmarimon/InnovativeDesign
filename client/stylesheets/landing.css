@@ -6,7 +6,10 @@
 }
 
 .landingCard:hover {
-	background-image: url("img/bluetier2.jpg");
+	background-image: url("img/hongye.jpg");
+    background-size:   cover;                    
+    background-repeat: no-repeat;
+/*    background-position: center center;   */
 }
 
 .landingCard:hover p {

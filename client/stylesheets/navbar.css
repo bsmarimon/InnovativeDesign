@@ -13,6 +13,22 @@ nav {
   color: white;
 }
 
+#dropdown2 > li > a {
+	color: white;
+	font-size: 15px !important;
+	background-color: #0493BF !important;
+	/*text-align: center;*/
+}
+
+/*#dropdown1 > li > a:hover {
+	color: #0493BF !important;
+}
+*/
+#dropdown2 > li {
+	background-color: #0493BF !important;
+}
+
+
 #dropdown1 > li > a {
 	color: white;
 	font-size: 15px !important;

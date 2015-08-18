@@ -1,5 +1,5 @@
 video {
-	
+	max-width: 100%;
 	height: 300px !important;
 	display: block;
 }
@@ -13,22 +13,6 @@ a {
 	color: black;
 }
 
-.removeLeftPadding {
-	padding-left: 0px !important;
-}
-
-.removeBottomMargin {
-	margin-bottom: 0px !important;
-}
-
-.removeTopMargin {
-	margin-top: 0px !important;
-}
-
-.removeRightPadding {
-	padding-right: 0px !important;
-}
-
 h4 {
 	font-family: Montserrat;
 	font-size: 13px;
@@ -38,19 +22,6 @@ h4 {
 p {
 	font-family: 'Open Sans';
 	font-size: 15px;
-}
-
-.btn {
-	background-color: #0592BF !important;
-	margin-bottom: 25px;
-}
-
-.h2white {
-	color: white;
-}
-
-.h3white {
-	color: white;
 }
 
 h2 {
@@ -69,6 +40,35 @@ h3 {
 
 label {
 	font-size: 13px;
+}
+
+.removeLeftPadding {
+	padding-left: 0px !important;
+}
+
+.removeBottomMargin {
+	margin-bottom: 0px !important;
+}
+
+.removeTopMargin {
+	margin-top: 0px !important;
+}
+
+.removeRightPadding {
+	padding-right: 0px !important;
+}
+
+.btn {
+	background-color: #0592BF !important;
+	margin-bottom: 25px;
+}
+
+.h2white {
+	color: white;
+}
+
+.h3white {
+	color: white;
 }
 
 .fa {
