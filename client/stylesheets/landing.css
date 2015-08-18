@@ -20,6 +20,10 @@
 	background-color: #0493BF;
 }
 
+.landingLink {
+	color: white !important;
+}
+
 .cardAd {
 	margin-top: 15px;
 	padding-left: 15px;

@@ -9,6 +9,10 @@ nav {
 	padding-right: 150px;
 }
 
+.textfieldTopSpacing {
+	margin-top: 5px !important;
+}
+
 .mdi-navigation-menu {
   color: white;
 }
