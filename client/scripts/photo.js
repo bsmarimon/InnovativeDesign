@@ -1,15 +1,13 @@
-Template.photo.onRendered(function() {
-  $( document ).ready(function() {
-    $('ul.tabs').tabs();
-  });
-});
-
 Meteor.subscribe("photo");
 
 Template.photo.helpers({
   photo: function() {
     return Session.get("photo");
   },
+});
+
+Template.photo.onRendered(function(){
+  $('ul.tabs').tabs();
 });
 
 Template.photo.onCreated(function() {
@@ -69,7 +67,6 @@ Template.photo.onCreated(function() {
       alert("Failed to render page");
     }
   });
-
 });
 
 

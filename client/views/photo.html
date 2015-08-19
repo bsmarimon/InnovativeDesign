@@ -5,71 +5,67 @@
       <p>From branding to event marketing, banners to cover photos, our designers are here to provide you with a wide variety of possibilities in design services and consultancy.</p>
     </div>
   </div>
+
   <div class="row">
     <div class="col l8 offset-l2">
-      {{#with photo}}
       <div class="row">
         
-          {{#with this.page1}}
+    
           <div id="test1" class="col l12 removeLeftPadding">
             <div class="col l4 removeLeftPadding">
-              {{#each this.column1}}
+              {{#each photo.page1.column1}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
             <div class="col l4">
-              {{#each this.column2}}
+              {{#each photo.page1.column2}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
             <div class="col l4 removeRightPadding">
-              {{#each this.column3}}
+              {{#each photo.page1.column3}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
           </div>
-          {{/with}}
-          {{#with this.page2}}
+ 
           <div id="test2" class="col l12 removeLeftPadding">
             <div class="col l4 removeLeftPadding">
-              {{#each this.column1}}
+              {{#each photo.page2.column1}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
             <div class="col l4">
-              {{#each this.column2}}
+              {{#each photo.page2.column2}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
             <div class="col l4 removeRightPadding">
-              {{#each this.column3}}
+              {{#each photo.page2.column3}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
           </div>
-          {{/with}}
-          {{#with this.page3}}
+      
           <div id="test3" class="col l12 removeLeftPadding">
             <div class="col l4 removeLeftPadding">
-              {{#each this.column1}}
+              {{#each photo.page3.column1}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
             <div class="col l4">
-              {{#each this.column2}}
+              {{#each photo.page3.column2}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
             <div class="col l4 removeRightPadding">
-              {{#each this.column3}}
+              {{#each photo.page3.column3}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
           </div>
-          {{/with}}
-        
       </div>
-      {{/with}}
+  
       <div class="row">
         <ul class="tabs tabs100">
           <li class="tab col l1">
