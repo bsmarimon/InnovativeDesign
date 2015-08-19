@@ -7,8 +7,9 @@
   </div>
   <div class="row">
     <div class="col l8 offset-l2">
+      {{#with photo}}
       <div class="row">
-        {{#with photo}}
+        
           {{#with this.page1}}
           <div id="test1" class="col l12 removeLeftPadding">
             <div class="col l4 removeLeftPadding">
@@ -28,9 +29,10 @@
             </div>
           </div>
           {{/with}}
+          {{#with this.page2}}
           <div id="test2" class="col l12 removeLeftPadding">
             <div class="col l4 removeLeftPadding">
-              {{#each this.column2}}
+              {{#each this.column1}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
@@ -46,9 +48,10 @@
             </div>
           </div>
           {{/with}}
+          {{#with this.page3}}
           <div id="test3" class="col l12 removeLeftPadding">
             <div class="col l4 removeLeftPadding">
-              {{#each this.column3}}
+              {{#each this.column1}}
                 <img class="work responsive-img" src="{{this.image.url}}">
               {{/each}}
             </div>
@@ -64,10 +67,9 @@
             </div>
           </div>
           {{/with}}
-        {{/with}}
-      </div>
         
-
+      </div>
+      {{/with}}
       <div class="row">
         <ul class="tabs tabs100">
           <li class="tab col l1">

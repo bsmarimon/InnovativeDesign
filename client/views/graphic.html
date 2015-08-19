@@ -22,10 +22,11 @@
   <div class="row">
     <div class="col l8 offset-l2 removeLeftPadding removeRightPadding">
       <div class="row">     
-        {{#with blue}}
+        
         <div id="blue" class="col l12 removeLeftPadding removeRightPadding">
           <div class="row">
             <div class="col l12 removeLeftPadding removeRightPadding"> 
+              {{#with blue}}
               <div class="row">
                 {{#with this.page1}}
                 <div id="test1" class="col l12">
@@ -87,7 +88,7 @@
                 </div>
                 {{/with}}
               </div>
-             
+             {{/with}}
               <div class="row">
                 <ul class="tabs tabs100">
                   <li class="tab col l1">
@@ -110,7 +111,7 @@
             </div>
           </div>
         </div>
-        {{/with}}
+        
      
 
         {{#with gold}}
