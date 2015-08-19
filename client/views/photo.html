@@ -29,9 +29,41 @@
           </div>
           {{/with}}
           <div id="test2" class="col l12 removeLeftPadding">
+            <div class="col l4 removeLeftPadding">
+              {{#each this.column2}}
+                <img class="work responsive-img" src="{{this.image.url}}">
+              {{/each}}
+            </div>
+            <div class="col l4">
+              {{#each this.column2}}
+                <img class="work responsive-img" src="{{this.image.url}}">
+              {{/each}}
+            </div>
+            <div class="col l4 removeRightPadding">
+              {{#each this.column3}}
+                <img class="work responsive-img" src="{{this.image.url}}">
+              {{/each}}
+            </div>
           </div>
-          <div id="test3" class="col l12 removeLeftPadding2">
+          {{/with}}
+          <div id="test3" class="col l12 removeLeftPadding">
+            <div class="col l4 removeLeftPadding">
+              {{#each this.column3}}
+                <img class="work responsive-img" src="{{this.image.url}}">
+              {{/each}}
+            </div>
+            <div class="col l4">
+              {{#each this.column2}}
+                <img class="work responsive-img" src="{{this.image.url}}">
+              {{/each}}
+            </div>
+            <div class="col l4 removeRightPadding">
+              {{#each this.column3}}
+                <img class="work responsive-img" src="{{this.image.url}}">
+              {{/each}}
+            </div>
           </div>
+          {{/with}}
         {{/with}}
       </div>
         
