@@ -8,40 +8,33 @@
   <div class="row">
     <div class="col l8 offset-l2">
       <div class="row">
-        <div id="test1" class="col l12 removeLeftPadding">
-          <div class="col l4 removeLeftPadding">
-            <img class="work responsive-img" src="img/photo/davinci2.png">
-            <img class="work responsive-img" src="img/photo/davinci1.jpg">
-            <img class="work responsive-img" src="img/photo/davinci3.jpg">
-            <img class="work responsive-img" src="img/photo/img5.jpg">
-            <img class="work responsive-img" src="img/photo/neil5.jpg">
+        {{#with photo}}
+          {{#with this.page1}}
+          <div id="test1" class="col l12 removeLeftPadding">
+            <div class="col l4 removeLeftPadding">
+              {{#each this.column1}}
+                <img class="work responsive-img" src="{{this.image.url}}">
+              {{/each}}
+            </div>
+            <div class="col l4">
+              {{#each this.column2}}
+                <img class="work responsive-img" src="{{this.image.url}}">
+              {{/each}}
+            </div>
+            <div class="col l4 removeRightPadding">
+              {{#each this.column3}}
+                <img class="work responsive-img" src="{{this.image.url}}">
+              {{/each}}
+            </div>
           </div>
-          <div class="col l4">
-            <img class="work responsive-img" src="img/photo/brandon2.jpg">
-            <img class="work responsive-img" src="img/photo/brandon4.jpg">
-            <img class="work responsive-img" src="img/photo/brandon6.jpg">
-            <img class="work responsive-img" src="img/photo/neil1.jpg">
-            <img class="work responsive-img" src="img/photo/shota2.jpg">
+          {{/with}}
+          <div id="test2" class="col l12 removeLeftPadding">
           </div>
-          <div class="col l4 removeRightPadding">
-            <img class="work responsive-img" src="img/photo/neil5.jpg">
-            <img class="work responsive-img" src="img/photo/janel2.jpg">
-            <img class="work responsive-img" src="img/photo/brandon1.jpg">
-            <img class="work responsive-img" src="img/photo/shota4.jpg">
-            <img class="work responsive-img" src="img/photo/janel1.jpg">
+          <div id="test3" class="col l12 removeLeftPadding2">
           </div>
-        </div>
-        <div id="test2" class="col l12 m12 removeLeftPadding">
-          <div class="col l4 removeLeftPadding">
-            <img class="work responsive-img" src="img/photo/janel3.jpg">
-            <img class="work responsive-img" src="img/photo/shota1.jpg">
-            <img class="work responsive-img" src="img/photo/img3.jpg">
-            <img class="work responsive-img" src="img/photo/janel5.jpg">
-          </div>
-        </div>
-        <div id="test3" class="col l12 m12">
-        </div>
+        {{/with}}
       </div>
+        
 
       <div class="row">
         <ul class="tabs tabs100">

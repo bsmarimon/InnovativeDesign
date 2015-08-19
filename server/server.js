@@ -25,6 +25,11 @@ Meteor.methods({
     return designList;
   },
 
+  getPhotoTier: function() {
+    var designList = Photo.find({}).fetch();
+    return designList;
+  },
+
 });
 
 Blue = new orion.collection('blue', {
@@ -37,7 +42,6 @@ Blue = new orion.collection('blue', {
     columns: [
       { data: "title", title: "Title" },
       orion.attributeColumn('image', 'image', 'Image'),
-      orion.attributeColumn('createdBy', 'createdBy', 'Created By')
     ]
   }
 });
@@ -69,8 +73,20 @@ Gold = new orion.collection('gold', {
     columns: [
       { data: "title", title: "Title" },
       orion.attributeColumn('image', 'image', 'Image'),
-      orion.attributeColumn('createdBy', 'createdBy', 'Created By')
     ]
   }
 });
 
+Photo = new orion.collection('photo', {
+  singularName: 'photo',
+  pluralName: 'photos',
+  link: {
+    title: 'Photo Tier' 
+  },
+  tabular: {
+    columns: [
+      { data: "title", title: "Title" },
+      orion.attributeColumn('image', 'image', 'Image'),
+    ]
+  }
+});

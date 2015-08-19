@@ -1,3 +1,33 @@
+Photo = new orion.collection('photo', {
+  singularName: 'photo',
+  pluralName: 'photos',
+  link: {
+    title: 'Photo Tier' 
+  },
+  tabular: {
+    columns: [
+      { data: "title", title: "Title" },
+      orion.attributeColumn('image', 'image', 'Image'),
+    ]
+  }
+});
+
+Photo.allow({
+  update: function(userId, post) { return ownsDocument(userId, post); },
+  remove: function(userId, post) { return ownsDocument(userId, post); },
+});
+
+Photo.attachSchema(new SimpleSchema({
+  title: {
+    type: String,
+    optional: true
+  },
+  image: orion.attribute('image', {
+      label: 'Image',
+      optional: true
+  }),
+}));
+
 Blue = new orion.collection('blue', {
   singularName: 'blue',
   pluralName: 'blues',
@@ -8,7 +38,6 @@ Blue = new orion.collection('blue', {
     columns: [
       { data: "title", title: "Title" },
       orion.attributeColumn('image', 'image', 'Image'),
-      orion.attributeColumn('createdBy', 'createdBy', 'Created By')
     ]
   }
 });
@@ -27,7 +56,6 @@ Blue.attachSchema(new SimpleSchema({
       label: 'Image',
       optional: true
   }),
-  createdBy: orion.attribute('createdBy') 
 }));
 
 
@@ -41,7 +69,6 @@ Gold = new orion.collection('gold', {
     columns: [
       { data: "title", title: "Title" },
       orion.attributeColumn('image', 'image', 'Image'),
-      orion.attributeColumn('createdBy', 'createdBy', 'Created By')
     ]
   }
 });
@@ -60,5 +87,4 @@ Gold.attachSchema(new SimpleSchema({
       label: 'Image',
       optional: true
   }),
-  createdBy: orion.attribute('createdBy') 
 }));
