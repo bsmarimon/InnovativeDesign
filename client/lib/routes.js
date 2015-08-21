@@ -66,6 +66,14 @@ Router.route('/events', function() {
   this.render('events');
 });
 
+Router.route('/club', function() {
+  this.render('club');
+});
+
+Router.route('/decal', function() {
+  this.render('decal');
+});
+
 Router.configure({
   layoutTemplate: 'navbar'
 });

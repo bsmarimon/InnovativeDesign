@@ -1,12 +1,12 @@
 Meteor.subscribe("events");
 
-Template.landing.helpers({
+Template.events.helpers({
   events: function() {
     return Session.get("events");
   },
 });
 
-Template.landing.onCreated(function() {
+Template.events.onCreated(function() {
   Meteor.call('getEvents', function(err, eventList) {
     Session.set("events", eventList);
   });

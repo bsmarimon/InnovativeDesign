@@ -5,10 +5,22 @@ Template.graphic.helpers({
   blue: function() {
     return Session.get("blue");
   },
-
+  bluetwo: function() {
+    return Session.get("bluetwo");
+  },
+  bluethree: function() {
+    return Session.get("bluethree");
+  },
   gold: function() {
     return Session.get("gold");
   },
+  goldtwo: function() {
+    return Session.get("goldtwo");
+  },
+  goldthree: function() {
+    return Session.get("goldthree");
+  },
+
 });
 
 Template.graphic.onRendered(function () {
@@ -20,6 +32,16 @@ Template.graphic.onCreated(function() {
     if (eventList) {
       var designs = eventList;
       var numDesigns = designs.length;
+      if (numDesigns < 24 && numDesigns > 12) {
+        Session.set("bluetwo", true);
+      } else {
+        Session.set("bluethree", false);
+      }
+      if (numDesigns < 36 && numDesigns > 24) {
+        Session.set("bluethree", true);
+      } else {
+        Session.set("bluethree", false);
+      }
       var layouts = {};
       var temp = numDesigns;
       var counter = 0;
@@ -72,6 +94,16 @@ Template.graphic.onCreated(function() {
       if (eventList) {
         var designs = eventList;
         var numDesigns = designs.length;
+        if (numDesigns < 24 && numDesigns > 12) {
+          Session.set("goldtwo", true);
+        } else {
+          Session.set("goldthree", false);
+        }
+        if (numDesigns < 36 && numDesigns > 24) {
+          Session.set("goldthree", true);
+        } else {
+          Session.set("goldthree", false);
+        }
         var layouts = {};
         var temp = numDesigns;
         var counter = 0;
@@ -111,6 +143,7 @@ Template.graphic.onCreated(function() {
           if (counter === 12) {
             columnNum = 0;
             pageNum = pageNum + 1;
+            columnIndex = 0;
           }
         }
         console.log(layouts);

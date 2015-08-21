@@ -1,5 +1,50 @@
 <template name="events">
-	<div class="row">
-		
-	</div>
+  <div class="row rowTopSpacing">
+    <div class="col l8 offset-l2">
+    <div class="row">
+      {{#each events}}
+      <div class="col l6">
+        <div class="row rowFix">
+          <div class="col l12">
+            <h2>{{this.title}}</h2>
+          </div>
+        </div>
+        <div class="row rowFix">
+          <div class="col l2">
+            <i class="fa fa-2x fa-location-arrow"></i>
+          </div>
+          <div class="col l10">
+            <p class="icon-text">{{this.location}}</p>
+          </div>
+        </div>
+        <div class="row rowFix">
+          <div class="col l2">
+            <i class="fa fa-2x fa-calendar"></i>
+          </div>
+          <div class="col l10">
+            <p class="icon-text">{{this.date}}</p>
+          </div>
+        </div>
+        <div class="row rowFix">
+          <div class="col l2">
+            <i class="fa fa-2x fa-clock-o"></i>
+          </div>
+          <div class="col l10">
+            <p class="icon-text">{{this.time}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l2">
+            <i class="fa fa-2x fa-facebook"></i>
+          </div>
+          <div class="col l10">
+            <a href="{{this.facebook_url}}" target="_blank"><p class="icon-text">Event Page</p></a>
+          </div>
+        </div>
+        <br>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div> 
 </template>
