@@ -1,53 +1,59 @@
 <template name="officers">
   <div class="row rowTopSpacing">
-    <div class="col l2 offset-l2 m5 offset-m1">
-      <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/hongye.jpg">
-          </div>
-          <div class="card-content">
-              <div class="row rowFix">
-                <div class="col l12 m12">
-                  <h3>Jordan Said</h3>
+    <div class="col l8 offset-l2">
+      <div class="row">
+        {{#each officers}}
+        <div class="col l3 m5 offset-m1">
+          <div class="card cardBottomMargin">
+              <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/hongye.jpg">
+              </div>
+              
+              <div class="card-content">
+                  <div class="row rowFix">
+                    <div class="col l12 m12">
+                      <h3>{{this.name}}</h3>
+                    </div>
+                    <div class="col l9 m9">
+                      <p>{{this.position}}</p>
+                    </div>
+                  </div>
+              </div>
+              
+              <div class="card-reveal">
+                  <span class="card-title"><i class="material-icons right">close</i></span>
+                <div class ="row rowFix addMarginTop75">
+                  <div class="col l12">
+                    <h3>{{this.name}}</h3>
+                  </div>
                 </div>
-                <div class="col l9 m9">
-                  <p>President</p>
+                <div class="row rowFix">
+                  <div class="col l2 m2">
+                    <i class="fa fa-2x fa-pencil"></i>
+                  </div>
+                  <div class="col l10 m10">
+                    <p class="icon-text">{{this.major}}</p>
+                    <p class="icon-text">{{this.grad}}</p>
+                  </div>
                 </div>
-                <div class="col l3 m3 removeRightPadding">
-                  <div class="activator"><i class="material-icons info-btn right">add</i></div>
+                <div class="row">
+                  <div class="col l2 m2">
+                    <i class="fa fa-2x fa-tag"></i>
+                  </div>
+                  <div class="col l10 m10">
+                    <p class="icon-text">{{this.tier}}</p>
+                  </div>
                 </div>
-              </div>
-          </div>
-          <div class="card-reveal">
-              <span class="card-title"><i class="material-icons right">close</i></span>
-            <div class ="row rowFix addMarginTop75">
-              <div class="col l12">
-                <h3>Jordan Said</h3>
-              </div>
-            </div>
-            <div class="row rowFix">
-              <div class="col l2 m2">
-                <i class="fa fa-2x fa-pencil"></i>
-              </div>
-              <div class="col l10 m10">
-                <p class="icon-text">Molecular and Cellular Biology</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col l2 m2">
-                <i class="fa fa-2x fa-graduation-cap"></i>
-              </div>
-              <div class="col l10 m10">
-                <p class="icon-text">2017</p>
-              </div>
-            </div>
-            <div class="row rowFix">
-              <div class="col l12 m12">
-                <p class="icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat.</p>
+                <div class="row rowFix">
+                  <div class="col l12 m12">
+                    <p class="icon-text">{{this.quote}}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          {{/each}}
+        </div>
       </div>
-    </div>
     </div>
 </template>

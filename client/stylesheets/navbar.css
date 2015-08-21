@@ -53,9 +53,8 @@ nav {
 	padding-bottom: 10px;
 }
 
-nav:hover {
+.blue {
 	background-color: #0493BF !important;
-	color: #0493BF !important;
 }
 
 .navText > li > a {

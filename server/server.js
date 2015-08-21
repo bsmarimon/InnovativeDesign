@@ -6,13 +6,24 @@ Meteor.startup(function () {
   Meteor.publish("blue", function() {
     return Blue.find();
   });
+  Meteor.publish("photo", function() {
+    return Photo.find();
+  });
+  Meteor.publish("officers", function() {
+    return Officers.find();
+  });
 });
 
 Meteor.methods({
-
   getEvents: function() {
     var eventList = Events.find({}).fetch();
     return eventList;
+  },
+
+  getOfficers: function() {
+    var officerList = Officers.find({}).fetch();
+    console.log(officerList);
+    return officerList;
   },
 
   getBlueTier: function() {
@@ -86,6 +97,25 @@ Photo = new orion.collection('photo', {
   tabular: {
     columns: [
       { data: "title", title: "Title" },
+      orion.attributeColumn('image', 'image', 'Image'),
+    ]
+  }
+});
+
+Officers = new orion.collection('officer', {
+  singularName: 'officer',
+  pluralName: 'officers',
+  link: {
+    title: 'Officers' 
+  },
+  tabular: {
+    columns: [
+      { data: "name", title: "Full Name" },
+      { data: "position", title: "Position" },
+      { data: "major", title: "Major" },
+      { data: "grad", title: "Graduation Year" },
+      { data: "quote", title: "Blurb" },
+      { data: "tier", title: "Tier" },
       orion.attributeColumn('image', 'image', 'Image'),
     ]
   }
