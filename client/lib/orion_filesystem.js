@@ -1,3 +1,5 @@
+// Uploads beautiful images to Amazon S3 
+
 orion.filesystem.providerUpload = function(options, success, failure, progress) {
   S3.upload({
     files: options.fileList,

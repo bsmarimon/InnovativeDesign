@@ -13,14 +13,12 @@ Template.photo.onRendered(function(){
 Template.photo.onCreated(function() {
   Meteor.call('getPhotoTier', function(err, eventList) {
     if (eventList) {
-
       var designs = eventList;
       var numDesigns = designs.length;
       var layouts = {};
       var temp = numDesigns;
       var counter = 0;
-      var base = "page";
-      
+      var base = "page";     
       while (temp > 0) {
         var pageNum = String(counter + 1);
         var page = base + pageNum;
@@ -28,7 +26,6 @@ Template.photo.onCreated(function() {
         temp = temp - 12;
         counter = counter + 1;
       }
-
       var keys = Object.keys(layouts);
       counter = 0;
       while (counter < keys.length) {
@@ -38,14 +35,12 @@ Template.photo.onCreated(function() {
         layouts[key]["column3"] = [];
         counter = counter + 1;
       }
-
       counter = 0;
       var layoutKeys = Object.keys(layouts);
       var columnKeys = Object.keys(layouts["page1"]);
       var pageNum = 0;
       var columnNum = 0;
       var columnIndex = 0;
-
       while (counter < numDesigns) {
         pageKey = layoutKeys[pageNum];
         columnKey = columnKeys[columnNum];
