@@ -23,6 +23,29 @@ Template.graphic.helpers({
 
 });
 
+// The mouseenter event is a janky fix for running the tabs plugin, despite using
+// onRendered and onCreated, the tabs plugin would sometimes run before the images were
+// inserted into the template, causing formatting issues
+
+Template.graphic.events({
+  'mouseenter': function(event) {
+    var test = Session.get("mouse");
+    if (test) {
+      $('ul.tabs').tabs();
+      console.log("triggered");
+      Session.set("mouse", false);
+    }
+  },
+  'mouseleave': function(event) {
+    var test = Session.get("mouse");
+    if (test) {
+      $('ul.tabs').tabs();
+      console.log("triggered");
+      Session.set("mouse", false);
+    }
+  },
+});
+
 Template.graphic.onRendered(function () {
   $('ul.tabs').tabs();
 });
@@ -30,6 +53,9 @@ Template.graphic.onRendered(function () {
 Template.graphic.onCreated(function() {
   Meteor.call('getBlueTier', function(err, eventList) {
     if (eventList) {
+
+      Session.set("mouse", true);
+
       var designs = eventList;
       var numDesigns = designs.length;
       if (numDesigns < 24 && numDesigns > 12) {

@@ -4,6 +4,31 @@ Template.photo.helpers({
   photo: function() {
     return Session.get("photo");
   },
+  two: function() {
+    return Session.get("two");
+  },
+  three: function() {
+    return Session.get("three");
+  },
+});
+
+Template.photo.events({
+  'mouseenter': function(event) {
+    var test = Session.get("mouse");
+    if (test) {
+      $('ul.tabs').tabs();
+      console.log("triggered");
+      Session.set("mouse", false);
+    }
+  },
+  'mouseleave': function(event) {
+    var test = Session.get("mouse");
+    if (test) {
+      $('ul.tabs').tabs();
+      console.log("triggered");
+      Session.set("mouse", false);
+    }
+  },
 });
 
 Template.photo.onRendered(function(){
@@ -15,6 +40,19 @@ Template.photo.onCreated(function() {
     if (eventList) {
       var designs = eventList;
       var numDesigns = designs.length;
+
+      Session.set("mouse", true);
+
+      if (numDesigns < 24 && numDesigns > 12) {
+        Session.set("two", true);
+      } else {
+        Session.set("three", false);
+      }
+      if (numDesigns < 36 && numDesigns > 24) {
+        Session.set("bluethree", true);
+      } else {
+        Session.set("bluethree", false);
+      }
       var layouts = {};
       var temp = numDesigns;
       var counter = 0;
