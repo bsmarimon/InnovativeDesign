@@ -74,6 +74,10 @@ Router.route('/decal', function() {
   this.render('decal');
 });
 
+Router.route('/decal/lesson/1', function() {
+  this.render('lesson1');
+});
+
 Router.configure({
   layoutTemplate: 'navbar'
 });

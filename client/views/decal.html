@@ -1,5 +1,5 @@
 <template name="decal">
-  <div class="row">
+  <div class="row rowFix">
 
   <!--     
   Squares done by /shanawho
@@ -8,7 +8,7 @@
 
   <ul class="squares">
       {{#each lessons}}
-      <a href="/lesson/{{this.lesson}}" class="lesson-link">
+      <a href="/decal/lesson/{{this.lesson}}" class="lesson-link">
         <li class="square square-{{this.lesson}}">
           <div class="square-blurb">
             <div class="square-text">
