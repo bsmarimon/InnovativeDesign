@@ -9,7 +9,7 @@
 }
 
 .material-icons {
-  color: #0592BF;
+  color: #3498DB;
 }
 
 .addMarginTop75  {
@@ -24,7 +24,7 @@
   font-size: 20px;
   margin-right: 15px;
 }
-
+/*
 .goldtier {
   color: #E7B03A !important;
 }
@@ -38,7 +38,7 @@
 }
 
 .bluetier {
-  color: #0592BF !important;
+  color: #3498DB !important;
 }
 
 .videotier {
@@ -47,7 +47,7 @@
 
 .producttier {
   color: #FF0894 !important;
-}
+}*/
 
 .cardBottomMargin {
   margin-bottom: 25px;

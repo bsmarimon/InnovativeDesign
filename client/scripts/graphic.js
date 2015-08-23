@@ -25,7 +25,7 @@ Template.graphic.helpers({
 
 // The mouseenter event is a janky fix for running the tabs plugin, despite using
 // onRendered and onCreated, the tabs plugin would sometimes run before the images were
-// inserted into the template, causing formatting issues
+// inserted into the template, causing formatting issues, this, well, fixes it!
 
 Template.graphic.events({
   'mouseenter': function(event) {

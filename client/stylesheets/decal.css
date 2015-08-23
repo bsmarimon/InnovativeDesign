@@ -1,0 +1,344 @@
+/*
+All CSS done by shanawho
+https://github.com/shanawho/decal
+*/
+
+.squares {
+  display
+  : inline-block;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.square {
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+  list-style-type: none;
+  background-color: #444444;
+  position: relative;
+  float: left; }
+  @media (max-width: 1000px) {
+    .square {
+      width: 33%;
+      padding-bottom: 33%; } }
+  @media (max-width: 800px) {
+    .square {
+      width: 50%;
+      padding-bottom: 50%; } }
+  @media (max-width: 450px) {
+    .square {
+      width: 100%;
+      padding-bottom: 100%; } }
+  .square:hover {
+    background-color: #222222; }
+
+.square-blurb {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+  @media (max-width: 450px) {
+    .square-blurb {
+      opacity: 1;
+      background-color: rgba(38, 41, 48, 0.3); }
+      .square-blurb .lesson-title {
+        opacity: 1; } }
+  .square-blurb:hover {
+    opacity: 1;
+    background-color: rgba(38, 41, 48, 0.9); }
+    .square-blurb:hover .lesson-title {
+      opacity: 1; }
+
+.square-1 {
+  background: url("img/lesson1.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-2 {
+  background: url("../img/lesson2.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-3 {
+  background: url("../img/lesson3.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-4 {
+  background: url("../img/lesson4.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-5 {
+  background: url("../img/lesson5.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-6 {
+  background: url("../img/lesson6.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-7 {
+  background: url("../img/lesson7.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-8 {
+  background: url("../img/lesson8.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-9 {
+  background: url("../img/lesson9.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-10 {
+  background: url("../img/lesson10.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-11 {
+  background: url("../img/lesson11.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-12 {
+  background: url("../img/lesson12.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; }
+
+.square-text {
+  position: relative;
+  top: 35%;
+  text-align: center;
+  color: white; }
+
+.week {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3em; }
+
+.lesson-title {
+  display: block;
+  margin: 0 30px;
+  font-family: "Arvo", Helvetica, sans-serif;
+  font-size: 2em; }
+
+.lesson-link {
+  width: 100%;
+  height: 100%; }
+  .lesson-link:visited {
+    text-decoration: none;
+    decoration: none; }
+
+.download {
+  position: relative;
+  display: block;
+  color: white;
+  text-align: center;
+  border: 1px white solid;
+  margin: auto;
+  padding: 15px;
+  width: 190px;
+  margin-top: -25px;
+  background: #3498db;
+  font-family: "Source Sans Pro", sans-serif; }
+  @media (max-width: 450px) {
+    .download {
+      width: 150px;
+      font-size: 0.6em; } }
+
+.rest {
+  width: 70%;
+  margin: 0 auto; }
+  @media (max-width: 450px) {
+    .rest {
+      width: 90%; } }
+
+.preheader, .subheader, .date {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1.8em;
+  display: block; }
+  @media (max-width: 570px) {
+    .preheader, .subheader, .date {
+      font-size: 1.2em; } }
+
+.subheader {
+  margin-left: 30px; }
+
+.title {
+  background-color: #3498db;
+  padding: 60px 15%;
+  color: white;
+  margin: 0 auto;
+  text-align: center; }
+  @media (max-width: 1000px) {
+    .title {
+      padding: 30px 15%; } }
+  @media (max-width: 800px) {
+    .title {
+      padding: 30px -5 15%; } }
+  @media (max-width: 450px) {
+    .title {
+      padding: 15px 15%; } }
+  .title p {
+    font-size: 1.3em; }
+
+.home-link {
+  position: absolute;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  top: 0;
+  left: 0; }
+  .home-link img {
+    width: 15px;
+    height: auto;
+    margin: 10px; }
+
+.main {
+  width: 100%; }
+
+.bg-img {
+  width: 100%;
+  height: auto;
+  z-index: -1000; }
+
+.divider {
+  width: 100%;
+  height: 5px;
+  background-color: #444444; }
+
+.line {
+  margin-top: 30px;
+  display: block;
+  min-height: 330px; }
+  .line:last-child {
+    margin-bottom: 90px; }
+
+.footer {
+  margin-bottom: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: none; }
+
+.timeline {
+  list-style-type: none; }
+  .timeline li {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.3em;
+    margin: 0; }
+  .timeline a {
+    color: #252930; }
+
+.team-list {
+  color: white;
+  display: inline-block;
+  list-style: none;
+  display: table;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  background: #3498db; }
+
+.team-pic-crop {
+  position: relative;
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.team-pic {
+  width: 100%; }
+
+.team-name {
+  position: relative;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  display: inline-block;
+  width: 25%;
+  top: 10px;
+  padding: 1em;
+  font-size: 1em;
+  vertical-align: top; }
+
+.team-bio {
+  position: absolute;
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #3498db;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  opacity: 0;
+  bottom: 0; }
+  .team-bio:hover {
+    opacity: 1; }
+
+.steps {
+  padding: 30px; }
+  .steps li {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5em;
+    margin-left: 30px; }
+
+.hours {
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  list-style: none;
+  padding: 0; }
+  .hours > li {
+    list-style-type: none; }
+
+.subsection ul li {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  list-style-type: none; }
+
+.col1of3 {
+  width: 33%;
+  float: left; }
+
+.col2of3 {
+  width: 66%;
+  float: left; }
+
+.section-img {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 0 30px;
+  margin-bottom: 30px; }
+  .section-img img {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+
+.date {
+  position: relative;
+  float: right; }
+.highlight {
+  font-weight: bold;
+  color: #3498db; }
+
+.apply-section {
+  margin-top: 60px; }
+  .apply-section ul li {
+    font-size: 1.3em; }
+  .apply-section a {
+    color: #3498db; }
+

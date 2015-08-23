@@ -1,7 +1,27 @@
 <template name="decal">
-  <div class="row rowTopSpacing">
-    <div class="col l8 offset-l2">
+  <div class="row">
 
-    </div>
+  <!--     
+  Squares done by /shanawho
+  https://github.com/shanawho/decal 
+  -->
+
+  <ul class="squares">
+      {{#each lessons}}
+      <a href="/lesson/{{this.lesson}}" class="lesson-link">
+        <li class="square square-{{this.lesson}}">
+          <div class="square-blurb">
+            <div class="square-text">
+              <span class="week">Lesson {{this.lesson}}</span>
+              <span class="lesson-title">{{this.title}}</span>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </li>
+      </a>
+      {{/each}}
+  </ul>
+
+
   </div> 
 </template>
