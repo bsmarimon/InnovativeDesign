@@ -1,3 +1,7 @@
+Template.request.onRendered(function () {
+  $('#modal1').openModal(); 
+});
+
 Template.navbar.helpers({
   submitted: function() {
     var tobeRtn = Session.get("submitted")

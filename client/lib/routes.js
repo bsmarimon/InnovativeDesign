@@ -70,6 +70,10 @@ Router.route('/club', function() {
   this.render('club');
 });
 
+Router.route('/request', function() {
+  this.render('request');
+});
+
 Router.route('/decal', function() {
   this.render('decal');
 });

@@ -6,11 +6,11 @@
 
   <div class="row rowFix">
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="{{pathFor route='photo'}}">Photo</a></li>
-        <li><a href="/graphic">Graphic</a></li>
-        <li><a href="/video">Video</a></li>
-        <li><a href="/web">Web</a></li>
-        <li><a href="/product">Product</a></li>
+      <li><a href="/photo">Photo</a></li>
+      <li><a href="/graphic">Graphic</a></li>
+      <li><a href="/video">Video</a></li>
+      <li><a href="/web">Web</a></li>
+      <li><a href="/product">Product</a></li>
     </ul>
     <ul id="dropdown2" class="dropdown-content">
       <li><a href="/officers">Officers</a></li>
@@ -19,19 +19,20 @@
     </ul>
     <nav>
       <div class="nav-wrapper">
-        <a href="/" class="brand-logo"><img class="logo" src="/img/logo-white.png"></a>
+        <a href="/" class="brand-logo"><img class="logo hide-on-med-and-down" src="/img/logo-white.png"></a>
         <ul class="right hide-on-med-and-down navText">
           <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Work</a></li>
           <li><a href="/club">Club</a></li>
           <li><a class="dropdown-button" href="#!" data-activates="dropdown2">People</a></li>
           <li><a href="/events">Events</a></li>
           <li><a href="/decal">Decal</a></li>
-          <li><a class="modal-trigger openRequests" href="#modal1">Requests</a></li>
+          <li><a class="modal-trigger openRequests" href="/requests">Requests</a></li>
         </ul>
         <ul id="slide-out" class="side-nav">
           <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
+          <li><a href="/club">Club</a></li>
           <li><a href="/events">Events</a></li>
+          <li><a href="/decal">Decal</a></li>
           <li><a class="modal-trigger" href="#modal1">Requests</a></li>
           <li><a href="/photo">Photo</a></li>
           <li><a href="/graphic">Graphic</a></li>
@@ -46,7 +47,7 @@
 
   <div id="modal1" class="modal bottom-sheet">
     <div class="modal-footer">
-        <a href="" class="modal-action modal-close"><i class="material-icons right closeFormBtn">close</i></a>
+        <a href="/" class="modal-action modal-close"><i class="material-icons right closeFormBtn">close</i></a>
       </div>
       <div class="row requestsFormPadding">
         <div class="col l6 offset-l3 m12">
@@ -80,10 +81,9 @@
                     <input id="phone" type="text">
                     <label for="phone">Phone</label>
                 </div>
-      
                 <div class="input-field col l6 m6">
                     <input id="organization" type="text">
-                    <label for="organization">Organization</label>
+                    <label for="organization">Organization Name</label>
                 </div>
               </div>
               <div class="row rowFix textfieldTopSpacing">  
@@ -93,6 +93,10 @@
                   </div>
               </div>
               <div class="row rowFix">    
+                <div class="input-field col l6 m6">
+                  <input id="orgLocation" type="text">
+                  <label for="orgLocation">Are you on or off campus?</label>
+                </div>
                 <div class="input-field col l6 m6">
                   <input type="date" placeholder="Proposed Deadline" class="datepicker">
                   <label for="date"></label>
@@ -109,32 +113,37 @@
                 </div>
               </div>
             {{#if graphic}}
+              <div class="row">
+                <div class="col l12">
+                  <p>What type of design are you looking for?</p>
+                </div>
+              </div>
               <div class="row">  
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="banner"/>
                     <label for="banner">Banner</label>
                 </p>
                 </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="poster"/>
                     <label for="poster">Poster</label>
                 </p>
                 </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="logo"/>
                     <label for="logo">Logo</label>
                 </p>
                 </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="pamphlet"/>
                     <label for="pamphlet">Pamphlet</label>
                 </p>
                 </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="other"/>
                     <label for="other">Other</label>
@@ -143,20 +152,25 @@
               </div>
             {{/if}}
             {{#if video}}
+              <div class="row">
+                <div class="col l12">
+                  <p>What type of design are you looking for?</p>
+                </div>
+              </div>
               <div class="row">  
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="Documentary"/>
                     <label for="Documentary">Documentary</label>
                 </p>
                 </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="Promotional"/>
                     <label for="Promotional">Promotional</label>
                 </p>
                 </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="other"/>
                     <label for="other">Other</label>
@@ -166,23 +180,28 @@
             {{/if}}
             {{#if photo}}
               <div class="row">
+                <div class="col l12">
+                  <p>What type of design are you looking for?</p>
+                </div>
+              </div>
+              <div class="row">
                 <div class="input-field col l12 m6">              
                   <input id="shoot_location" type="text">
-                  <label for="shoot_location">Shoot Location</label>
+                  <label for="shoot_location">Proposed Shoot Location and Time</label>
                 </div>  
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                   <p class="removeTopMargin">
                     <input type="checkbox" class="filled-in" id="Documentary"/>
                     <label for="Documentary">Club Photos</label>
                   </p>
                 </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                   <p class="removeTopMargin">
                     <input type="checkbox" class="filled-in" id="Promotional"/>
                     <label for="Promotional">Event Photos</label>
                   </p>
                 </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                   <p class="removeTopMargin">
                     <input type="checkbox" class="filled-in" id="other"/>
                     <label for="other">Other</label>
@@ -191,26 +210,25 @@
               </div>
             {{/if}}
             {{#if web}}
+              <div class="row">
+                <div class="col l12">
+                  <p>What type of design are you looking for?</p>
+                </div>
+              </div>
               <div class="row">  
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="Documentary"/>
                     <label for="Documentary">Single Page Site</label>
                 </p>
                 </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="Promotional"/>
                     <label for="Promotional">Multi-Page Site</label>
                 </p>
                 </div>
-                <div class="input-field col l6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="Promotional"/>
-                    <label for="Promotional">Blog</label>
-                </p>
-                </div>
-                <div class="input-field col l6">
+                <div class="input-field col l6 m6">
                     <p class="removeTopMargin">
                   <input type="checkbox" class="filled-in" id="other"/>
                     <label for="other">Other</label>
