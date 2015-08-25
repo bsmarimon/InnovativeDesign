@@ -82,6 +82,46 @@ Router.route('/decal/lesson/1', function() {
   this.render('lesson1');
 });
 
+Router.route('/decal/lesson/2', function() {
+  this.render('lesson2');
+});
+
+Router.route('/decal/lesson/3', function() {
+  this.render('lesson3');
+});
+
+Router.route('/decal/lesson/4', function() {
+  this.render('lesson4');
+});
+
+Router.route('/decal/lesson/5', function() {
+  this.render('lesson5');
+});
+
+Router.route('/decal/lesson/6', function() {
+  this.render('lesson6');
+});
+
+Router.route('/decal/lesson/7', function() {
+  this.render('lesson7');
+});
+
+Router.route('/decal/lesson/8', function() {
+  this.render('lesson8');
+});
+
+Router.route('/decal/lesson/9', function() {
+  this.render('lesson9');
+});
+
+Router.route('/decal/lesson/10', function() {
+  this.render('lesson10');
+});
+
+Router.route('/decal/lesson/11', function() {
+  this.render('lesson11');
+});
+
 Router.configure({
   layoutTemplate: 'navbar'
 });

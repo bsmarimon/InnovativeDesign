@@ -12,6 +12,9 @@ Meteor.startup(function () {
   Meteor.publish("officers", function() {
     return Officers.find();
   });
+  Meteor.publish("decal", function() {
+    return Decal.find();
+  });
 });
 
 Meteor.methods({
@@ -38,6 +41,11 @@ Meteor.methods({
 
   getPhotoTier: function() {
     var designList = Photo.find({}).fetch();
+    return designList;
+  },
+  getDecal: function() {
+    var designList = Decal.find({}).fetch();
+    console.log(designList);
     return designList;
   },
 
@@ -118,5 +126,19 @@ Officers = new orion.collection('officer', {
       { data: "tier", title: "Tier" },
       orion.attributeColumn('image', 'image', 'Image'),
     ]
+  }
+});
+
+Decal = new orion.collection('decal', {
+  singularName: 'decal',
+  pluralName: 'decals',
+  link: {
+    title: 'Decal' 
+  },
+  tabular: {
+    columns: [
+    { data: "lesson", title: "Lesson" },
+    { data: "shown", title: "Viewable on website?" },
+  ]
   }
 });

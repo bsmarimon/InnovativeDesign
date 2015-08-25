@@ -4,6 +4,7 @@
       <span class="preheader">Lesson {{this.lesson}}</span>
       <h1></h1>
     </section>
+    {{#if show}}
     <a class="download" ng-if="download" href="#!" target="_blank">Download files</a>
     <br><br>
     <div class="row">
@@ -12,8 +13,10 @@
           <div class="section-img">
             <img src="/img/lesson{{this.lesson}}.png" />
           </div>
+          
           <h2>Tutorial</h2>
           <p>{{this.description}}</p>
+
         </section>
         <section class="line" ng-if="download">
           <div class="section-img">
@@ -24,6 +27,7 @@
         </section>
       </div>
     </div>
+    {{/if}}
   </div>
 </template>
 
@@ -41,6 +45,54 @@
 
 <template name="lesson3">
   {{#with three}}
+    {{> lesson}}
+  {{/with}}
+</template>
+
+<template name="lesson4">
+  {{#with four}}
+    {{> lesson}}
+  {{/with}}
+</template>
+
+<template name="lesson5">
+  {{#with five}}
+    {{> lesson}}
+  {{/with}}
+</template>
+
+<template name="lesson6">
+  {{#with six}}
+    {{> lesson}}
+  {{/with}}
+</template>
+
+<template name="lesson7">
+  {{#with seven}}
+    {{> lesson}}
+  {{/with}}
+</template>
+
+<template name="lesson8">
+  {{#with eight}}
+    {{> lesson}}
+  {{/with}}
+</template>
+
+<template name="lesson9">
+  {{#with nine}}
+    {{> lesson}}
+  {{/with}}
+</template>
+
+<template name="lesson10">
+  {{#with ten}}
+    {{> lesson}}
+  {{/with}}
+</template>
+
+<template name="lesson11">
+  {{#with eleven}}
     {{> lesson}}
   {{/with}}
 </template>
