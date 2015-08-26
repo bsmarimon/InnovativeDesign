@@ -75,8 +75,16 @@ nav {
 	margin-right: 10px !important;
 }
 
+.navText > li:hover {
+	background-color: #3680A5;
+	box-shadow: none !important;
+	text-decoration: none !important;
+}
+
 .navText > li > a:hover {
 	background-color: #3680A5;
+	box-shadow: none !important;
+	text-decoration: none !important;
 }
 
 .openRequests {
