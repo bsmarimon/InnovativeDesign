@@ -55,7 +55,7 @@
             {{#if submitted}}
               <div class="row rowFix">
                 <div class="col l12 center">
-                  <h3 class="h3black">Your request is currently being delivered by a squad of intelligent owls. <br><br> An officer should be reaching out to you in a couple days to discuss the details of the project.</h3>.
+                  <p>Your request is currently being delivered by a squad of intelligent owls. <br><br> An officer should be reaching out to you in a couple days to discuss the details of the project. If you don't hear back in a couple days, feel free to contact us at</p><h3 class="h3black">Innovativedesignatcal@gmail.com.</h3>
                 </div>
               </div>
             {{else}}
@@ -93,17 +93,21 @@
                   </div>
               </div>
               <div class="row rowFix">    
-                <div class="input-field col l6 m6">
-                  <input id="orgLocation" type="text">
-                  <label for="orgLocation">Are you on or off campus?</label>
+                <div class="col l6 m6">
+                  <label class="tierSelect">&nbsp;</label>
+                  <select id="dropdown1" class="browser-default tierSelect">
+                      <option value="" disabled="" selected="">Are you on or off campus?</option>
+                      <option value="on">On</option>
+                      <option value="off">Off</option>
+                  </select>
                 </div>
                 <div class="input-field col l6 m6">
-                  <input type="date" placeholder="Proposed Deadline" class="datepicker">
+                  <input id="date" type="date" placeholder="Proposed Deadline" class="datepicker">
                   <label for="date"></label>
                 </div> 
                 <div class="col l6 m6">
                   <label class="tierSelect">&nbsp;</label>
-                  <select id="dropdown" class="browser-default tierSelect">
+                  <select id="dropdown2" class="browser-default tierSelect">
                       <option value="" disabled="" selected="">Project Category</option>
                       <option value="videography">Videography</option>
                       <option value="photography">Photography</option>
@@ -136,8 +140,8 @@
             </div>
             <div class="row rowFix textfieldTopSpacing">  
               <div class="input-field col l12 m12">
-                <textarea id="textarea2" class="materialize-textarea" length="500"></textarea>
-                <label for="textarea2">Any questions?</label>
+                <textarea id="textarea3" class="materialize-textarea" length="200"></textarea>
+                <label for="textarea3">Any questions?</label>
               </div>
             </div>
               <div class="row rowFix">  

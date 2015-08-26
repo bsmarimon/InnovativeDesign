@@ -1,6 +1,6 @@
 nav {
 	box-shadow: none !important;
-	background-color: #3C84A2 !important;
+	background-color: #3680A5;
 	font-family: Montserrat;
 	padding-top: 20px;
 	padding-bottom: 70px !important;
@@ -25,24 +25,24 @@ nav {
 #dropdown2 > li > a {
 	color: white;
 	font-size: 15px !important;
-	background-color: #3C84A2 !important;
+	background-color: #3680A5;
 	/*text-align: center;*/
 }
 
 #dropdown2 > li {
-	background-color: #3C84A2 !important;
+	background-color: #3680A5;
 }
 
 
 #dropdown1 > li > a {
 	color: white;
 	font-size: 15px !important;
-	background-color: #3C84A2 !important;
+	background-color: #3680A5;
 	/*text-align: center;*/
 }
 
 #dropdown1 > li {
-	background-color: #3C84A2 !important;
+	background-color: #3680A5;
 }
 
 .requestThanks {
@@ -51,7 +51,7 @@ nav {
 }
 
 .navText > li {
-	background-color: #3C84A2 !important;
+	background-color: #3680A5;
 }
 
 .nav-wrapper {
@@ -59,13 +59,13 @@ nav {
 }
 
 .blue {
-	background-color: #3C84A2 !important;
+	background-color: #3680A5;
 }
 
 .navText > li > a {
 	color: white;
 	font-size: 15px !important;
-	background-color: #3C84A2 !important;
+	background-color: #3680A5;
 	margin-left: 20px;
 	margin-right: 20px;
 }
@@ -76,7 +76,7 @@ nav {
 }
 
 .navText > li > a:hover {
-	background-color: #3C84A2 !important
+	background-color: #3680A5;
 }
 
 .openRequests {
@@ -85,7 +85,7 @@ nav {
 }
 
 .openRequests:hover {
-	background-color: #3C84A2 !important;
+	background-color: #3680A5;
 	cursor: pointer;
 }
 
@@ -98,11 +98,10 @@ nav {
 .bottom-sheet {
 	max-height: 100% !important;
 	height: 100% !important;
-
 }
 
 .submitbtn {
-	background-color: #3C84A2 !important;
+	background-color: #3680A5 !important;
 	margin-bottom: 25px;
 	color: white;
 }
@@ -119,11 +118,11 @@ nav {
 }
 
 .picker__nav--prev:hover {
-	background-color: #3C84A2 !important;
+	background-color: #3680A5 !important;
 }
 
 .picker__nav--next:hover {
-	background-color: #3C84A2 !important;
+	background-color: #3680A5 !important;
 }
 
 .additionalInfo {
