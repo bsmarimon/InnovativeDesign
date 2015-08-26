@@ -1,6 +1,7 @@
 video {
 	max-width: 100%;
 	display: block;
+	width: 100% !important;
 }
 
 html {
@@ -58,7 +59,7 @@ label {
 }
 
 .btn {
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 	margin-bottom: 25px;
 }
 
@@ -71,7 +72,7 @@ label {
 }
 
 .fa {
-	color: #3498DB;
+	color: #3C84A2;
 	font-size: 15px;
 }
 

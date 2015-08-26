@@ -112,134 +112,32 @@
                   </select>
                 </div>
               </div>
-            {{#if graphic}}
-              <div class="row">
-                <div class="col l12">
-                  <p>What type of design are you looking for?</p>
-                </div>
-              </div>
-              <div class="row">  
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="banner"/>
-                    <label for="banner">Banner</label>
-                </p>
-                </div>
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="poster"/>
-                    <label for="poster">Poster</label>
-                </p>
-                </div>
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="logo"/>
-                    <label for="logo">Logo</label>
-                </p>
-                </div>
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="pamphlet"/>
-                    <label for="pamphlet">Pamphlet</label>
-                </p>
-                </div>
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="other"/>
-                    <label for="other">Other</label>
-                </p>
-                </div>
-              </div>
-            {{/if}}
             {{#if video}}
-              <div class="row">
-                <div class="col l12">
-                  <p>What type of design are you looking for?</p>
-                </div>
-              </div>
               <div class="row">  
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="Documentary"/>
-                    <label for="Documentary">Documentary</label>
-                </p>
-                </div>
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="Promotional"/>
-                    <label for="Promotional">Promotional</label>
-                </p>
-                </div>
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="other"/>
-                    <label for="other">Other</label>
-                </p>
-                </div>
+                <div class="input-field col l12 m12">              
+                  <input id="shoot_location" type="text">
+                  <label for="shoot_location">Proposed Shoot Location and Time</label>
+                </div>  
               </div>
             {{/if}}
             {{#if photo}}
               <div class="row">
-                <div class="col l12">
-                  <p>What type of design are you looking for?</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col l12 m6">              
+                <div class="input-field col l12 m12">              
                   <input id="shoot_location" type="text">
                   <label for="shoot_location">Proposed Shoot Location and Time</label>
                 </div>  
-                <div class="input-field col l6 m6">
-                  <p class="removeTopMargin">
-                    <input type="checkbox" class="filled-in" id="Documentary"/>
-                    <label for="Documentary">Club Photos</label>
-                  </p>
-                </div>
-                <div class="input-field col l6 m6">
-                  <p class="removeTopMargin">
-                    <input type="checkbox" class="filled-in" id="Promotional"/>
-                    <label for="Promotional">Event Photos</label>
-                  </p>
-                </div>
-                <div class="input-field col l6 m6">
-                  <p class="removeTopMargin">
-                    <input type="checkbox" class="filled-in" id="other"/>
-                    <label for="other">Other</label>
-                  </p>
-                </div>
-              </div>
-            {{/if}}
-            {{#if web}}
-              <div class="row">
-                <div class="col l12">
-                  <p>What type of design are you looking for?</p>
-                </div>
-              </div>
-              <div class="row">  
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="Documentary"/>
-                    <label for="Documentary">Single Page Site</label>
-                </p>
-                </div>
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="Promotional"/>
-                    <label for="Promotional">Multi-Page Site</label>
-                </p>
-                </div>
-                <div class="input-field col l6 m6">
-                    <p class="removeTopMargin">
-                  <input type="checkbox" class="filled-in" id="other"/>
-                    <label for="other">Other</label>
-                </p>
-                </div>
               </div>
             {{/if}}
             <div class="row rowFix textfieldTopSpacing">  
               <div class="input-field col l12 m12">
                 <textarea id="textarea2" class="materialize-textarea" length="500"></textarea>
                 <label for="textarea2">Project Description</label>
+              </div>
+            </div>
+            <div class="row rowFix textfieldTopSpacing">  
+              <div class="input-field col l12 m12">
+                <textarea id="textarea2" class="materialize-textarea" length="500"></textarea>
+                <label for="textarea2">Any questions?</label>
               </div>
             </div>
               <div class="row rowFix">  

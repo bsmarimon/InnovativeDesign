@@ -13,7 +13,7 @@ u {
     height: 15px;
     width: 15px;
     float: right;
-    background-color: #3498DB;
+    background-color: #3C84A2;
 }
 
 .tierWorkSpacing {
@@ -30,7 +30,7 @@ u {
 }
 
 .tabs100 .tab a p {
-    color: #3498DB !important;
+    color: #3C84A2 !important;
     text-decoration: none;
 }
 
@@ -66,22 +66,22 @@ u {
     padding-top: 7px;
     text-align: center;
     height: 50px !important;
-    border: 2px solid #3498DB;
+    border: 2px solid #3C84A2;
 }
 
 .bluetier > p {
-    color: #3498DB !important;
+    color: #3C84A2 !important;
     text-transform: none !important;
     position: relative;
 }
 
 .bluetier:hover {
     background-color: white !important;
-    color: #3498DB !important;
+    color: #3C84A2 !important;
 }
 
 .bluetier.active {
-    background-color: #3498DB !important;
+    background-color: #3C84A2 !important;
     line-height: 0px !important;
     width: 90% !important;
     padding-right: 0px !important;
@@ -98,7 +98,7 @@ u {
 }
 
 .bluetier.active:hover {
-    background-color: #3498DB !important;
+    background-color: #3C84A2 !important;
     color: white !important;
 }
 

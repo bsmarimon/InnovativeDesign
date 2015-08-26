@@ -1,6 +1,6 @@
 nav {
 	box-shadow: none !important;
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 	font-family: Montserrat;
 	padding-top: 20px;
 	padding-bottom: 70px !important;
@@ -25,24 +25,24 @@ nav {
 #dropdown2 > li > a {
 	color: white;
 	font-size: 15px !important;
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 	/*text-align: center;*/
 }
 
 #dropdown2 > li {
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 }
 
 
 #dropdown1 > li > a {
 	color: white;
 	font-size: 15px !important;
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 	/*text-align: center;*/
 }
 
 #dropdown1 > li {
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 }
 
 .requestThanks {
@@ -51,7 +51,7 @@ nav {
 }
 
 .navText > li {
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 }
 
 .nav-wrapper {
@@ -59,13 +59,13 @@ nav {
 }
 
 .blue {
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 }
 
 .navText > li > a {
 	color: white;
 	font-size: 15px !important;
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 	margin-left: 20px;
 	margin-right: 20px;
 }
@@ -76,7 +76,7 @@ nav {
 }
 
 .navText > li > a:hover {
-	background-color: #3498DB !important
+	background-color: #3C84A2 !important
 }
 
 .openRequests {
@@ -85,13 +85,13 @@ nav {
 }
 
 .openRequests:hover {
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 	cursor: pointer;
 }
 
 .logo {
 	height: 100%;
-	width: 40px;
+	width: 50px;
 	margin-left: 15px;
 }
 
@@ -102,7 +102,7 @@ nav {
 }
 
 .submitbtn {
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 	margin-bottom: 25px;
 	color: white;
 }
@@ -119,11 +119,11 @@ nav {
 }
 
 .picker__nav--prev:hover {
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 }
 
 .picker__nav--next:hover {
-	background-color: #3498DB !important;
+	background-color: #3C84A2 !important;
 }
 
 .additionalInfo {

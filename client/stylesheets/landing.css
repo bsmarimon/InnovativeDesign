@@ -1,3 +1,8 @@
+iframe {
+	max-width: 100% !important;
+	width: 100%;
+}
+
 .landingCard {
 	box-shadow: none;
 	height: 200px;
@@ -17,7 +22,7 @@
 }
 
 .landingCard:hover h3 {
-	background-color: #0493BF;
+	background-color: #3C84A2;
 }
 
 .landingLink {
@@ -36,11 +41,16 @@
 }
 
 .footerIcons {
-	color: #262930;
+	color: white;
 	font-size: 20px !important;	
 }
 
 .copyright {
 	float: right;
 	margin-right: 30px;
+	color: white;
+}
+
+.bottom {
+	background-color: #3C84A2 !important; 
 }

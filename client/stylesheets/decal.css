@@ -147,7 +147,7 @@ https://github.com/shanawho/decal
   padding: 15px;
   width: 190px;
   margin-top: -25px;
-  background: #3498db;
+  background: #3C84A2;
   font-family: "Source Sans Pro", sans-serif; }
   @media (max-width: 450px) {
     .download {
@@ -174,7 +174,7 @@ https://github.com/shanawho/decal
   margin-left: 30px; }
 
 .title {
-  background-color: #3498db;
+  background-color: #3C84A2;
   padding: 60px 15%;
   color: white;
   margin: 0 auto;
@@ -246,7 +246,7 @@ https://github.com/shanawho/decal
   padding: 0;
   margin: 0 auto;
   width: 100%;
-  background: #3498db; }
+  background: #3C84A2; }
 
 .team-pic-crop {
   position: relative;
@@ -280,7 +280,7 @@ https://github.com/shanawho/decal
   padding-top: 30px;
   width: 100%;
   height: 100%;
-  background-color: #3498db;
+  background-color: #3C84A2;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -333,12 +333,12 @@ https://github.com/shanawho/decal
   float: right; }
 .highlight {
   font-weight: bold;
-  color: #3498db; }
+  color: #3C84A2; }
 
 .apply-section {
   margin-top: 60px; }
   .apply-section ul li {
     font-size: 1.3em; }
   .apply-section a {
-    color: #3498db; }
+    color: #3C84A2; }
 
