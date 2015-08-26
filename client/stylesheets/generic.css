@@ -19,8 +19,8 @@ h4 {
 }
 
 p {
-	font-family: 'Open Sans';
-	font-size: 15px;
+	font-family: 'Open Sans', Sans-Serif;
+	font-size: 15px !important;
 }
 
 h2 {

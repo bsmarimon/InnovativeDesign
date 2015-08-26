@@ -92,7 +92,32 @@
 </template>
 
 <template name="lesson11">
-  {{#with eleven}}
-    {{> lesson}}
-  {{/with}}
+  <div class="main">
+    <section class="title">
+      <span class="preheader">Lesson {{this.lesson}}</span>
+      <h1></h1>
+    </section>
+    {{#if show}}
+    <a class="download" ng-if="download" href="#!" target="_blank">Download files</a>
+    <br><br>
+    <div class="row">
+      <div class="col l8 offset-l2">
+        <section class="line">
+          <div class="section-img">
+            <img src="/img/lesson{{this.lesson}}.png" />
+          </div> 
+          <h2>Tutorial</h2>
+          <p>{{this.description}}</p>
+        </section>
+        <section class="line" ng-if="download">
+          <div class="section-img">
+            <img src="/img/lesson{{this.lesson}}.png" />
+          </div>
+          <h2>Homework</h2>
+          <p>None</p>
+        </section>
+      </div>
+    </div>
+    {{/if}}
+  </div>
 </template>
