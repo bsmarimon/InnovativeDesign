@@ -1,6 +1,11 @@
-iframe {
-	max-width: 100% !important;
-	width: 100%;
+.mobileBody {
+	background-color: #3680A5;
+	padding-top: 175px;
+	padding-bottom: 175px;
+}
+
+.mobileVideo {
+	max-width: 100%;
 }
 
 .landingCard {
