@@ -20,6 +20,7 @@ Template.navbar.onRendered(function () {
   $('.button-collapse').sideNav('hide');
   $('input#input_text, textarea#textarea1').characterCounter();
   $('input#input_text, textarea#textarea2').characterCounter();
+  $('input#input_text, textarea#textarea3').characterCounter();
   $(".button-collapse").sideNav();  
   $('.datepicker').pickadate({
     selectMonths: true,
