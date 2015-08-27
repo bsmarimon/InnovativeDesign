@@ -87,11 +87,6 @@ nav {
 	text-decoration: none !important;
 }
 
-.openRequests {
-	border-style: solid;
-	border-color: white;
-}
-
 .openRequests:hover {
 	background-color: #3680A5;
 	cursor: pointer;

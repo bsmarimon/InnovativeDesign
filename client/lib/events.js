@@ -11,6 +11,7 @@ Events = new orion.collection('events', {
       { data: "date", title: "Date" },
       { data: "time", title: "Time" },
       { data: "facebook_url", title: "Facebook Link" },
+      orion.attributeColumn('image', 'image', 'Image'),
     ]
   }
 });
@@ -36,5 +37,9 @@ Events.attachSchema(new SimpleSchema({
   facebook_url: {
     type: String
   },
+  image: orion.attribute('image', {
+    label: 'Image',
+    optional: true
+  }),
 }));
 
