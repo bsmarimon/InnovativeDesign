@@ -25,7 +25,6 @@ Meteor.methods({
 
   getOfficers: function() {
     var officerList = Officers.find({}).fetch();
-    console.log(officerList);
     return officerList;
   },
 
@@ -45,7 +44,6 @@ Meteor.methods({
   },
   getDecal: function() {
     var designList = Decal.find({}).fetch();
-    console.log(designList);
     return designList;
   },
 
