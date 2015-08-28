@@ -5,10 +5,8 @@ Template.landing.onRendered(function () {
   
   if ($(window).width() >= 992) {
     var vid = document.getElementsByTagName('video')[0];
-    console.log(vid);
     vid.oncanplaythrough = function () {
       vid.play();
-      console.log("can play now");
       var timeTable = [5000, 25000, 2000];
       var colorTable = ["#3680A5", "#EDB439", "#CB0F36"];
       var c = document.getElementsByClassName('colorChange');
@@ -18,19 +16,16 @@ Template.landing.onRendered(function () {
           c[i].style.backgroundColor = colorTable[0];
         }
       }, 41000);
-
       var end2 = setInterval(function () {
         for (var i = 0; i < c.length; i++) {
           c[i].style.backgroundColor = colorTable[1];
         }
       }, 24600);
-
       var end3 = setInterval(function () {
         for (var i = 0; i < c.length; i++) {
           c[i].style.backgroundColor = colorTable[2];
         }
       }, 33200);
-
       var end4 = setInterval(function () {
         var check = Session.get("pagechange");
         if (check) {
@@ -55,19 +50,16 @@ Template.landing.onRendered(function () {
             c[i].style.backgroundColor = colorTable[0];
           }
         }, 41000);
-
         var end2 = setInterval(function () {
           for (var i = 0; i < c.length; i++) {
             c[i].style.backgroundColor = colorTable[1];
           }
         }, 24590);
-
         var end3 = setInterval(function () {
           for (var i = 0; i < c.length; i++) {
             c[i].style.backgroundColor = colorTable[2];
           }
         }, 33140);
-
         var end4 = setInterval(function () {
           if (check) {
             clearInterval(end1);
