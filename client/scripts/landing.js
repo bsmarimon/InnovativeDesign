@@ -17,21 +17,18 @@ Template.landing.onRendered(function () {
         for (var i = 0; i < c.length; i++) {
           c[i].style.backgroundColor = colorTable[0];
         }
-        console.log("changed to blue");
       }, 41000);
 
       var end2 = setInterval(function () {
         for (var i = 0; i < c.length; i++) {
           c[i].style.backgroundColor = colorTable[1];
         }
-        console.log("changed to yellow");
       }, 24600);
 
       var end3 = setInterval(function () {
         for (var i = 0; i < c.length; i++) {
           c[i].style.backgroundColor = colorTable[2];
         }
-        console.log("changed to red");
       }, 33200);
 
       var end4 = setInterval(function () {
@@ -43,7 +40,6 @@ Template.landing.onRendered(function () {
           for (var i = 0; i < c.length; i++) {
             c[i].style.backgroundColor = colorTable[0];
           }
-          console.log("changed to blue");
           clearInterval(end4);
         }
       }, 250);
@@ -58,25 +54,21 @@ Template.landing.onRendered(function () {
           for (var i = 0; i < c.length; i++) {
             c[i].style.backgroundColor = colorTable[0];
           }
-          console.log("changed to blue");
         }, 41000);
 
         var end2 = setInterval(function () {
           for (var i = 0; i < c.length; i++) {
             c[i].style.backgroundColor = colorTable[1];
           }
-          console.log("changed to yellow");
         }, 24590);
 
         var end3 = setInterval(function () {
           for (var i = 0; i < c.length; i++) {
             c[i].style.backgroundColor = colorTable[2];
           }
-          console.log("changed to red");
         }, 33140);
 
         var end4 = setInterval(function () {
-          var check = Session.get("pagechange");
           if (check) {
             clearInterval(end1);
             clearInterval(end2);
@@ -84,7 +76,6 @@ Template.landing.onRendered(function () {
             for (var i = 0; i < c.length; i++) {
               c[i].style.backgroundColor = colorTable[0];
             }
-            console.log("changed to blue");
             clearInterval(end4);
           }
         }, 250);

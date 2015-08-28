@@ -32,7 +32,7 @@ Template.graphic.events({
     var test = Session.get("mouse");
     if (test) {
       $('ul.tabs').tabs();
-      console.log("triggered");
+
       Session.set("mouse", false);
     }
   },
@@ -40,7 +40,7 @@ Template.graphic.events({
     var test = Session.get("mouse");
     if (test) {
       $('ul.tabs').tabs();
-      console.log("triggered");
+
       Session.set("mouse", false);
     }
   },
@@ -109,7 +109,6 @@ Template.graphic.onCreated(function() {
           pageNum = pageNum + 1;
         }
       }
-      console.log(layouts);
       Session.set("blue", layouts);
     } else {
       alert("Failed to render page");
@@ -172,7 +171,6 @@ Template.graphic.onCreated(function() {
             columnIndex = 0;
           }
         }
-        console.log(layouts);
         Session.set("gold", layouts);
       } else {
         alert("Failed to render page");
