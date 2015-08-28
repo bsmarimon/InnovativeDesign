@@ -80,4 +80,16 @@ Template.landing.onRendered(function () {
       }, 42000);
     };
   }
+
+  console.log("#InnodPoetryTier #SecretSociety");
+  console.log("Love is patient, love is kind.");
+  console.log("It does not envy, it does not boast.");
+  console.log("It is not proud. It is not rude.");
+  console.log("It is not self-seeking. It is not easily angered.");
+  console.log("It keeps no record of wrongs.");
+  console.log("Love does not delight in evil");
+  console.log("But rejoices with the truth.");
+  console.log("It always protects, always trusts,");
+  console.log("Always hopes, always perseveres:");
+  console.log("Love never fails.");
 });
