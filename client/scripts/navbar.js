@@ -43,13 +43,16 @@ Template.navbar.events({
     var orgDetails = $('#textarea1').val();
     var orgLocation = $('#dropdown1').val();
     var deadline = $('#date').val();
-    console.log(deadline)
     Session.set("submitted", true);
   },
 
   "click a": function(event) {
-    console.log("Preparing for page change");
-    Session.set("pagechange", true);
+    var name = event.target.id;
+    if (name === "requestclick") {
+      Session.set("pagechange", false);
+    } else {
+      Session.set("pagechange", true);
+    }
   },
 });
 
