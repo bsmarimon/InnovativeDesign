@@ -32,7 +32,6 @@ Template.graphic.events({
     var test = Session.get("mouse");
     if (test) {
       $('ul.tabs').tabs();
-
       Session.set("mouse", false);
     }
   },
@@ -40,7 +39,6 @@ Template.graphic.events({
     var test = Session.get("mouse");
     if (test) {
       $('ul.tabs').tabs();
-
       Session.set("mouse", false);
     }
   },

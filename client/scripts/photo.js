@@ -17,7 +17,6 @@ Template.photo.events({
     var test = Session.get("mouse");
     if (test) {
       $('ul.tabs').tabs();
-      console.log("triggered");
       Session.set("mouse", false);
     }
   },
@@ -25,7 +24,6 @@ Template.photo.events({
     var test = Session.get("mouse");
     if (test) {
       $('ul.tabs').tabs();
-      console.log("triggered");
       Session.set("mouse", false);
     }
   },
@@ -94,7 +92,6 @@ Template.photo.onCreated(function() {
           pageNum = pageNum + 1;
         }
       }
-      console.log(layouts);
       Session.set("photo", layouts);
     } else {
       alert("Failed to render page");
