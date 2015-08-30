@@ -17,6 +17,7 @@ Template.navbar.onRendered(function () {
     in_duration: 300, // Transition in duration
     out_duration: 200, // Transition out duration
   });
+  $('.tooltipped').tooltip({delay: 50});
   $('.button-collapse').sideNav('hide');
   $('input#input_text, textarea#textarea1').characterCounter();
   $('input#input_text, textarea#textarea2').characterCounter();
@@ -36,13 +37,41 @@ Template.navbar.events({
 
   "submit form": function(event) {
     event.preventDefault();
-    var name = $('#first_name').val();
-    var email = $('#email').val();
-    var phone = $('#phone').val();
-    var organization = $('#organization').val();
-    var orgDetails = $('#textarea1').val();
-    var orgLocation = $('#dropdown1').val();
-    var deadline = $('#date').val();
+    var contactName1 = $('#first_name').val();
+    var contactEmail1 = $('#email').val();
+    var contactNum1 = $('#phone').val();
+    var orgName1 = $('#organization').val();
+    var orgInfo1 = $('#textarea1').val();
+    var orgType1 = $('#dropdown1').val();
+    var date1 = $('#date').val();
+    var serviceType1 = $('#dropdown2').val();
+
+    var service = Session.get("type");
+    if (service === "videography" || service === "photography") {
+      var shootLoc = $('#shoot_location');
+    } else {
+      var shootLoc = 'n/a';
+    }
+    var addInfo = $('#textarea2').val();
+    var questions = $('#textarea3').val();
+
+    var test = {contactName: contactName1};
+    console.log(test);
+
+    $.ajax({
+      url: "",
+      data: test,
+      type: "POST",
+      dataType: "xml",
+      statusCode: {
+        0: function() {
+          
+        },
+        200: function() {
+          
+        }
+      }
+    });
     Session.set("submitted", true);
   },
 
