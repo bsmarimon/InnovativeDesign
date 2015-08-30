@@ -48,29 +48,36 @@ Template.navbar.events({
 
     var service = Session.get("type");
     if (service === "videography" || service === "photography") {
-      var shootLoc = $('#shoot_location');
+      var shootLoc1 = $('#shoot_location').val();
     } else {
-      var shootLoc = 'n/a';
+      var shootLoc1 = 'n/a';
     }
-    var addInfo = $('#textarea2').val();
-    var questions = $('#textarea3').val();
+    var addInfo1 = $('#textarea2').val();
+    var questions1 = $('#textarea3').val();
 
-    var test = {contactName: contactName1};
+
+
+    var test = {
+    contactName: contactName1,
+    contactEmail: contactEmail1,
+    contactNum: contactNum1,
+    orgName: orgName1,
+    orgInfo: orgInfo1,
+    orgType: orgType1,
+    date: date1,
+    serviceType: service,
+    shootLoc: shootLoc1,
+    addInfo: addInfo1,
+    questions: questions1,
+    };
+
     console.log(test);
 
     $.ajax({
-      url: "",
+      url: "https://script.google.com/macros/s/AKfycbyWo6AfGdMPBVawrg2-3jrUxgFBkDItq4q73M0v6NZqt2jXGTk/exec",
       data: test,
       type: "POST",
       dataType: "xml",
-      statusCode: {
-        0: function() {
-          
-        },
-        200: function() {
-          
-        }
-      }
     });
     Session.set("submitted", true);
   },
