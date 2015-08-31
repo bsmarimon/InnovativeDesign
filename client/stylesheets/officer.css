@@ -1,5 +1,5 @@
 .icon-text {
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Open Sans';
   margin-top: 0px;
 }
@@ -27,4 +27,10 @@
 
 .cardBottomMargin {
   margin-bottom: 25px;
+}
+
+.nameFix {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
 }
