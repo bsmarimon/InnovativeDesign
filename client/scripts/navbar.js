@@ -77,16 +77,20 @@ Template.navbar.events({
     };
 
     var canSend = true;
-    keys = Object.keys(send);
-    for (i = 0; i < keys.length; i++) {
-      var key = keys[i];
-      var value = send[key];
-      if (value === "") {
-        alert("Please fill in all the fields before submitting.");
-        canSend = false;
-        Session.set("submitted", false);
-      }
-    }
+    // keys = Object.keys(send);
+    // console.log(send);
+    // console.log(keys);
+    // for (i = 0; i < keys.length; i++) {
+    //   var key = keys[i];
+    //   var value = send[key];
+    //   if (value === "") {
+    //     alert("Please fill in all the fields before submitting.");
+    //     canSend = false;
+    //     Session.set("submitted", false);
+    //     break;
+    //   }
+    // }
+
     if (canSend) { 
       Session.set("submitted", true);
       $.ajax({

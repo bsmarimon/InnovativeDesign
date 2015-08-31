@@ -1,4 +1,4 @@
-// Beauty is in the eye of the beholder but this code is really messy regardless of that.
+// Beauty is in the eye of the beholder but this code is really messy regardless of whoever thinks what.
 
 Template.landing.onRendered(function () {
   Session.set("pagechange", false);
@@ -81,7 +81,7 @@ Template.landing.onRendered(function () {
     };
   }
 
-  console.log("#InnodPoetryTier #SecretSociety");
+  console.log("#InnodPoetryTier");
   console.log("Love is patient, love is kind.");
   console.log("It does not envy, it does not boast.");
   console.log("It is not proud. It is not rude.");
