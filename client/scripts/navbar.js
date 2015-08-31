@@ -2,6 +2,13 @@ Template.request.onRendered(function () {
   $('#modal1').openModal(); 
 });
 
+Template.club.onRendered(function () {
+  $('.collapsible').collapsible({
+    accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+  });
+});
+
+
 Template.navbar.onRendered(function () {
   $('.dropdown-button').dropdown({
     inDuration: 300,
@@ -55,9 +62,7 @@ Template.navbar.events({
     var addInfo1 = $('#textarea2').val();
     var questions1 = $('#textarea3').val();
 
-
-
-    var test = {
+    var send = {
     contactName: contactName1,
     contactEmail: contactEmail1,
     contactNum: contactNum1,
@@ -71,15 +76,26 @@ Template.navbar.events({
     questions: questions1,
     };
 
-    console.log(test);
-
-    $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbyWo6AfGdMPBVawrg2-3jrUxgFBkDItq4q73M0v6NZqt2jXGTk/exec",
-      data: test,
-      type: "POST",
-      dataType: "xml",
-    });
-    Session.set("submitted", true);
+    var canSend = true;
+    keys = Object.keys(send);
+    for (i = 0; i < keys.length; i++) {
+      var key = keys[i];
+      var value = send[key];
+      if (value === "") {
+        alert("Please fill in all the fields before submitting.");
+        canSend = false;
+        Session.set("submitted", false);
+      }
+    }
+    if (canSend) { 
+      Session.set("submitted", true);
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbyWo6AfGdMPBVawrg2-3jrUxgFBkDItq4q73M0v6NZqt2jXGTk/exec",
+        data: send,
+        type: "POST",
+        dataType: "xml",
+      });
+    }   
   },
 
   "click a": function(event) {

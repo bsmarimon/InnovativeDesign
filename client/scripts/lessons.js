@@ -138,7 +138,7 @@ Template.lesson10.helpers({
     {
     lesson: '10', title: 'Identity & Ad Design', 
     description: "Apply everything you've learned this semester by rebranding and creating an advertisement design for a company!",
-    homework: "",
+    homework: "None!",
     }
     return context
   },
@@ -150,7 +150,7 @@ Template.lesson11.helpers({
     {
     lesson: '11', title: 'Final Showcase', 
     description: "Our last class will be a potluck style showcase! Bring some snacks to share and see all the work you and your classmates have accomplished this semester. The course will conclude with everyone presenting to the class their final project.",
-    homework: "",
+    homework: "None!",
     }
     return context
   },

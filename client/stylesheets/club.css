@@ -1,3 +1,16 @@
 .tierIcons {
-	max-width: 100%;
+    max-width: 100%;
+}
+
+.collapsible {
+    box-shadow: none;
+    margin-top: 0px !important;
+}
+
+.collapsible-header {
+  padding-top: 15px;
+}
+
+.collapsible > li > .active > h3 {
+  color: #3680A5 !important;
 }
