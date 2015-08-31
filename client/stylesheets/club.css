@@ -14,3 +14,27 @@
 .collapsible > li > .active > h3 {
   color: #3680A5 !important;
 }
+
+.gold {
+  background-color: #E7B03A !important;
+}
+
+.webtier {
+  background-color: #468966 !important;
+}
+
+.phototier {
+  background-color: #C83353 !important;
+}
+
+.bluetier {
+  background-color: #3680A5 !important;
+}
+
+.videotier {
+  background-color: black !important;
+}
+
+.producttier {
+  background-color: #FF0894 !important;
+}

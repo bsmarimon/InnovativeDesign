@@ -122,10 +122,6 @@ Router.route('/decal/lesson/11', function() {
   this.render('lesson11');
 });
 
-Router.route('/apply', function() {
-  this.render('application');
-});
-
 Router.configure({
   layoutTemplate: 'navbar'
 });
