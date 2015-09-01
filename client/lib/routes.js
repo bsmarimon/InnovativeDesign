@@ -1,12 +1,12 @@
 // I Tend To Think Too Deeply
-// 
+//
 // My friend was eating an orange,
-// So I asked him, 
+// So I asked him,
 // Is the fruit called an orange
 // Because it is the color orange?
 // Or is the color called orange,
 // Because the fruit is orange?
-// 
+//
 // He said,
 // This is a tangerine.
 //
@@ -125,7 +125,3 @@ Router.route('/decal/lesson/11', function() {
 Router.configure({
   layoutTemplate: 'navbar'
 });
-
-
-
-

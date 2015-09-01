@@ -2,7 +2,7 @@ Decal = new orion.collection('decal', {
   singularName: 'decal',
   pluralName: 'decals',
   link: {
-    title: 'Decal' 
+    title: 'Decal'
   },
   tabular: {
     columns: [

@@ -2,7 +2,7 @@ Events = new orion.collection('events', {
   singularName: 'event',
   pluralName: 'events',
   link: {
-    title: 'Events' 
+    title: 'Events'
   },
   tabular: {
     columns: [
@@ -42,4 +42,3 @@ Events.attachSchema(new SimpleSchema({
     optional: true
   }),
 }));
-

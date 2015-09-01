@@ -2,7 +2,7 @@
 
 Template.landing.onRendered(function () {
   Session.set("pagechange", false);
-  
+
   if ($(window).width() >= 992) {
     var vid = document.getElementsByTagName('video')[0];
     vid.oncanplaythrough = function () {

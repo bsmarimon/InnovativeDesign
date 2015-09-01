@@ -2,7 +2,7 @@ Photo = new orion.collection('photo', {
   singularName: 'photo',
   pluralName: 'photos',
   link: {
-    title: 'Photo Tier' 
+    title: 'Photo Tier'
   },
   tabular: {
     columns: [
@@ -32,7 +32,7 @@ Blue = new orion.collection('blue', {
   singularName: 'blue',
   pluralName: 'blues',
   link: {
-    title: 'Blue Tier' 
+    title: 'Blue Tier'
   },
   tabular: {
     columns: [
@@ -63,7 +63,7 @@ Gold = new orion.collection('gold', {
   singularName: 'gold',
   pluralName: 'golds',
   link: {
-    title: 'Gold Tier' 
+    title: 'Gold Tier'
   },
   tabular: {
     columns: [
