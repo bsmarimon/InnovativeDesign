@@ -53,7 +53,7 @@ Blue = new orion.collection('blue', {
   singularName: 'blue',
   pluralName: 'blues',
   link: {
-    title: 'Blue Tier' 
+    title: 'Blue Tier'
   },
   tabular: {
     columns: [
@@ -67,7 +67,7 @@ Events = new orion.collection('events', {
   singularName: 'event',
   pluralName: 'events',
   link: {
-    title: 'Events' 
+    title: 'Events'
   },
   tabular: {
     columns: [
@@ -85,7 +85,7 @@ Gold = new orion.collection('gold', {
   singularName: 'gold',
   pluralName: 'golds',
   link: {
-    title: 'Gold Tier' 
+    title: 'Gold Tier'
   },
   tabular: {
     columns: [
@@ -99,7 +99,7 @@ Photo = new orion.collection('photo', {
   singularName: 'photo',
   pluralName: 'photos',
   link: {
-    title: 'Photo Tier' 
+    title: 'Photo Tier'
   },
   tabular: {
     columns: [
@@ -113,7 +113,7 @@ Officers = new orion.collection('officer', {
   singularName: 'officer',
   pluralName: 'officers',
   link: {
-    title: 'Officers' 
+    title: 'Officers'
   },
   tabular: {
     columns: [
@@ -132,7 +132,7 @@ Decal = new orion.collection('decal', {
   singularName: 'decal',
   pluralName: 'decals',
   link: {
-    title: 'Decal' 
+    title: 'Decal'
   },
   tabular: {
     columns: [

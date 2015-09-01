@@ -2,7 +2,7 @@ Officers = new orion.collection('officer', {
   singularName: 'officer',
   pluralName: 'officers',
   link: {
-    title: 'Officers' 
+    title: 'Officers'
   },
   tabular: {
     columns: [

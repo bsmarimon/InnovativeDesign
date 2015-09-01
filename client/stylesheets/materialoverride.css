@@ -203,14 +203,14 @@ form p:last-child {
   border-color: #BDBDBD; }
 
 
-/* 
+/*
 =======================================
 CSS to override Colors + ScrollBar Fix
 =======================================
 */
 
 .picker__date-display, .picker__weekday-display {
-  background-color: #3680A5; 
+  background-color: #3680A5;
 }
 
 .picker__footer {
@@ -242,8 +242,8 @@ box-shadow: 0 1px 0 0 #F44336; }
     color: #9e9e9e;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
@@ -265,5 +265,3 @@ box-shadow: 0 1px 0 0 #F44336; }
 .mdi-communication-location-on {
   color: #3680A5;
 }
-
-

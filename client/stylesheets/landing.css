@@ -17,7 +17,7 @@
 
 .landingCard:hover {
 	background-image: url("img/hongye.jpg");
-    background-size:   cover;                    
+    background-size:   cover;
     background-repeat: no-repeat;
 /*    background-position: center center;   */
 }
@@ -47,7 +47,7 @@
 
 .footerIcons {
 	color: white !important;
-	font-size: 20px !important;	
+	font-size: 20px !important;
 	background-color: #3680A5;
 }
 
@@ -58,9 +58,9 @@
 }
 
 .iconLink {
-	background-color: #3680A5 !important; 
+	background-color: #3680A5 !important;
 }
 
 .bottom {
-	background-color: #3680A5; 
+	background-color: #3680A5;
 }

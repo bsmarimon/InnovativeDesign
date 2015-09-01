@@ -25,8 +25,8 @@ orion.filesystem.providerUpload = function(options, success, failure, progress) 
 
 /**
  * Official S3 Remove Provider
- * 
- * Please replace this function with the 
+ *
+ * Please replace this function with the
  * provider you prefer.
  *
  * If success, call success();
