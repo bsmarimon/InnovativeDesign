@@ -1,7 +1,7 @@
 .mobileBody {
 	background-color: #3680A5;
-	padding-top: 175px;
-	padding-bottom: 175px;
+	padding-top: 525px;
+	padding-bottom: 525px;
 }
 
 .mobileVideo {
@@ -20,6 +20,11 @@
     background-size:   cover;
     background-repeat: no-repeat;
 /*    background-position: center center;   */
+}
+
+.centerThings {
+	margin-right: auto !important;
+	margin-left: auto !important;
 }
 
 .landingCard:hover p {

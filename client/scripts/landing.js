@@ -5,9 +5,11 @@ Template.landing.onRendered(function () {
 
   if ($(window).width() >= 992) {
     var vid = document.getElementsByTagName('video')[0];
+
     vid.oncanplaythrough = function () {
+
       vid.play();
-      var timeTable = [5000, 25000, 2000];
+      console.log("video started playing");
       var colorTable = ["#3680A5", "#EDB439", "#CB0F36"];
       var c = document.getElementsByClassName('colorChange');
 
@@ -82,14 +84,14 @@ Template.landing.onRendered(function () {
   }
 
   console.log("#InnodPoetryTier");
-  console.log("Love is patient, love is kind.");
-  console.log("It does not envy, it does not boast.");
-  console.log("It is not proud. It is not rude.");
-  console.log("It is not self-seeking. It is not easily angered.");
-  console.log("It keeps no record of wrongs.");
-  console.log("Love does not delight in evil");
-  console.log("But rejoices with the truth.");
-  console.log("It always protects, always trusts,");
-  console.log("Always hopes, always perseveres:");
-  console.log("Love never fails.");
+  // console.log("Love is patient, love is kind.");
+  // console.log("It does not envy, it does not boast.");
+  // console.log("It is not proud. It is not rude.");
+  // console.log("It is not self-seeking. It is not easily angered.");
+  // console.log("It keeps no record of wrongs.");
+  // console.log("Love does not delight in evil");
+  // console.log("But rejoices with the truth.");
+  // console.log("It always protects, always trusts,");
+  // console.log("Always hopes, always perseveres:");
+  // console.log("Love never fails.");
 });
