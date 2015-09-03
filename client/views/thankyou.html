@@ -1,0 +1,19 @@
+<template name="thankyou">
+  <div class="row rowTopSpacing">
+    <div class="col l6 offset-l3">
+      <div class="row">    
+        <div class="col l12 center">
+          {{#with phrase}}
+          <p>Your request is currently being delivered by a {{this}}. An officer should be reaching out to you in a couple days to discuss the details of the project. If you don't hear back, feel free to contact us at</p><h3 class="h3black">Innovativedesignatcal@gmail.com.</h3>
+          {{/with}}
+        </div>
+      </div>
+      <div class="row rowFix">  
+        <div id="submitbtn" class="col l12 m12 center">
+          <button class="btn-flat waves-effect waves-light submitbtn">Submit Another Request
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

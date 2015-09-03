@@ -78,6 +78,10 @@ Router.route('/decal', function() {
   this.render('decal');
 });
 
+Router.route('/thanks', function() {
+  this.render('thankyou');
+});
+
 Router.route('/decal/lesson/1', function() {
   this.render('lesson1');
 });

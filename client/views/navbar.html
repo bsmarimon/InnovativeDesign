@@ -93,53 +93,54 @@
               <div class="col l12 m10 offset-m1">
                 <h3 class="h3black">Please submit design requests through the form below.</h3>
               </div>
-            </div>
-            <form class="col l12 m10 offset-m1 requestForm">
+            </div>            
+            <form class="col l12 m10 offset-m1 requestForm" action="https://formaholic.com/f/132b7e1baa36863f" method="POST">
               <div class="row rowFix">  
                 <div class="input-field col l6 m6">              
-                    <input id="first_name" type="text">
+                    <input id="first_name" name="name" type="text">
                     <label for="first_name">Name</label>
                 </div>
          
                 <div class="input-field col l6 m6">
-                    <input id="email" type="email">
+                    <input id="email" name="email" type="email">
                     <label for="email">Email</label>
                 </div>
               </div>
-              <div class="row rowFix">  
+               <div class="row rowFix">  
                 <div class="input-field col l6 m6">
-                    <input id="phone" type="text">
+                    <input id="phone" name="Phone" type="text">
                     <label for="phone">Phone</label>
                 </div>
+
                 <div class="input-field col l6 m6">
-                    <input id="organization" type="text">
+                    <input name="Organization Name" id="organization" type="text">
                     <label for="organization">Organization Name</label>
                 </div>
               </div>
               <div class="row rowFix textfieldTopSpacing">  
                 <div class="input-field col l12 m12">
-                  <textarea id="textarea1" class="materialize-textarea" length="250"></textarea>
+                  <textarea id="textarea1" name="Organization Description" class="materialize-textarea" length="250"></textarea>
                   <label for="textarea1">Organization Description</label>
                 </div>
               </div>
               <div class="row rowFix">    
                 <div class="col l6 m6">
                   <label class="tierSelect">&nbsp;</label>
-                  <select id="dropdown1" class="browser-default tierSelect">
+                  <select id="dropdown1" name="On/Off campus" class="browser-default tierSelect">
                       <option value="" disabled="" selected="">Are you on or off campus?</option>
                       <option value="on">On</option>
                       <option value="off">Off</option>
                   </select>
                 </div>
                 <div class="input-field col l6 m6">
-                  <input id="date" type="date" placeholder="Proposed Deadline" class="datepicker">
+                  <input id="date" type="date" name="Project Deadline" placeholder="Proposed Deadline" class="datepicker">
                   <label for="date"></label>
                 </div>
               </div>
               <div class="row rowFix">
                 <div class="col l6 m6">
                   <label class="tierSelect">&nbsp;</label>
-                  <select id="dropdown2" class="browser-default tierSelect">
+                  <select id="dropdown2" name="Design Category" class="browser-default tierSelect">
                     <option value="" disabled="" selected="">Project Category</option>
                     <option value="videography">Videography</option>
                     <option value="photography">Photography</option>
@@ -151,36 +152,36 @@
             {{#if video}}
               <div class="row">  
                 <div class="input-field col l12 m12">              
-                  <input id="shoot_location" type="text">
+                  <input id="shoot_location" name="Proposed Video Shoot Location and Time" type="text">
                   <label for="shoot_location">Proposed Shoot Location and Time</label>
                 </div>  
               </div>
             {{/if}}
             {{#if photo}}
-              <div class="row">
-                <div class="input-field col l12 m12">              
-                  <input id="shoot_location" type="text">
-                  <label for="shoot_location">Proposed Shoot Location and Time</label>
-                </div>  
-              </div>
+            <div class="row">
+              <div class="input-field col l12 m12">              
+                <input id="shoot_location" name="Proposed Photo Shoot Location and Time" type="text">
+                <label for="shoot_location">Proposed Shoot Location and Time</label>
+              </div>  
+            </div>
             {{/if}}
             <div class="row rowFix textfieldTopSpacing">  
               <div class="input-field col l12 m12">
-                <textarea id="textarea2" class="materialize-textarea" length="500"></textarea>
+                <textarea id="textarea2" class="materialize-textarea" name="Project Decsription" length="500"></textarea>
                 <label for="textarea2">Project Description</label>
               </div>
             </div>
             <div class="row rowFix textfieldTopSpacing">  
               <div class="input-field col l12 m12">
-                <textarea id="textarea3" class="materialize-textarea" length="200"></textarea>
+                <textarea id="textarea3" class="materialize-textarea" name="Questions" length="200"></textarea>
                 <label for="textarea3">Any questions?</label>
               </div>
             </div>
-              <div class="row rowFix">  
-                <div id="submitbtn" class="col l12 m12">
-                  <button class="btn-flat waves-effect waves-light submitbtn" type="submit" name="action">Send
-                    <i class="mdi-content-send right"></i>
-                  </button>
+            <div class="row rowFix">  
+              <div id="submitbtn" class="col l12 m12">
+                <button class="btn-flat waves-effect waves-light submitbtn" type="submit" name="action">Send
+                  <i class="mdi-content-send right"></i>
+                </button>
               </div>
             </div>
           </form>

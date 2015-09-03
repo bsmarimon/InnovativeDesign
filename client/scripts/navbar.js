@@ -8,7 +8,6 @@ Template.club.onRendered(function () {
   });
 });
 
-
 Template.navbar.onRendered(function () {
   $('.dropdown-button').dropdown({
     inDuration: 300,
@@ -42,66 +41,6 @@ Template.navbar.events({
     Session.set("type", newValue);
   },
 
-  "submit form": function(event) {
-    event.preventDefault();
-    var contactName1 = $('#first_name').val();
-    var contactEmail1 = $('#email').val();
-    var contactNum1 = $('#phone').val();
-    var orgName1 = $('#organization').val();
-    var orgInfo1 = $('#textarea1').val();
-    var orgType1 = $('#dropdown1').val();
-    var date1 = $('#date').val();
-    var serviceType1 = $('#dropdown2').val();
-
-    var service = Session.get("type");
-    if (service === "videography" || service === "photography") {
-      var shootLoc1 = $('#shoot_location').val();
-    } else {
-      var shootLoc1 = 'n/a';
-    }
-    var addInfo1 = $('#textarea2').val();
-    var questions1 = $('#textarea3').val();
-
-    var send = {
-    contactName: contactName1,
-    contactEmail: contactEmail1,
-    contactNum: contactNum1,
-    orgName: orgName1,
-    orgInfo: orgInfo1,
-    orgType: orgType1,
-    date: date1,
-    serviceType: service,
-    shootLoc: shootLoc1,
-    addInfo: addInfo1,
-    questions: questions1,
-    };
-
-    var canSend = true;
-    // keys = Object.keys(send);
-    // console.log(send);
-    // console.log(keys);
-    // for (i = 0; i < keys.length; i++) {
-    //   var key = keys[i];
-    //   var value = send[key];
-    //   if (value === "") {
-    //     alert("Please fill in all the fields before submitting.");
-    //     canSend = false;
-    //     Session.set("submitted", false);
-    //     break;
-    //   }
-    // }
-
-    if (canSend) { 
-      Session.set("submitted", true);
-      $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbyWo6AfGdMPBVawrg2-3jrUxgFBkDItq4q73M0v6NZqt2jXGTk/exec",
-        data: send,
-        type: "POST",
-        dataType: "xml",
-      });
-    }   
-  },
-
   "click a": function(event) {
     var name = event.target.id;
     if (name === "requestclick") {
@@ -112,13 +51,26 @@ Template.navbar.events({
   },
 });
 
+Template.thankyou.events({
+  "click submitbtn": function(event) {
+    $('#modal1').openModal(); 
+  },
+});
+
+Template.thankyou.helpers({
+  phrase: function() {
+    phrases = [
+      "squad of intelligent owls",
+      "pack of quick-witted otters",
+      "crew of charismatic bears",
+      "group of avocado enthusiasts",
+    ];
+    var rand = phrases[Math.floor(Math.random() * phrases.length)];
+    return rand;
+  }
+});
 
 Template.navbar.helpers({
-  submitted: function() {
-    var tobeRtn = Session.get("submitted")
-    return tobeRtn;
-  },
-
   video: function() {
     var test = Session.get("type")
     if (test === "videography") {
