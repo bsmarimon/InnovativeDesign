@@ -65,7 +65,7 @@ Template.navbar.events({
     var name = event.target.id;
     if (name === "requestclick") {
       Session.set("pagechange", false);
-      Session.set("alreadyRan", false);
+      Session.set("alreadyRan", true);
     } else {
       Session.set("pagechange", true);
       Session.set("alreadyRan", true);
