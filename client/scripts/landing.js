@@ -5,11 +5,32 @@ Template.landing.onRendered(function () {
 
   if ($(window).width() >= 992) {
     var vid = document.getElementsByTagName('video')[0];
-
     vid.oncanplaythrough = function () {
-
       vid.play();
-      console.log("video started playing");
+      var lastPlayPos    = 0;
+      var currentPlayPos = 0;
+      var bufferingDetected = false;
+      var bufferTimeout = setTimeout(function () {
+        var bufferCheck = setInterval(function () {
+            currentPlayPos = vid.currentTime;
+            var offset = 1/100;
+            var check = Session.get("pagechange");
+            var ran = Session.get("alreadyRan");
+            if (!bufferingDetected && currentPlayPos < (lastPlayPos + offset) && currentPlayPos != 0 && !check && !ran) {
+              bufferingDetected = true;
+              Materialize.toast('Looks like the video is having some trouble. Feel free to refresh, wait, or check out the rest of the site!', 8000, 'videoProblems');
+              clearInterval(end1);
+              clearInterval(end2);
+              clearInterval(end3);
+              clearInterval(end4);
+              Session.set("alreadyRan", true);
+              clearInterval(bufferCheck);
+              clearInterval(bufferTimeout);
+            }
+            lastPlayPos = currentPlayPos;
+        }, 100);
+      }, 1000);
+
       var colorTable = ["#3680A5", "#EDB439", "#CB0F36"];
       var c = document.getElementsByClassName('colorChange');
 
@@ -34,12 +55,15 @@ Template.landing.onRendered(function () {
           clearInterval(end1);
           clearInterval(end2);
           clearInterval(end3);
+          clearInterval(bufferCheck);
+          clearInterval(bufferTimeout);
           for (var i = 0; i < c.length; i++) {
             c[i].style.backgroundColor = colorTable[0];
           }
           clearInterval(end4);
         }
       }, 250);
+
       setTimeout(function () {
         clearInterval(end1);
         clearInterval(end2);
@@ -67,6 +91,8 @@ Template.landing.onRendered(function () {
             clearInterval(end1);
             clearInterval(end2);
             clearInterval(end3);
+            clearInterval(bufferCheck);
+            clearInterval(bufferTimeout);
             for (var i = 0; i < c.length; i++) {
               c[i].style.backgroundColor = colorTable[0];
             }

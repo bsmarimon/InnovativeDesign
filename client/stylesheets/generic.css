@@ -8,6 +8,11 @@ html {
 	background-color: white;
 }
 
+button {
+	font-family: Montserrat;
+	text-transform: none !important;
+}
+
 a {
 	text-decoration: none;
 	color: black;

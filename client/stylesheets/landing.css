@@ -4,22 +4,15 @@
 	padding-bottom: 525px;
 }
 
+.videoProblems {
+	background-color: white !important;
+	color: #3680A5;
+	font-family: Montserrat;
+	font-size: 10px;
+}
+
 .mobileVideo {
 	max-width: 100%;
-}
-
-.landingCard {
-	box-shadow: none;
-	height: 200px;
-	background-color: #262930;
-	color: white;
-}
-
-.landingCard:hover {
-	background-image: url("img/hongye.jpg");
-    background-size:   cover;
-    background-repeat: no-repeat;
-/*    background-position: center center;   */
 }
 
 .centerThings {

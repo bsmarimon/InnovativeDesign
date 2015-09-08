@@ -8,6 +8,25 @@ Template.club.onRendered(function () {
   });
 });
 
+Template.thankyou.events({
+  "click #submitagain": function(event) {
+    $('#modal1').openModal(); 
+  },
+});
+
+Template.thankyou.helpers({
+  phrase: function() {
+    phrases = [
+      "squad of intelligent owls",
+      "pack of quick-witted otters",
+      "crew of charismatic bears",
+      "group of avocado enthusiasts",
+    ];
+    var rand = phrases[Math.floor(Math.random() * phrases.length)];
+    return rand;
+  }
+});
+
 Template.navbar.onRendered(function () {
   $('.dropdown-button').dropdown({
     inDuration: 300,
@@ -23,6 +42,7 @@ Template.navbar.onRendered(function () {
     in_duration: 300, // Transition in duration
     out_duration: 200, // Transition out duration
   });
+  Session.set("alreadyRan", false);
   $('.tooltipped').tooltip({delay: 50});
   $('.button-collapse').sideNav('hide');
   $('input#input_text, textarea#textarea1').characterCounter();
@@ -45,30 +65,15 @@ Template.navbar.events({
     var name = event.target.id;
     if (name === "requestclick") {
       Session.set("pagechange", false);
+      Session.set("alreadyRan", false);
     } else {
       Session.set("pagechange", true);
+      Session.set("alreadyRan", true);
     }
   },
 });
 
-Template.thankyou.events({
-  "click submitbtn": function(event) {
-    $('#modal1').openModal(); 
-  },
-});
 
-Template.thankyou.helpers({
-  phrase: function() {
-    phrases = [
-      "squad of intelligent owls",
-      "pack of quick-witted otters",
-      "crew of charismatic bears",
-      "group of avocado enthusiasts",
-    ];
-    var rand = phrases[Math.floor(Math.random() * phrases.length)];
-    return rand;
-  }
-});
 
 Template.navbar.helpers({
   video: function() {
