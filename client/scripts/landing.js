@@ -7,7 +7,7 @@ Template.landing.onRendered(function () {
     var vid = document.getElementsByTagName('video')[0];
     vid.oncanplaythrough = function () {
       vid.play();
-      var lastPlayPos    = 0;
+      var lastPlayPos = 0;
       var currentPlayPos = 0;
       var bufferingDetected = false;
       var bufferTimeout = setTimeout(function () {
@@ -18,7 +18,9 @@ Template.landing.onRendered(function () {
             var ran = Session.get("alreadyRan");
             if (!bufferingDetected && currentPlayPos < (lastPlayPos + offset) && currentPlayPos != 0 && !check && !ran) {
               bufferingDetected = true;
-              Materialize.toast('Looks like the video is having some trouble. Feel free to refresh, wait, or check out the rest of the site!', 8000, 'videoProblems');
+              console.log(currentPlayPos);
+              console.log(lastPlayPos);
+              Materialize.toast('Looks like the video might be having some trouble. Feel free to refresh, wait, or check out the rest of the site!', 7000, 'videoProblems');
               clearInterval(end1);
               clearInterval(end2);
               clearInterval(end3);
@@ -55,7 +57,6 @@ Template.landing.onRendered(function () {
           clearInterval(end1);
           clearInterval(end2);
           clearInterval(end3);
-          clearInterval(bufferCheck);
           clearInterval(bufferTimeout);
           for (var i = 0; i < c.length; i++) {
             c[i].style.backgroundColor = colorTable[0];
@@ -91,7 +92,6 @@ Template.landing.onRendered(function () {
             clearInterval(end1);
             clearInterval(end2);
             clearInterval(end3);
-            clearInterval(bufferCheck);
             clearInterval(bufferTimeout);
             for (var i = 0; i < c.length; i++) {
               c[i].style.backgroundColor = colorTable[0];
