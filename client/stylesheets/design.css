@@ -5,6 +5,10 @@ u {
     text-decoration: none;
 }
 
+.webPortfolioLinks:hover {
+    color: #3680A5;
+}
+
 .rowTopSpacing {
     margin-top: 100px;
 }
