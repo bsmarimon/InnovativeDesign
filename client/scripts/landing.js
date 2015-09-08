@@ -16,7 +16,7 @@ Template.landing.onRendered(function () {
             var offset = 1/100;
             var check = Session.get("pagechange");
             var ran = Session.get("alreadyRan");
-            if (!bufferingDetected && currentPlayPos < (lastPlayPos + offset) && currentPlayPos != 0 && !check && !ran) {
+            if (!bufferingDetected && currentPlayPos < (lastPlayPos + offset) && (currentPlayPos > 2 && currentPlayPos < 40) && !check && !ran) {
               bufferingDetected = true;
               console.log(currentPlayPos);
               console.log(lastPlayPos);
