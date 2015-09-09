@@ -28,6 +28,7 @@ Template.thankyou.helpers({
 });
 
 Template.navbar.onRendered(function () {
+  Session.set("open", false);
   $('.dropdown-button').dropdown({
     inDuration: 300,
     outDuration: 225,
@@ -61,6 +62,7 @@ Template.navbar.events({
     Session.set("type", newValue);
   },
 
+
   "click a": function(event) {
     var name = event.target.id;
     if (name === "requestclick") {
@@ -83,6 +85,12 @@ Template.navbar.helpers({
     } else {
       return false;
     }
+  },
+
+  "open": function() {
+    var formStatus = Session.get("open");
+    formStatus = !formStatus;
+    return formStatus;
   },
 
   photo: function() {
