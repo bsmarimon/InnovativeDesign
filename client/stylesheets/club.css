@@ -2,6 +2,10 @@
     max-width: 100%;
 }
 
+.fa-arrow-down {
+  font-size: 40px !important;
+}
+
 .collapsible {
     box-shadow: none;
     margin-top: 0px !important;
