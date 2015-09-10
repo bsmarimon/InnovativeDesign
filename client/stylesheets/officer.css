@@ -12,6 +12,13 @@
   height: 250px;
 }
 
+.horizontal_divider {
+  height: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: #3680A5 !important;
+}
+
 .material-icons {
   color: #3C84A2;
 }
