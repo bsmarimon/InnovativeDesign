@@ -1,4 +1,12 @@
 Template.request.onRendered(function () {
+  $('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 15 
+  });
+  $('input[name=ProposedDeadline').pickadate({
+    selectMonths: true,
+    selectYears: 15 
+  });
   $('#modal1').openModal(); 
 });
 
@@ -28,7 +36,12 @@ Template.thankyou.helpers({
 });
 
 Template.navbar.onRendered(function () {
-  Session.set("open", false);
+  Session.set("open", true);
+
+  $('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 15 
+  });
   $('.dropdown-button').dropdown({
     inDuration: 300,
     outDuration: 225,
@@ -50,10 +63,7 @@ Template.navbar.onRendered(function () {
   $('input#input_text, textarea#textarea2').characterCounter();
   $('input#input_text, textarea#textarea3').characterCounter();
   $(".button-collapse").sideNav();  
-  $('.datepicker').pickadate({
-    selectMonths: true,
-    selectYears: 15 
-  });
+
 });
 
 Template.navbar.events({
@@ -64,6 +74,10 @@ Template.navbar.events({
 
 
   "click a": function(event) {
+    $('.datepicker').pickadate({
+      selectMonths: true,
+      selectYears: 15 
+    });
     var name = event.target.id;
     if (name === "requestclick") {
       Session.set("pagechange", false);
