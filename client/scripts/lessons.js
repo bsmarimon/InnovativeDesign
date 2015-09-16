@@ -30,7 +30,8 @@ Template.lesson1.helpers({
     {
     lesson: '1', title: 'Intro to Illustrator', 
     description: "Learn how to create a cool-looking abstract pattern which you can personalize with your own color choices and initials.",
-    homework: "This week's homework is to get you comfortable with finding your away around Illustrator on your own! Follow the tutorial we did in class to make another cool pattern."
+    homework: "This week's homework is to get you comfortable with finding your away around Illustrator on your own! Follow the tutorial we did in class to make another cool pattern.",
+    link: "https://www.dropbox.com/sh/zvd57h13pfzt62c/AACbun9oc0aVlajzfY0ieOpla?dl=0"
     }
     return context
   }
