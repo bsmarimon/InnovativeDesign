@@ -80,7 +80,7 @@ Template.navbar.events({
     var contactNum1 = $('#phone').val();
     var orgName1 = $('#organization').val();
     var orgInfo1 = $('#textarea1').val();
-    var orgType1 = $('#dropdown1').val();
+    var orgType1 = $('#dropdown3').val();
     var date1 = $('#date').val();
     var serviceType1 = $('#dropdown2').val();
 
