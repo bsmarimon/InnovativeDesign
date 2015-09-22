@@ -1,8 +1,14 @@
 .mobileBody {
 	background-color: #3680A5;
-	padding-top: 525px;
-	padding-bottom: 525px;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
+
+.mobileCheckout {
+	font-family: Monteserrat;
+	font-size: 15px !important;
+	color: white;
+} 	
 
 .videoProblems {
 	background-color: white !important;
@@ -12,7 +18,7 @@
 }
 
 .mobileVideo {
-	max-width: 100%;
+	max-width: 50%;
 }
 
 .centerThings {
