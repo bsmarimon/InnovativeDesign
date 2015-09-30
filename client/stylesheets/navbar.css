@@ -1,12 +1,12 @@
 nav {
 	box-shadow: none !important;
-	background-color: #3680A5;
+	background-color: #3E85A5;
 	font-family: Montserrat;
 	padding-top: 20px;
 	padding-bottom: 70px !important;
 	margin-bottom: 0px !important;
 	line-height: 40px;
-	padding-right: 150px;
+	padding-right: 25px;
 }
 
 .mdi-navigation-menu {
@@ -25,24 +25,24 @@ nav {
 #dropdown2 > li > a {
 	color: white;
 	font-size: 15px !important;
-	background-color: #3680A5;
+	background-color: #3E85A5;
 	/*text-align: center;*/
 }
 
 #dropdown2 > li {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 }
 
 
 #dropdown1 > li > a {
 	color: white;
 	font-size: 15px !important;
-	background-color: #3680A5;
+	background-color: #3E85A5;
 	/*text-align: center;*/
 }
 
 #dropdown1 > li {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 }
 
 .requestThanks {
@@ -51,7 +51,7 @@ nav {
 }
 
 .navText > li {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 }
 
 .nav-wrapper {
@@ -59,13 +59,13 @@ nav {
 }
 
 .blue {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 }
 
 .navText > li > a {
 	color: white;
 	font-size: 15px !important;
-	background-color: #3680A5;
+	background-color: #3E85A5;
 	margin-left: 20px;
 	margin-right: 20px;
 }
@@ -76,19 +76,19 @@ nav {
 }
 
 .navText > li:hover {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 	box-shadow: none !important;
 	text-decoration: none !important;
 }
 
 .navText > li > a:hover {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 	box-shadow: none !important;
 	text-decoration: none !important;
 }
 
 .openRequests:hover {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 	cursor: pointer;
 }
 
@@ -104,7 +104,7 @@ nav {
 }
 
 .submitbtn {
-	background-color: #3680A5 !important;
+	background-color: #3E85A5 !important;
 	margin-bottom: 25px;
 	color: white;
 }
@@ -121,11 +121,11 @@ nav {
 }
 
 .picker__nav--prev:hover {
-	background-color: #3680A5 !important;
+	background-color: #3E85A5 !important;
 }
 
 .picker__nav--next:hover {
-	background-color: #3680A5 !important;
+	background-color: #3E85A5 !important;
 }
 
 .additionalInfo {

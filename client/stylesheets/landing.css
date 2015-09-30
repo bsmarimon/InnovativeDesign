@@ -1,18 +1,18 @@
 .mobileBody {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
 
 .mobileCheckout {
-	font-family: Monteserrat;
+	font-family: Montserrat;
 	font-size: 15px !important;
 	color: white;
 } 	
 
 .videoProblems {
 	background-color: white !important;
-	color: #3680A5;
+	color: #3E85A5;
 	font-family: Montserrat;
 	font-size: 10px;
 }
@@ -31,7 +31,7 @@
 }
 
 .landingCard:hover h3 {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 }
 
 .landingLink {
@@ -52,7 +52,7 @@
 .footerIcons {
 	color: white !important;
 	font-size: 20px !important;
-	background-color: #3680A5;
+	background-color: #3E85A5;
 }
 
 .copyright {
@@ -62,5 +62,5 @@
 }
 
 .bottom {
-	background-color: #3680A5;
+	background-color: #3E85A5;
 }

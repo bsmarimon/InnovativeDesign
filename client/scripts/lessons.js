@@ -41,7 +41,7 @@ Template.lesson2.helpers({
   two: function() {
     var context = 
     {
-    lesson: '2', title: 'Colors & Blending', 
+    lesson: '2', title: 'Pen Tool', 
     description: "Get your pop art on by using pen tool to create a graphic in Roy Lichtenstein's comic-book style. You'll be honing your skills with anchors and handles, and even playing with stroke width to get a Lichtenstein-like effect.",
     homework: "Pick a favorite character from a cartoon or animation, lock it underneath, and start tracing away with pen tool! After you have a set of lines you're happy with, be sure to use Live Paint to color it in.",
     link: "https://www.dropbox.com/sh/70rw67m5eubihne/AAAMUBFxpUw2LMeYuAwWwvZ1a?dl=0"
@@ -54,9 +54,10 @@ Template.lesson3.helpers({
   three: function() {
     var context = 
     {
-    lesson: '3', title: 'Intro to Illustrator', 
+    lesson: '3', title: 'Color', 
     description: "Learn how to make blends and gradients in Illustrator and how to use these tools to create an original composition.",
-    homework: "Pen tool a scene of your choice, and then go to Edit -> Edit Colors -> Recolor Artwork to create a day and night scene. Make sure you incorporate both the gradient tool and the blend tool into the work you've created."
+    homework: "Pen tool a scene of your choice, and then go to Edit -> Edit Colors -> Recolor Artwork to create a day and night scene. Make sure you incorporate both the gradient tool and the blend tool into the work you've created.",
+    link: "https://www.dropbox.com/sh/0libo1c4ul1l5o3/AADaSFE5BMXFNPpz-dK10GyRa?dl=0"
     }
     return context
   },

@@ -33,7 +33,7 @@ Template.landing.onRendered(function () {
         }, 100);
       }, 1000);
 
-      var colorTable = ["#3680A5", "#EDB439", "#CB0F36"];
+      var colorTable = ["#3E85A5", "#E9B740", "#BC0037"];
       var c = document.getElementsByClassName('colorChange');
 
       var end1 = setInterval(function () {
