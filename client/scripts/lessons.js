@@ -69,7 +69,8 @@ Template.lesson4.helpers({
     {
     lesson: '4', title: "Brushes, Symbols, and Effects", 
     description: "Learn how to make all different types of brushes and apply them in a fun poster series about New York City.",
-    homework: "Create a poster of a landmark using the pen tool. Stylize your poster by applying brushes to your paths!"
+    homework: "Create a poster of a landmark using the pen tool. Stylize your poster by applying brushes to your paths!",
+    link: "https://www.dropbox.com/sh/dontw0n4r4np54e/AAApy9lC7d3ENM93CMk80QLYa?dl=0"
     }
     return context
   },
