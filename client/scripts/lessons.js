@@ -13,9 +13,7 @@ Template.lesson.onRendered(function () {
     number = parseInt(number);
     number = number - 1;
     Meteor.call('getDecal', function(err, permissionList) {
-      console.log(permissionList);
       var permission = permissionList[number]['shown'];
-      console.log(permission);
       if (permission == 'Y') {
         Session.set("allow", true);
       } else {
