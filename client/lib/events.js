@@ -35,7 +35,8 @@ Events.attachSchema(new SimpleSchema({
     type: String
   },
   facebook_url: {
-    type: String
+    type: String,
+    optional: true
   },
   image: orion.attribute('image', {
     label: 'Image',
