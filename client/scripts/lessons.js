@@ -80,7 +80,8 @@ Template.lesson5.helpers({
     { 
     lesson: '5', title: "Typography", 
     description: "For this week's lesson, we'll talk a little about typography and how you can manipulate type in your designs.",
-    homework: "No weekly homework this week! BUT you should start working on your Midterm Project. Create an infographic about anything you want. Incorporate 3 facts about your topic and make an illustration for each of them. You must use at least 3 tools that we've learned in class, so get creative and have fun!"
+    homework: "No weekly homework this week! BUT you should start working on your Midterm Project. Create an infographic about anything you want. Incorporate 3 facts about your topic and make an illustration for each of them. You must use at least 3 tools that we've learned in class, so get creative and have fun!",
+    link: "https://www.dropbox.com/sh/lgzhnu96x8uy47d/AACyXqxw_yaofP4VGs--tTpIa?dl=0"
     }
     return context
   },
