@@ -93,7 +93,8 @@ Template.lesson6.helpers({
     {
     lesson: '6', title: "Intro to Photoshop", 
     description: "Learn your way around the Photoshop interface while fixing up a portrait. We'll play with everything from saturation to lighting to spothealing. Remember, photo editing ideally should be minor retouches which can make a major difference.",
-    homework: "Find a photo of a celebrity with no makeup on and use at least two tools you learned to fix the photo up. Imagine you work for a fashion magazine and must make the photo cover-ready!"
+    homework: "Find a photo of a celebrity with no makeup on and use at least two tools you learned to fix the photo up. Imagine you work for a fashion magazine and must make the photo cover-ready!",
+    link: "https://www.dropbox.com/sh/utk4sc9xxg4rn37/AABZETq2__e0Z35uonQJ1SNia?dl=0"
     }
     return context
   },
