@@ -119,7 +119,8 @@ Template.lesson8.helpers({
     {
     lesson: '8', title: "Blending, Layer Styles, and Filter Effects", 
     description: "Learn how to apply special effects on text & images using blending modes, layer styles, and filter effects!",
-    homework: "Using your new knowledge of blending modes, clipping & layer masks, make a sci-fi movie poster! Put a subject or two onto a cool background, apply some textures, and give your movie a name."
+    homework: "Using your new knowledge of blending modes, clipping & layer masks, make a sci-fi movie poster! Put a subject or two onto a cool background, apply some textures, and give your movie a name.",
+    link: "https://www.dropbox.com/sh/493v32pmvh9utya/AACLT2vwOrWYffS9opdmtLE3a?dl=0"
     }
     return context
   },
