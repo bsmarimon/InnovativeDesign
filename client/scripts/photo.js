@@ -3,95 +3,69 @@ Meteor.subscribe("photo");
 Template.photo.helpers({
   photo: function() {
     return Session.get("photo");
-  },
-  two: function() {
-    return Session.get("two");
-  },
-  three: function() {
-    return Session.get("three");
-  },
+  }
 });
 
 Template.photo.events({
-  'mouseenter': function(event) {
-    var test = Session.get("mouse");
-    if (test) {
-      $('ul.tabs').tabs();
-      Session.set("mouse", false);
-    }
-  },
-  'mouseleave': function(event) {
-    var test = Session.get("mouse");
-    if (test) {
-      $('ul.tabs').tabs();
-      Session.set("mouse", false);
-    }
-  },
+
 });
 
 Template.photo.onRendered(function(){
-  $('ul.tabs').tabs();
+
 });
 
 Template.photo.onCreated(function() {
   Meteor.call('getPhotoTier', function(err, eventList) {
     if (eventList) {
-      var designs = eventList;
-      var numDesigns = designs.length;
+      console.log(eventList);
+      designs = eventList;
+      numDesigns = designs.length;
 
-      Session.set("mouse", true);
+      third = (numDesigns - numDesigns % 3)/3;
+      
+      layouts = {};
+      layouts["column1"] = [];
+      layouts["column2"] = [];
+      layouts["column3"] = [];
 
-      if (numDesigns < 24 && numDesigns > 12) {
-        Session.set("two", true);
-      } else {
-        Session.set("three", false);
-      }
-      if (numDesigns < 36 && numDesigns > 24) {
-        Session.set("bluethree", true);
-      } else {
-        Session.set("bluethree", false);
-      }
-      var layouts = {};
-      var temp = numDesigns;
-      var counter = 0;
-      var base = "page";     
-      while (temp > 0) {
-        var pageNum = String(counter + 1);
-        var page = base + pageNum;
-        layouts[page] = {};
-        temp = temp - 12;
-        counter = counter + 1;
-      }
-      var keys = Object.keys(layouts);
       counter = 0;
-      while (counter < keys.length) {
-        var key = keys[counter];
-        layouts[key]["column1"] = [];
-        layouts[key]["column2"] = [];
-        layouts[key]["column3"] = [];
+      position = 0;
+      limit = third
+   
+      while (counter < limit) {
+        layouts["column1"][position] = designs[counter];
+        position = position + 1;
         counter = counter + 1;
       }
-      counter = 0;
-      var layoutKeys = Object.keys(layouts);
-      var columnKeys = Object.keys(layouts["page1"]);
-      var pageNum = 0;
-      var columnNum = 0;
-      var columnIndex = 0;
-      while (counter < numDesigns) {
-        pageKey = layoutKeys[pageNum];
-        columnKey = columnKeys[columnNum];
-        layouts[pageKey][columnKey][columnIndex] = designs[counter];
+
+      limit = limit + third
+      position = 0;
+
+      while (counter < limit) {
+        layouts["column2"][position] = designs[counter];
+        position = position + 1;
         counter = counter + 1;
-        columnIndex = columnIndex + 1;
-        if (counter % 4 === 0) {
-          columnNum = columnNum + 1;
-          columnIndex = 0;
-        }
-        if (counter === 12) {
-          columnNum = 0;
-          pageNum = pageNum + 1;
-        }
       }
+
+      limit = limit + third
+      position = 0;
+
+      while (counter < limit) {
+        layouts["column3"][position] = designs[counter];
+        position = position + 1;
+        counter = counter + 1;
+      }
+
+      leftovers = numDesigns - limit;
+      
+      if (leftovers == 2) {
+        layouts["column1"][third] = designs[numDesigns - 1];
+        layouts["column2"][third] = designs[numDesigns - 2];
+      }
+      if (leftovers == 1) {
+        layouts["column1"][third] = designs[numDesigns - 1];
+      }
+      
       Session.set("photo", layouts);
     } else {
       alert("Failed to render page");

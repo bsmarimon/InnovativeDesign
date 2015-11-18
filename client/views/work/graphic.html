@@ -27,82 +27,23 @@
           <div class="row">
             <div class="col l12 removeRightPadding"> 
               <div class="row">
-                <div id="test1" class="col l12 removeLeftPadding">
+                <div class="col l12 removeLeftPadding">
                   <div class="col l4 removeLeftPadding">
-                    {{#each blue.page1.column1}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
+                    {{#each blue.column1}}
+                      <img class="work materialboxed responsive-img" src="{{this.image.url}}">
                     {{/each}}
                   </div>
                   <div class="col l4">
-                    {{#each blue.page1.column2}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
+                    {{#each blue.column2}}
+                      <img class="work materialboxed responsive-img" src="{{this.image.url}}">
                     {{/each}}
                   </div>
                   <div class="col l4 removeRightPadding">
-                    {{#each blue.page1.column3}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
+                    {{#each blue.column3}}
+                      <img class="work materialboxed responsive-img" src="{{this.image.url}}">
                     {{/each}}
                   </div>
                 </div>
-       
-                <div id="test2" class="col l12 removeLeftPadding">
-                  <div class="col l4 removeLeftPadding">
-                    {{#each blue.page2.column1}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                  <div class="col l4">
-                    {{#each blue.page2.column2}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                  <div class="col l4 removeRightPadding">
-                    {{#each blue.page2.column3}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                </div>
-            
-                <div id="test3" class="col l12 removeLeftPadding">
-                  <div class="col l4 removeLeftPadding">
-                    {{#each blue.page3.column1}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                  <div class="col l4">
-                    {{#each blue.page3.column2}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                  <div class="col l4 removeRightPadding">
-                    {{#each blue.page3.column3}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <ul class="tabs tabs100">
-                  <li class="tab col l1">
-                    <a class="active" href="#test1">
-                      <p>1</p>
-                    </a>
-                  </li>
-                  {{#if bluetwo}}
-                  <li class="tab col l1"> 
-                    <a href="#test2">
-                      <p>2</p>
-                    </a>
-                  </li>
-                  {{/if}}
-                  {{#if bluetwo}}
-                  <li class="tab col l1">
-                    <a href="#test3">
-                      <p>3</p>
-                    </a>
-                  </li>
-                  {{/if}}
-                </ul>
               </div>
             </div>
           </div>
@@ -113,82 +54,26 @@
           <div class="row">
             <div class="col l12 removeRightPadding"> 
               <div class="row">
-                <div id="gold1" class="col l12 removeLeftPadding">
+                <div class="col l12 removeLeftPadding">
                   <div class="col l4 removeLeftPadding">
-                    {{#each gold.page1.column1}}
+                    {{#each gold.column1}}
                       <img class="work responsive-img" src="{{this.image.url}}">
                     {{/each}}
                   </div>
                   <div class="col l4">
-                    {{#each gold.page1.column2}}
+                    {{#each gold.column2}}
                       <img class="work responsive-img" src="{{this.image.url}}">
                     {{/each}}
                   </div>
                   <div class="col l4 removeRightPadding">
-                    {{#each gold.page1.column3}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                </div>
-                <div id="gold2" class="col l12 removeLeftPadding">
-                  <div class="col l4 removeLeftPadding">
-                    {{#each gold.page2.column1}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                  <div class="col l4">
-                    {{#each gold.page2.column2}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                  <div class="col l4 removeRightPadding">
-                    {{#each gold.page2.column3}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                </div>
-                <div id="gold3" class="col l12 removeLeftPadding">
-                  <div class="col l4 removeLeftPadding">
-                    {{#each gold.page3.column1}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                  <div class="col l4">
-                    {{#each gold.page3.column2}}
-                      <img class="work responsive-img" src="{{this.image.url}}">
-                    {{/each}}
-                  </div>
-                  <div class="col l4 removeRightPadding">
-                    {{#each gold.page3.column3}}
+                    {{#each gold.column3}}
                       <img class="work responsive-img" src="{{this.image.url}}">
                     {{/each}}
                   </div>
                 </div>
               </div>
              
-              <div class="row">
-                <ul class="tabs tabs100">
-                  <li class="tab col l1">
-                    <a class="active" href="#gold1">
-                      <p>1</p>
-                    </a>
-                  </li>
-                  {{#if goldtwo}}
-                  <li class="tab col l1">
-                    <a href="#gold2">
-                      <p>2</p>
-                    </a>
-                  </li>
-                  {{/if}}
-                  {{#if goldthree}}
-                  <li class="tab col l1">
-                    <a href="#gold3">
-                      <p>3</p>
-                    </a>
-                  </li>
-                  {{/if}}
-                </ul>
-              </div>
+              
             </div>
           </div>
         </div>

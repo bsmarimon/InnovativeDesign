@@ -63,7 +63,7 @@ Template.navbar.onRendered(function () {
   $('input#input_text, textarea#textarea2').characterCounter();
   $('input#input_text, textarea#textarea3').characterCounter();
   $(".button-collapse").sideNav();  
-
+  $('.materialboxed').materialbox();
 });
 
 Template.navbar.events({
@@ -74,6 +74,7 @@ Template.navbar.events({
 
 
   "submit form": function(event) {
+    
     event.preventDefault();
     var contactName1 = $('#first_name').val();
     var contactEmail1 = $('#email').val();
