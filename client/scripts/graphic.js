@@ -18,7 +18,9 @@ Template.graphic.events({
 
 Template.graphic.onRendered(function () {
   $('ul.tabs').tabs();
-  $('.materialboxed').materialbox();
+  setTimeout(function () {
+    $('.materialboxed').materialbox();
+  }, 1000);
 });
 
 Template.graphic.onCreated(function() {
