@@ -145,6 +145,7 @@ Template.lesson10.helpers({
     lesson: '10', title: 'Identity & Ad Design', 
     description: "Apply everything you've learned this semester by rebranding and creating an advertisement design for a company!",
     homework: "None!",
+    link: "https://www.dropbox.com/sh/m173b2bqyuaenr9/AACHQCTiBrF32iOY5vP3mcFKa?dl=0"
     }
     return context
   },
