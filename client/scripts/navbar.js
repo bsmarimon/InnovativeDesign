@@ -64,6 +64,7 @@ Template.navbar.onRendered(function () {
   $('input#input_text, textarea#textarea3').characterCounter();
   $(".button-collapse").sideNav();  
   $('.materialboxed').materialbox();
+  $('ul.tabs').tabs();
 });
 
 Template.navbar.events({

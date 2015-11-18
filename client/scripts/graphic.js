@@ -18,6 +18,7 @@ Template.graphic.events({
 
 Template.graphic.onRendered(function () {
   $('ul.tabs').tabs();
+  $('.materialboxed').materialbox();
 });
 
 Template.graphic.onCreated(function() {
@@ -77,7 +78,7 @@ Template.graphic.onCreated(function() {
     }
   });
 
-  Meteor.call('getPhotoTier', function(err, eventList) {
+  Meteor.call('getGoldTier', function(err, eventList) {
     if (eventList) {
       designs = eventList;
       numDesigns = designs.length;
