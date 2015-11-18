@@ -9,6 +9,11 @@ Template.lesson.helpers({
 
 Template.lesson.onRendered(function () {
     var name = window.location.href;
+    var doubleDigitCheck = name.slice(-2);
+    var geqTen = false;
+    if (doubleDigitCheck === 10 || doubleDigitCheck == 11) {
+      geq = true;
+    }
     var number = name.slice(-1);
     number = parseInt(number);
     number = number - 1;
@@ -20,6 +25,9 @@ Template.lesson.onRendered(function () {
         Session.set("allow", false);
       }
     });
+    if (geq) {
+      Session.set("allow", true);
+    }
 });
 
 Template.lesson1.helpers({
