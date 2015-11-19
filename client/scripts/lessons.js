@@ -3,7 +3,7 @@ Meteor.subscribe("decal");
 Template.lesson.helpers({
   show: function() {
     var show = Session.get("allow");
-    return show;
+    return true;
   },
 });
 

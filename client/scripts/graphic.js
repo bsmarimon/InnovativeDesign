@@ -5,7 +5,6 @@ Template.graphic.helpers({
   blue: function() {
     return Session.get("blue");
   },
-
   gold: function() {
     return Session.get("gold");
   },
