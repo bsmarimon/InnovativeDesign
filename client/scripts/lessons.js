@@ -8,15 +8,20 @@ Template.lesson.helpers({
 });
 
 Template.lesson.onRendered(function () {
-    var name = window.location.href;
-    var doubleDigitCheck = name.slice(-2);
-    var geqTen = false;
-    if (doubleDigitCheck === 10 || doubleDigitCheck == 11) {
-      geq = true;
-    }
-    var number = name.slice(-1);
-    number = parseInt(number);
-    number = number - 1;
+  // really janky code that checks if you can show the current lesson by parsing the end of the route
+  // e.g. /lesson/10 -> grabs the 10, checks to see if it can show lesson 10
+  var name = window.location.href;
+  var doubleDigitCheck = name.slice(-2);
+  var geqTen = false;
+  if (doubleDigitCheck === 10 || doubleDigitCheck == 11) {
+    geq = true;
+  }
+  var number = name.slice(-1);
+  number = parseInt(number);
+  number = number - 1;
+  if (geq) {
+    Session.set("allow", true);
+  } else {
     Meteor.call('getDecal', function(err, permissionList) {
       var permission = permissionList[number]['shown'];
       if (permission == 'Y') {
@@ -25,11 +30,10 @@ Template.lesson.onRendered(function () {
         Session.set("allow", false);
       }
     });
-    if (geq) {
-      Session.set("allow", true);
-    }
+  }
 });
 
+// helper code to render homework and descriptions
 Template.lesson1.helpers({
   one: function() {
     var context = 

@@ -2,10 +2,6 @@
     max-width: 100%;
 }
 
-.fa-arrow-down {
-  font-size: 40px !important;
-}
-
 .collapsible {
     box-shadow: none;
     margin-top: 0px !important;
@@ -19,26 +15,3 @@
   color: #3E85A5 !important;
 }
 
-.gold {
-  background-color: #E7B03A !important;
-}
-
-.web {
-  background-color: #468966 !important;
-}
-
-.photo {
-  background-color: #C83353 !important;
-}
-
-.blue {
-  background-color: #3E85A5 !important;
-}
-
-.video {
-  background-color: black !important;
-}
-
-.product {
-  background-color: #FF0894 !important;
-}

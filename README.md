@@ -18,5 +18,10 @@ Package List:
 
 Uploading relative larger file sizes (>5 MB) causes Chromium/Chrome to crash.
 
+Popular class declarations:
+* rowFix - sets margin-bottom for row to 0px
+* removeLeftPadding, removeRightPadding - removes padding for columns
+* img-responsive - sets max-width to 100%
+
 
 

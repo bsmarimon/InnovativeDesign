@@ -1,3 +1,5 @@
+// should replace Meteor.call, otherwise onCreated does pre-processing to the data so it can render as three columns
+
 Meteor.subscribe("blue");
 Meteor.subscribe("gold");
 
@@ -8,10 +10,6 @@ Template.graphic.helpers({
   gold: function() {
     return Session.get("gold");
   },
-
-});
-
-Template.graphic.events({
 
 });
 

@@ -22,6 +22,8 @@ Template.thankyou.events({
   },
 });
 
+// Phrases that are injected into the thank you for submitting a request template
+
 Template.thankyou.helpers({
   phrase: function() {
     phrases = [
@@ -35,8 +37,9 @@ Template.thankyou.helpers({
   }
 });
 
+// Initialize almost every plug-in the site uses.
+
 Template.navbar.onRendered(function () {
-  Session.set("open", true);
   Session.set("submitted", false);
   $('.datepicker').pickadate({
     selectMonths: true,
@@ -73,9 +76,7 @@ Template.navbar.events({
     Session.set("type", newValue);
   },
 
-
   "submit form": function(event) {
-    
     event.preventDefault();
     var contactName1 = $('#first_name').val();
     var contactEmail1 = $('#email').val();
@@ -162,10 +163,8 @@ Template.navbar.helpers({
     return test;
   },
 
-  "open": function() {
-    var formStatus = Session.get("open");
-    formStatus = !formStatus;
-    return formStatus;
+  open: function() {
+    return false;
   },
 
   photo: function() {

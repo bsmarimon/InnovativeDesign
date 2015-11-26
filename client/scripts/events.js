@@ -1,3 +1,5 @@
+// Simple code to fetch the events, should remove Meteor.call and get data directly from collection
+
 Meteor.subscribe("events");
 
 Template.events.helpers({

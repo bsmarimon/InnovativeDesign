@@ -6,13 +6,7 @@ Template.photo.helpers({
   }
 });
 
-Template.photo.events({
-
-});
-
-Template.photo.onRendered(function(){
-
-});
+// just pre-processing to render as three columns
 
 Template.photo.onCreated(function() {
   Meteor.call('getPhotoTier', function(err, eventList) {
