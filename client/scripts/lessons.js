@@ -140,7 +140,8 @@ Template.lesson9.helpers({
     {
     lesson: '9', title: "Combining Programs", 
     description: "Learn how to combine Illustrator & Photoshop to create cool composite images and designs.",
-    homework: "No homework this week--just start working on your final project, which is to redo the album cover of your favorite album and make a matching lyric poster!"
+    homework: "No homework this week--just start working on your final project, which is to redo the album cover of your favorite album and make a matching lyric poster!",
+    link: "https://www.dropbox.com/sh/vmsxaozl2urq2ze/AAD15ab8Kl2d3EtNHfXaxOS6a?dl=0"
     }
     return context
   },
