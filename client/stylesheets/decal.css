@@ -1,7 +1,3 @@
-.decalTest {
-  font-size: 15px;
-}
-
 /*
 All CSS done by shanawho
 https://github.com/shanawho/decal
@@ -198,7 +194,7 @@ https://github.com/shanawho/decal
     .title {
       padding: 15px 15%; } }
   .title p {
-    font-size: 1.3em; }
+    font-size: 1em; }
 
 .home-link {
   position: absolute;

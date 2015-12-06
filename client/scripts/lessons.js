@@ -3,6 +3,7 @@ Meteor.subscribe("decal");
 Template.lesson.helpers({
   show: function() {
     var show = Session.get("allow");
+    // showing all lessons for right now
     return true;
   },
 });
@@ -14,12 +15,12 @@ Template.lesson.onRendered(function () {
   var doubleDigitCheck = name.slice(-2);
   var geqTen = false;
   if (doubleDigitCheck === 10 || doubleDigitCheck == 11) {
-    geq = true;
+    geqTen = true;
   }
   var number = name.slice(-1);
   number = parseInt(number);
   number = number - 1;
-  if (geq) {
+  if (geqTen) {
     Session.set("allow", true);
   } else {
     Meteor.call('getDecal', function(err, permissionList) {

@@ -1,5 +1,11 @@
 Website for Innovative Design, built using Meteor. 
 
+TO-DOs
+* fix footer positioning (also on mobile)
+* image compression
+* less janky way to render decal pages
+* break up templates into smaller templates
+
 Download meteor https://www.meteor.com/install, clone the repository, cd to root directory and run "meteor". 
 
 Package List:
