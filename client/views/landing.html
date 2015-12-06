@@ -1,25 +1,31 @@
-<head>
-  <title>Innovative Design</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="As Cal's student run creative agency, we're a family of creatives providing design, photo, and other services, and we run several events such as the CMYK designathon and DeCals for learning more about design.">
-  <!-- Facebook Open Graph -->
-  <meta property="og:title" content="Hello! | Innovative Design"/>
-  <meta property="og:url" content="http://innovativedesign.club" />
-  <meta property="og:image" content="http://innovativedesign.club/img/logo-blue.png"/>
-  <meta property="og:site_name" content="Innovative Design"/>
-  <meta property="og:description" content="As Cal's student run creative agency, we're a family of creatives providing design, photo, and other services, and we run several events such as the CMYK designathon and DeCals for learning more about design."/>
-  <meta property="og:locale" content="en_US" />
-</head>
-
 <template name="landing">
-  <div class="row rowFix hide-on-med-and-down">
+
+  <head>
+    <script src="/scripts/snowfall.js"></script>
+    <script src="/scripts/snowfall.jquery.js"></script>
+  </head>
+
+  <!--   Uncomment for recruiting -->
+
+<!--   <div class="row rowFix hide-on-med-and-down">
     <video muted loop class="responsive-video">
       <source src="img/innod2.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+  </div> -->
+  <div class="row hide-on-med-and-down">
+    <div class="winterBack center col l12 m8 offset-m2">
+      <p class="helloWinter">Happy holidays from Innovative Design</p>
+    </div>
   </div>
-  <div class="row rowFix hide-on-large-only mobileBody">
+  <div class="row hide-on-large-only">
+    <div class="winterBackMobile center">
+      <p class="helloWinter">Happy holidays!</p>
+    </div>
+  </div>
+
+
+<!--   <div class="row rowFix hide-on-large-only mobileBody">
     <div class="center col m6 offset-m3 s6 offset-s3">
       <img class="mobileVideo" src="/img/logo-white.png">
     </div>
@@ -27,17 +33,20 @@
       <br>
       <p class="mobileCheckout">Check out our website on a larger device window to see our Fall 2015 recruitment video!</p>
     </div>
-  </div>
+  </div> -->
   <div class="row rowFix bottom colorChange" id="bottom">
     <br>
-    <div class="col l4 offset-l4 m4 offset-m4 center">
+    <div class="col l4 offset-l4 m12 center">
       <a target="_blank" href="https://www.facebook.com/InnovativeDesignUCB" class="iconLink"><i class="fa footerIcons colorChange fa-facebook-square"></i></a> &nbsp;
       <a target="_blank" href="https://instagram.com/innodatcal/" class="iconLink"><i class="fa footerIcons colorChange fa-instagram"></i></a> &nbsp;
       <a target="_blank" href="https://twitter.com/innodatcal" class="iconLink"><i class="fa footerIcons colorChange fa-twitter-square"></i></a>
-    </div>
-    <div class="col l4">
+      <br>
+      <br>
       <h3 class="copyright">&copy; Innovative Design 2015</h3>
+      <br>
+      <br>
     </div>
+    <br>
     <br>
   </div>
   <script>

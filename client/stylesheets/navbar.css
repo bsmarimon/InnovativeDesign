@@ -1,6 +1,11 @@
 nav {
 	box-shadow: none !important;
-	background-color: #3E85A5;
+/*	recruitment  */
+/*	background-color: #1B93C0;  */
+
+/*	holidays */
+	background-color: white;
+
 	font-family: Montserrat;
 	padding-top: 20px;
 	padding-bottom: 70px !important;
@@ -19,29 +24,54 @@ nav {
 }
 
 .mdi-navigation-menu {
-  color: white;
+	color: #1B93C0;
+	/*	recruitment  */
+	/*	color: white;*/
+
 }
 
 #dropdown2 > li > a {
-	color: white;
+
 	font-size: 15px !important;
-	background-color: #3E85A5;
+	/*	recruitment  */
+
+	/*	background-color: #1B93C0;  */
+	/*	color: white;*/
+
+	/*	holidays */
+	
+	background-color: white;
+	color: #1B93C0;
 }
 
 #dropdown2 > li {
-	background-color: #3E85A5;
+/*	recruitment  */
+/*	background-color: #1B93C0;  */
+
+/*	holidays */
+	background-color: white;
 }
 
 
 #dropdown1 > li > a {
-	color: white;
 	font-size: 15px !important;
-	background-color: #3E85A5;
-	/*text-align: center;*/
+	/*	recruitment  */
+
+	/*	background-color: #1B93C0;  */
+	/*	color: white;*/
+
+	/*	holidays */
+	
+	background-color: white;
+	color: #1B93C0;
 }
 
 #dropdown1 > li {
-	background-color: #3E85A5;
+/*	recruitment  */
+/*	background-color: #1B93C0;  */
+
+/*	holidays */
+	background-color: white;
 }
 
 .requestThanks {
@@ -50,21 +80,32 @@ nav {
 }
 
 .navText > li {
-	background-color: #3E85A5;
+	/*	recruitment  */
+	/*	background-color: #1B93C0;  */
+
+	/*	holidays */
+	background-color: white;
 }
 
 .nav-wrapper {
 	padding-bottom: 10px;
 }
 
-.blue {
-	background-color: #3E85A5;
-}
 
 .navText > li > a {
-	color: white;
+	
 	font-size: 15px !important;
-	background-color: #3E85A5;
+
+	/*	recruitment  */
+
+	/*	background-color: #1B93C0;  */
+	/*	color: white;*/
+
+	/*	holidays */
+
+	background-color: white;
+	color: #1B93C0;
+
 	margin-left: 20px;
 	margin-right: 20px;
 }
@@ -75,19 +116,30 @@ nav {
 }
 
 .navText > li:hover {
-	background-color: #3E85A5;
+	/*	recruitment  */
+	/*	background-color: #1B93C0;  */
+
+	/*	holidays */
+	background-color: white;
+
 	box-shadow: none !important;
 	text-decoration: none !important;
 }
 
 .navText > li > a:hover {
-	background-color: #3E85A5;
+
+	/*	recruitment  */
+	/*	background-color: #1B93C0;  */
+
+	/*	holidays */
+	background-color: white;
+
 	box-shadow: none !important;
 	text-decoration: none !important;
 }
 
 .openRequests:hover {
-	background-color: #3E85A5;
+	background-color: #1B93C0;
 	cursor: pointer;
 }
 
@@ -103,7 +155,7 @@ nav {
 }
 
 .submitbtn {
-	background-color: #3E85A5 !important;
+	background-color: #1B93C0 !important;
 	margin-bottom: 25px;
 	color: white;
 }
@@ -120,11 +172,11 @@ nav {
 }
 
 .picker__nav--prev:hover {
-	background-color: #3E85A5 !important;
+	background-color: #1B93C0 !important;
 }
 
 .picker__nav--next:hover {
-	background-color: #3E85A5 !important;
+	background-color: #1B93C0 !important;
 }
 
 .additionalInfo {

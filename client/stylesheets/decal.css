@@ -1,3 +1,7 @@
+.decalTest {
+  font-size: 15px;
+}
+
 /*
 All CSS done by shanawho
 https://github.com/shanawho/decal
@@ -140,19 +144,24 @@ https://github.com/shanawho/decal
 .download {
   position: relative;
   display: block;
-  color: white;
+  color: #1B93C0;
   text-align: center;
-  border: 1px white solid;
+  border: 1px #1B93C0 solid;
   margin: auto;
   padding: 15px;
   width: 190px;
   margin-top: -25px;
-  background: #3E85A5;
+  background: white;
   font-family: "Source Sans Pro", sans-serif; }
   @media (max-width: 450px) {
     .download {
       width: 150px;
       font-size: 0.6em; } }
+
+.download:hover {
+  color: white;
+  background-color: #1B93C0; 
+}
 
 .rest {
   width: 70%;
@@ -174,9 +183,9 @@ https://github.com/shanawho/decal
   margin-left: 30px; }
 
 .title {
-  background-color: #3E85A5;
+  background-color: white;
   padding: 60px 15%;
-  color: white;
+  color: #1B93C0;
   margin: 0 auto;
   text-align: center; }
   @media (max-width: 1000px) {
@@ -246,7 +255,7 @@ https://github.com/shanawho/decal
   padding: 0;
   margin: 0 auto;
   width: 100%;
-  background: #3E85A5; }
+  background: #1B93C0; }
 
 .team-pic-crop {
   position: relative;
@@ -280,7 +289,7 @@ https://github.com/shanawho/decal
   padding-top: 30px;
   width: 100%;
   height: 100%;
-  background-color: #3E85A5;
+  background-color: #1B93C0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -333,11 +342,11 @@ https://github.com/shanawho/decal
   float: right; }
 .highlight {
   font-weight: bold;
-  color: #3E85A5; }
+  color: #1B93C0; }
 
 .apply-section {
   margin-top: 60px; }
   .apply-section ul li {
     font-size: 1.3em; }
   .apply-section a {
-    color: #3E85A5; }
+    color: #1B93C0; }

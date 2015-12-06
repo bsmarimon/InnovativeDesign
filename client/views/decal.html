@@ -2,7 +2,7 @@
   <div class="main">
     <section class="title">
       <div class="col l4 offset-l4">
-        <p>A 2-unit DeCal lessons for beginner to intermediate level designers, open to all interested Berkeley students.</p>
+        <p class="decalText">A 2-unit DeCal lessons for beginner to intermediate level designers, open to all interested Berkeley students.</p>
       </div>
     </section>
   </div>
@@ -13,20 +13,20 @@
   https://github.com/shanawho/decal
   -->
 
-  <ul class="squares">
-      {{#each lessons}}
-      <a href="/decal/lesson/{{this.lesson}}" class="lesson-link">
-        <li class="square square-{{this.lesson}}">
-          <div class="square-blurb">
-            <div class="square-text">
-              <span class="week">Lesson {{this.lesson}}</span>
-              <span class="lesson-title">{{this.title}}</span>
+    <ul class="squares">
+        {{#each lessons}}
+        <a href="/decal/lesson/{{this.lesson}}" class="lesson-link">
+          <li class="square square-{{this.lesson}}">
+            <div class="square-blurb">
+              <div class="square-text">
+                <span class="week">Lesson {{this.lesson}}</span>
+                <span class="lesson-title">{{this.title}}</span>
+              </div>
+              <div class="overlay"></div>
             </div>
-            <div class="overlay"></div>
-          </div>
-        </li>
-      </a>
-      {{/each}}
-  </ul>
+          </li>
+        </a>
+        {{/each}}
+    </ul>
   </div>
 </template>

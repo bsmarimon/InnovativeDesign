@@ -1,0 +1,15 @@
+.winterBack {
+	height: 600px;
+	line-height: 500px;
+}
+
+.winterBackMobile {
+	height: 435px;
+	line-height: 380px;
+}
+
+.helloWinter {
+	font-family: Montserrat;
+	font-size: 35px;
+	color: #1B93C0;
+}

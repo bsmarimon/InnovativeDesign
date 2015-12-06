@@ -1,18 +1,14 @@
 <template name="navbar">
 
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <meta name="viewport" content='width=device-width, initial-scale=1.0'>
-    <title>Innovative Design</title>
-  </head>
+  {{> header}}
+
+<!--   This is a janky fix for the color animations on the site, when you go to the mobile version you basically "hide"
+  the part of the site that is animating, and you get this site nav is just blue. -->
 
   <div class="row rowFix hide-on-large-only">
     <nav>
       <div class="nav-wrapper ">
-        <a href="/" class="brand-logo"><img class="logo hide-on-med-and-down" src="/img/logo-white.png"></a>
+        <a href="/" class="brand-logo"><img class="logo hide-on-med-and-down" src="/img/innovative.png"></a>
         <ul class="right hide-on-med-and-down navText ">
         </ul>
         <ul id="slide-out" class="side-nav">
@@ -32,6 +28,9 @@
     </nav>
   </div>
 
+  <!-- I couldn't figure out which element was causing a problem in the color change, so I just added the damn class to everything
+  this can probably be cleaned up a little bit -->
+
   <div class="row colorChange rowFix hide-on-med-and-down">
     <ul id="dropdown1" class="colorChange dropdown-content">
       <li class="colorChange"><a class="colorChange" href="/photo">Photo</a></li>
@@ -46,7 +45,7 @@
     </ul>
     <nav class="colorChange centerThings">
       <div class="nav-wrapper colorChange">
-        <a href="/" class="brand-logo hide-on-med-and-down"><img class="logo hide-on-med-and-down" src="/img/logo-white.png"></a>
+        <a href="/" class="brand-logo hide-on-med-and-down"><img class="logo hide-on-med-and-down" src="/img/innovative.png"></a>
         <ul class="right hide-on-med-and-down navText colorChange">
           <li class="colorChange"><a class="dropdown-button colorChange" href="#!" data-activates="dropdown1">Work</a></li>
           <li class="colorChange"><a class="colorChange" href="/club">Club</a></li>
@@ -73,6 +72,8 @@
       </div>
     </nav>
   </div>
+
+<!--   TODO: move the request form to it's own template. -->
 
   <div id="modal1" class="modal bottom-sheet">
     <div class="modal-footer">

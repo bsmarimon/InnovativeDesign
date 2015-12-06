@@ -5,7 +5,7 @@ video {
 }
 
 html {
-	background-color: white;
+	background-color: white !important;
 }
 
 button {
@@ -26,7 +26,7 @@ h4 {
 
 p {
 	font-family: 'Open Sans', Sans-Serif;
-	font-size: 15px !important;
+	font-size: 15px;
 }
 
 h2 {
@@ -70,7 +70,7 @@ label {
 }
 
 .btn {
-	background-color: #3E85A5 !important;
+	background-color: #1B93C0 !important;
 	margin-bottom: 25px;
 }
 
@@ -83,7 +83,7 @@ label {
 }
 
 .fa {
-	color: #3E85A5;
+	color: #1B93C0;
 	font-size: 15px;
 }
 

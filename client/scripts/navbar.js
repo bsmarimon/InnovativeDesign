@@ -7,7 +7,7 @@ Template.request.onRendered(function () {
     selectMonths: true,
     selectYears: 15 
   });
-  $('#modal1').openModal(); 
+  $('#modal1').openModal();
 });
 
 Template.club.onRendered(function () {
@@ -109,6 +109,7 @@ Template.navbar.events({
     addInfo: addInfo1,
     questions: questions1,
     };
+
     var canSend = true;
     if (canSend) { 
       Session.set("submitted", true);
@@ -122,10 +123,13 @@ Template.navbar.events({
   },
 
   "click a": function(event) {
+    // janky fix to make sure the datepicker code runs
     $('.datepicker').pickadate({
       selectMonths: true,
       selectYears: 15 
     });
+    $(document).snowfall('clear');
+    $('html').snowfall('clear');
     var name = event.target.id;
     if (name === "requestclick") {
       Session.set("pagechange", false);
