@@ -128,8 +128,7 @@ Template.navbar.events({
       selectMonths: true,
       selectYears: 15 
     });
-    $(document).snowfall('clear');
-    $('html').snowfall('clear');
+
     var name = event.target.id;
     if (name === "requestclick") {
       Session.set("pagechange", false);
@@ -137,6 +136,8 @@ Template.navbar.events({
     } else {
       Session.set("pagechange", true);
       Session.set("alreadyRan", true);
+      $(document).snowfall('clear');
+      $('html').snowfall('clear');
     }
   },
 });

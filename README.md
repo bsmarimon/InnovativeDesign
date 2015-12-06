@@ -29,5 +29,7 @@ Popular class declarations:
 * removeLeftPadding, removeRightPadding - removes padding for columns
 * img-responsive - sets max-width to 100%
 
+Package for deploying to Heroku:
+https://github.com/jordansissel/heroku-buildpack-meteor.git
 
 
