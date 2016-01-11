@@ -129,5 +129,5 @@ Template.landing.onRendered(function () {
   //   };
   // }
 
-  console.log("#InnodPoetryTier");
+  console.log("Comments? Questions? Concerns? Send us an email!");
 });

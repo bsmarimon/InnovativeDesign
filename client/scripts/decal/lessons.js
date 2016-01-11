@@ -23,14 +23,13 @@ Template.lesson.onRendered(function () {
   if (geqTen) {
     Session.set("allow", true);
   } else {
-    Meteor.call('getDecal', function(err, permissionList) {
-      var permission = permissionList[number]['shown'];
-      if (permission == 'Y') {
-        Session.set("allow", true);
-      } else {
-        Session.set("allow", false);
-      }
-    });
+    permissionList = Decal.find({}).fetch();
+    var permission = permissionList[number]['shown'];
+    if (permission == 'Y') {
+      Session.set("allow", true);
+    } else {
+      Session.set("allow", false);
+    }
   }
 });
 

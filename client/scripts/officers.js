@@ -9,7 +9,6 @@ Template.officers.helpers({
 });
 
 Template.officers.onCreated(function() {
-  Meteor.call('getOfficers', function(err, eventList) {
-    Session.set("officers", eventList);
-  });
+  list = Officers.find({}).fetch();
+   Session.set("officers", list);
 });

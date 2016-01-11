@@ -1,6 +1,9 @@
 Website for Innovative Design, built using Meteor. 
 
+I wasn't thinking for some reason, and all <h3> tages should be <h2> tags, and vice versa, oops. Need to fix.
+
 TO-DOs
+* get the favicon to work :\ 
 * add marketing tab
 * club page redesign
 * member page redesign

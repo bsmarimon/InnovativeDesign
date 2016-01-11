@@ -1,3 +1,5 @@
+/*  needed to override some of the colors in materialize, this is how I did it, don't really know what parts of this are necessary anymore lol */
+
 .picker__date-display {
   text-align: center;
   background-color: #1B93C0;

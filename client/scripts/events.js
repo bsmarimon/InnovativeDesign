@@ -1,5 +1,3 @@
-// Simple code to fetch the events, should remove Meteor.call and get data directly from collection
-
 Meteor.subscribe("events");
 
 Template.events.helpers({
@@ -9,8 +7,6 @@ Template.events.helpers({
 });
 
 Template.events.onCreated(function() {
-  Meteor.call('getEvents', function(err, eventList) {
-  	console.log(eventList);
-    Session.set("events", eventList);
-  });
+  eventList = Events.find({}).fetch();
+  Session.set("events", eventList);
 });

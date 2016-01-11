@@ -36,7 +36,7 @@ Template.decal.helpers({
       {
       lesson: '11', title: 'Final Showcase', 
       }
-		];
-		return lessons;
+	];
+	return lessons;
 	},
 });
