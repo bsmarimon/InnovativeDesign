@@ -1,6 +1,11 @@
 Website for Innovative Design, built using Meteor. 
 
 TO-DOs
+* add marketing tab
+* club page redesign
+* member page redesign
+* tweak to decal page squares, add description as it's own square
+* fix requests redirect to homepage
 * fix footer positioning (also on mobile)
 * image compression
 * less janky way to render decal pages
@@ -24,7 +29,7 @@ Package List:
 
 Uploading relative larger file sizes (>5 MB) causes Chromium/Chrome to crash.
 
-Popular class declarations:
+Common classes:
 * rowFix - sets margin-bottom for row to 0px
 * removeLeftPadding, removeRightPadding - removes padding for columns
 * img-responsive - sets max-width to 100%
