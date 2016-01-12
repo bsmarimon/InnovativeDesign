@@ -15,9 +15,15 @@ Meteor.startup(function () {
   Meteor.publish("decal", function() {
     return Decal.find();
   });
+  Meteor.publish("gold", function () {
+    return Gold.find();
+  });
 });
 
 Meteor.methods({
+
+  // old, do not use
+
   getEvents: function() {
     var eventList = Events.find({}).fetch();
     return eventList;
