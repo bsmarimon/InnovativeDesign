@@ -43,7 +43,7 @@ Template.request.onRendered(function () {
   Session.set("pageName", pageName);
 });
 
-Template.navbar.events({
+Template.requests.events({
   "change #dropdown2": function(event) {
     var newValue = $(event.target).val();
     Session.set("type", newValue);
@@ -93,26 +93,6 @@ Template.navbar.events({
         dataType: "xml",
       });
     }   
-  },
-
-  "click a": function(event) {
-    // janky fix to make sure the datepicker code runs
-    $('.datepicker').pickadate({
-      selectMonths: true,
-      selectYears: 15 
-    });
-
-    // janky fix to stop animations when you change to another page, that is not the request form 
-    var name = event.target.id;
-    if (name === "requestclick") {
-      Session.set("pagechange", false);
-      Session.set("alreadyRan", true);
-    } else {
-      Session.set("pagechange", true);
-      Session.set("alreadyRan", true);
-      // $(document).snowfall('clear');
-      // $('html').snowfall('clear');
-    }
   },
 });
 

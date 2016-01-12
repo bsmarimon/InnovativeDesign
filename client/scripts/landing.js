@@ -8,9 +8,6 @@ Template.landing.onRendered(function () {
   if ($(window).width() >= 992) {
     $(document).snowfall();
     $('html').snowfall({flakeCount: 500, maxSpeed: 3, round: true, minSize: 4, flakeColor: '#1B93C0'});
-  } else {
-     $(document).snowfall();
-    $('html').snowfall({flakeCount: 250, maxSpeed: 3, round: true, flakeColor: '#1B93C0'});
   }
   // if the window is large enough, play the video, check to see if there's buffering
   // if ($(window).width() >= 992) {

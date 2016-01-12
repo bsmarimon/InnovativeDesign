@@ -32,3 +32,24 @@ Template.navbar.onRendered(function () {
   $('ul.tabs').tabs();
 });
 
+Template.navbar.events({
+  "click a": function(event) {
+    // janky fix to make sure the datepicker code runs
+    $('.datepicker').pickadate({
+      selectMonths: true,
+      selectYears: 15 
+    });
+
+    // janky fix to stop animations when you change to another page, that is not the request form 
+    var name = event.target.id;
+    if (name === "requestclick") {
+      Session.set("pagechange", false);
+      Session.set("alreadyRan", true);
+    } else {
+      Session.set("pagechange", true);
+      Session.set("alreadyRan", true);
+      $(document).snowfall('clear');
+      $('html').snowfall('clear');
+    }
+  },
+});
