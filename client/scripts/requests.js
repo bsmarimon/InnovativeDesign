@@ -126,11 +126,6 @@ Template.request.helpers({
     }
   },
 
-  page: function() {
-    var pageName = Session.get("pageName");
-    return pageName;
-  },
-
   phrase: function() {
     phrases = [
       "squad of intelligent owls",
