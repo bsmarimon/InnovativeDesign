@@ -1,11 +1,3 @@
-
-
-Template.club.onRendered(function () {
-  $('.collapsible').collapsible({
-    accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-  });
-});
-
 // Initialize almost every plug-in the site uses.
 
 Template.navbar.onRendered(function () {

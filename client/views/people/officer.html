@@ -5,8 +5,8 @@
         {{#each officers}}
         <div class="col l3 m6">
           <div class="card cardBottomMargin">
-              <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="{{this.image.url}}">
+              <div class="card-image">
+                  <img src="{{this.image.url}}">
               </div>
               <div class="card-content">
                   <div class="row rowFix">
@@ -18,6 +18,8 @@
                     </div>
                   </div>
               </div>  
+<!--          Uncomment to enable the "more info section"
+
               <div class="card-reveal">
                   <span class="card-title"><i class="material-icons right">close</i></span>
                 <div class ="row rowFix addMarginTop75">
@@ -44,7 +46,7 @@
                     <p class="icon-text">"{{this.quote}}"</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           {{/each}}

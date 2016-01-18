@@ -55,7 +55,7 @@ Router.route('/club', function() {
 });
 
 Router.route('/request', function() {
-  this.render('request');
+  this.render('requestFix');
 });
 
 Router.route('/decal', function() {
