@@ -6,6 +6,7 @@ Template.thankyou.events({
 
 // Phrases that are injected into the thank you for submitting a request template
 
+
 Template.thankyou.helpers({
   phrase: function() {
     phrases = [
