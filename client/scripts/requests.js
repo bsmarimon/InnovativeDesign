@@ -43,7 +43,7 @@ Template.request.onRendered(function () {
   Session.set("pageName", pageName);
 });
 
-Template.requests.events({
+Template.request.events({
   "change #dropdown2": function(event) {
     var newValue = $(event.target).val();
     Session.set("type", newValue);
