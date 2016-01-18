@@ -50,11 +50,11 @@ Meteor.methods({
     var designList = Photo.find({}).fetch();
     return designList;
   },
+  
   getDecal: function() {
     var designList = Decal.find({}).fetch();
     return designList;
   },
-
 });
 
 Blue = new orion.collection('blue', {
