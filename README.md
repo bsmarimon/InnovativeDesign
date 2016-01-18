@@ -3,16 +3,16 @@ Website for Innovative Design, built using Meteor.
 I wasn't thinking for some reason, and all h3 tages should be h2 tags, and vice versa, oops. Need to fix.
 
 TO-DOs
-* get the favicon to work :\ 
+* ~~get the favicon to work~~
 * add marketing tab
-* club page redesign
-* member page redesign
+* ~~club page redesign~~
+* ~~member page redesign~~
 * tweak to decal page squares, add description as it's own square
-* fix requests redirect to homepage
+* ~~fix requests redirect to homepage~~
 * fix footer positioning (also on mobile)
 * image compression
 * less janky way to render decal pages
-* break up templates into smaller templates
+* ~~break up templates into smaller templates~~
 
 Download meteor https://www.meteor.com/install, clone the repository, cd to root directory and run "meteor". 
 
