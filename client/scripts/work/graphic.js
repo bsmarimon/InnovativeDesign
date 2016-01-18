@@ -22,7 +22,6 @@ Template.graphic.onRendered(function () {
 
 Template.graphic.onCreated(function() {
   eventList = Blue.find({}).fetch();
-  console.log(eventList);
   if (eventList) {
     designs = eventList;
     numDesigns = designs.length;
@@ -78,7 +77,6 @@ Template.graphic.onCreated(function() {
   }
 
   eventList = Gold.find({}).fetch();
-  console.log(eventList);
   if (eventList) {
 
     designs = eventList;
