@@ -39,6 +39,8 @@ Uploading relative larger file sizes (>5 MB) causes Chromium/Chrome to crash. Vi
 
 heroku restart -a app_name
 
+Setting up AWS, read https://themeteorchef.com/recipes/uploading-files-to-amazon-s3/#tmc-setting-up-amazon-s3. 
+
 Important base classes:
 * rowFix - sets margin-bottom for row to 0px
 * removeLeftPadding, removeRightPadding - removes padding for columns
