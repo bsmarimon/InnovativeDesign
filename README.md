@@ -1,6 +1,7 @@
 Website for Innovative Design, built using Meteor 1.1.0.3
 
 TO-DOs
+* image uploading is currently broken, issue with access control header in CORS configuration for amazon S3, read the meteorchef article below, make a new bucket that you own, try to troubleshoot
 * ~~get the favicon to work~~
 * move Orion CMS into file outside server/client
 * add marketing tab
