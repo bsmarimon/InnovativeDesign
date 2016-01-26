@@ -1,10 +1,10 @@
 nav {
 	box-shadow: none !important;
 /*	recruitment  */
-/*	background-color: #1B93C0;  */
+  background-color: #1B93C0;
 
 /*	holidays */
-	background-color: white;
+/*	background-color: white; */
 
 	font-family: Montserrat;
 	padding-top: 20px;
@@ -24,9 +24,9 @@ nav {
 }
 
 .mdi-navigation-menu {
-	color: #1B93C0;
+	/* color: #1B93C0; */
 	/*	recruitment  */
-	/*	color: white;*/
+	color: white;
 
 }
 
@@ -35,21 +35,21 @@ nav {
 	font-size: 15px !important;
 	/*	recruitment  */
 
-	/*	background-color: #1B93C0;  */
-	/*	color: white;*/
+	background-color: #1B93C0;
+	color: white;
 
 	/*	holidays */
 	
-	background-color: white;
-	color: #1B93C0;
+	/* background-color: white;
+	color: #1B93C0; */
 }
 
 #dropdown2 > li {
 /*	recruitment  */
-/*	background-color: #1B93C0;  */
+	background-color: #1B93C0;
 
 /*	holidays */
-	background-color: white;
+	/* background-color: white; */
 }
 
 
@@ -57,21 +57,21 @@ nav {
 	font-size: 15px !important;
 	/*	recruitment  */
 
-	/*	background-color: #1B93C0;  */
-	/*	color: white;*/
+	background-color: #1B93C0;
+	color: white;
 
 	/*	holidays */
 	
-	background-color: white;
-	color: #1B93C0;
+	/* background-color: white;
+	color: #1B93C0; */
 }
 
 #dropdown1 > li {
 /*	recruitment  */
-/*	background-color: #1B93C0;  */
+	background-color: #1B93C0;
 
 /*	holidays */
-	background-color: white;
+	/* background-color: white; */
 }
 
 .requestThanks {
@@ -81,10 +81,10 @@ nav {
 
 .navText > li {
 	/*	recruitment  */
-	/*	background-color: #1B93C0;  */
+	background-color: #1B93C0;
 
 	/*	holidays */
-	background-color: white;
+	/* background-color: white; */
 }
 
 .nav-wrapper {
@@ -98,13 +98,13 @@ nav {
 
 	/*	recruitment  */
 
-	/*	background-color: #1B93C0;  */
-	/*	color: white;*/
+	background-color: #1B93C0;
+	color: white;
 
 	/*	holidays */
 
-	background-color: white;
-	color: #1B93C0;
+	/* background-color: white;
+	color: #1B93C0; */
 
 	margin-left: 20px;
 	margin-right: 20px;
@@ -117,10 +117,10 @@ nav {
 
 .navText > li:hover {
 	/*	recruitment  */
-	/*	background-color: #1B93C0;  */
+	background-color: #1B93C0;
 
 	/*	holidays */
-	background-color: white;
+	/* background-color: white; */
 
 	box-shadow: none !important;
 	text-decoration: none !important;
@@ -129,10 +129,10 @@ nav {
 .navText > li > a:hover {
 
 	/*	recruitment  */
-	/*	background-color: #1B93C0;  */
+	background-color: #1B93C0;
 
 	/*	holidays */
-	background-color: white;
+	/* background-color: white; */
 
 	box-shadow: none !important;
 	text-decoration: none !important;

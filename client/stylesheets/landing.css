@@ -41,20 +41,23 @@
 .footerIcons {
 	/*	recruitment  */
 
-	/*	background-color: white;  */
-	/*	color: #1B93C0; */
+	background-color: #1B93C0;
+	color: white;
 
 	/*	holidays */
 	
-	background-color: white;
-	color: #1B93C0;
+	/* background-color: white;
+	color: #1B93C0; */
 	font-size: 20px !important;
 }
 
 .copyright {
-	color: #1B93C0;
+  color: white;
+  /* holidays 
+	color: #1B93C0; */
 }
 
 .bottom {
-	background-color: white;
+  /* background-color: #3E85A5; /* video compatibility */
+	background-color: #1B93C0;
 }
