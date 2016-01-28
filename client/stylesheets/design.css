@@ -8,7 +8,7 @@ u {
 }
 
 .webPortfolioLinks:hover {
-    color: #1B93C0;
+    color: #0693C0;
 }
 
 .rowTopSpacing {
@@ -19,7 +19,7 @@ u {
     height: 15px;
     width: 15px;
     float: right;
-    background-color: #1B93C0;
+    background-color: #0693C0;
 }
 
 .tierWorkSpacing {
@@ -35,7 +35,7 @@ u {
 }
 
 .tabs100 .tab a p {
-    color: #1B93C0 !important;
+    color: #0693C0 !important;
     text-decoration: none;
 }
 
@@ -71,22 +71,22 @@ u {
     padding-top: 7px;
     text-align: center;
     height: 50px !important;
-    border: 2px solid #1B93C0;
+    border: 2px solid #0693C0;
 }
 
 .bluetier > p {
-    color: #1B93C0 !important;
+    color: #0693C0 !important;
     text-transform: none !important;
     position: relative;
 }
 
 .bluetier:hover {
     background-color: white !important;
-    color: #1B93C0 !important;
+    color: #0693C0 !important;
 }
 
 .bluetier.active {
-    background-color: #1B93C0 !important;
+    background-color: #0693C0 !important;
     line-height: 0px !important;
     width: 90% !important;
     padding-right: 0px !important;
@@ -103,7 +103,7 @@ u {
 }
 
 .bluetier.active:hover {
-    background-color: #1B93C0 !important;
+    background-color: #0693C0 !important;
     color: white !important;
 }
 

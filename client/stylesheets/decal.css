@@ -140,9 +140,9 @@ https://github.com/shanawho/decal
 .download {
   position: relative;
   display: block;
-  color: #1B93C0;
+  color: #0693C0;
   text-align: center;
-  border: 1px #1B93C0 solid;
+  border: 1px #0693C0 solid;
   margin: auto;
   padding: 15px;
   width: 190px;
@@ -156,7 +156,7 @@ https://github.com/shanawho/decal
 
 .download:hover {
   color: white;
-  background-color: #1B93C0; 
+  background-color: #0693C0; 
 }
 
 .rest {
@@ -181,7 +181,7 @@ https://github.com/shanawho/decal
 .title {
   background-color: white;
   padding: 60px 15%;
-  color: #1B93C0;
+  color: #0693C0;
   margin: 0 auto;
   text-align: center; }
   @media (max-width: 1000px) {
@@ -251,7 +251,7 @@ https://github.com/shanawho/decal
   padding: 0;
   margin: 0 auto;
   width: 100%;
-  background: #1B93C0; }
+  background: #0693C0; }
 
 .team-pic-crop {
   position: relative;
@@ -285,7 +285,7 @@ https://github.com/shanawho/decal
   padding-top: 30px;
   width: 100%;
   height: 100%;
-  background-color: #1B93C0;
+  background-color: #0693C0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -338,11 +338,11 @@ https://github.com/shanawho/decal
   float: right; }
 .highlight {
   font-weight: bold;
-  color: #1B93C0; }
+  color: #0693C0; }
 
 .apply-section {
   margin-top: 60px; }
   .apply-section ul li {
     font-size: 1.3em; }
   .apply-section a {
-    color: #1B93C0; }
+    color: #0693C0; }

@@ -7,7 +7,7 @@ Template.landing.onRendered(function () {
   Session.set("pagechange", false);
   /* if ($(window).width() >= 992) {
     $(document).snowfall();
-    $('html').snowfall({flakeCount: 500, maxSpeed: 3, round: true, minSize: 4, flakeColor: '#1B93C0'});
+    $('html').snowfall({flakeCount: 500, maxSpeed: 3, round: true, minSize: 4, flakeColor: '#0693C0'});
   } */
   // if the window is large enough, play the video, check to see if there's buffering
   if ($(window).width() >= 992) {
@@ -45,7 +45,7 @@ Template.landing.onRendered(function () {
 
       // colors for the animation changes
       // var colorTable = ["#3E85A5", "#E9B740", "#BC0037"];
-      var colorTable = ["#1B93C0", "#E9B740", "#BC0037"];
+      var colorTable = ["#0693C0", "#E9B740", "#BC0037"];
       // the animations use a colorChange class, if an element has the class, it has it's color changed
       var c = document.getElementsByClassName('colorChange');
 

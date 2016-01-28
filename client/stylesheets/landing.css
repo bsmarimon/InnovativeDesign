@@ -1,5 +1,5 @@
 .mobileBody {
-	background-color: #1B93C0;
+	background-color: #0693C0;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -12,7 +12,7 @@
 
 .videoProblems {
 	background-color: white !important;
-	color: #1B93C0;
+	color: #0693C0;
 	font-family: Montserrat;
 	font-size: 10px;
 }
@@ -31,7 +31,7 @@
 }
 
 .landingCard:hover h3 {
-	background-color: #1B93C0;
+	background-color: #0693C0;
 }
 
 .landingLink {
@@ -41,23 +41,23 @@
 .footerIcons {
 	/*	recruitment  */
 
-	background-color: #1B93C0;
+	background-color: #0693C0;
 	color: white;
 
 	/*	holidays */
 	
 	/* background-color: white;
-	color: #1B93C0; */
+	color: #0693C0; */
 	font-size: 20px !important;
 }
 
 .copyright {
   color: white;
   /* holidays 
-	color: #1B93C0; */
+	color: #0693C0; */
 }
 
 .bottom {
   /* background-color: #3E85A5; /* video compatibility */
-	background-color: #1B93C0;
+	background-color: #0693C0;
 }

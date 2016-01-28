@@ -1,7 +1,7 @@
 nav {
 	box-shadow: none !important;
 /*	recruitment  */
-  background-color: #1B93C0;
+  background-color: #0693C0;
 
 /*	holidays */
 /*	background-color: white; */
@@ -24,7 +24,7 @@ nav {
 }
 
 .mdi-navigation-menu {
-	/* color: #1B93C0; */
+	/* color: #0693C0; */
 	/*	recruitment  */
 	color: white;
 
@@ -35,18 +35,18 @@ nav {
 	font-size: 15px !important;
 	/*	recruitment  */
 
-	background-color: #1B93C0;
+	background-color: #0693C0;
 	color: white;
 
 	/*	holidays */
 	
 	/* background-color: white;
-	color: #1B93C0; */
+	color: #0693C0; */
 }
 
 #dropdown2 > li {
 /*	recruitment  */
-	background-color: #1B93C0;
+	background-color: #0693C0;
 
 /*	holidays */
 	/* background-color: white; */
@@ -57,18 +57,18 @@ nav {
 	font-size: 15px !important;
 	/*	recruitment  */
 
-	background-color: #1B93C0;
+	background-color: #0693C0;
 	color: white;
 
 	/*	holidays */
 	
 	/* background-color: white;
-	color: #1B93C0; */
+	color: #0693C0; */
 }
 
 #dropdown1 > li {
 /*	recruitment  */
-	background-color: #1B93C0;
+	background-color: #0693C0;
 
 /*	holidays */
 	/* background-color: white; */
@@ -81,7 +81,7 @@ nav {
 
 .navText > li {
 	/*	recruitment  */
-	background-color: #1B93C0;
+	background-color: #0693C0;
 
 	/*	holidays */
 	/* background-color: white; */
@@ -98,13 +98,13 @@ nav {
 
 	/*	recruitment  */
 
-	background-color: #1B93C0;
+	background-color: #0693C0;
 	color: white;
 
 	/*	holidays */
 
 	/* background-color: white;
-	color: #1B93C0; */
+	color: #0693C0; */
 
 	margin-left: 20px;
 	margin-right: 20px;
@@ -117,7 +117,7 @@ nav {
 
 .navText > li:hover {
 	/*	recruitment  */
-	background-color: #1B93C0;
+	background-color: #0693C0;
 
 	/*	holidays */
 	/* background-color: white; */
@@ -129,7 +129,7 @@ nav {
 .navText > li > a:hover {
 
 	/*	recruitment  */
-	background-color: #1B93C0;
+	background-color: #0693C0;
 
 	/*	holidays */
 	/* background-color: white; */
@@ -139,7 +139,7 @@ nav {
 }
 
 .openRequests:hover {
-	background-color: #1B93C0;
+	background-color: #0693C0;
 	cursor: pointer;
 }
 
@@ -155,7 +155,7 @@ nav {
 }
 
 .submitbtn {
-	background-color: #1B93C0 !important;
+	background-color: #0693C0 !important;
 	margin-bottom: 25px;
 	color: white;
 }
@@ -172,11 +172,11 @@ nav {
 }
 
 .picker__nav--prev:hover {
-	background-color: #1B93C0 !important;
+	background-color: #0693C0 !important;
 }
 
 .picker__nav--next:hover {
-	background-color: #1B93C0 !important;
+	background-color: #0693C0 !important;
 }
 
 .additionalInfo {
