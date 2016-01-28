@@ -44,8 +44,8 @@ Template.landing.onRendered(function () {
       }, 1000);
 
       // colors for the animation changes
-      // var colorTable = ["#3E85A5", "#E9B740", "#BC0037"];
-      var colorTable = ["#0693C0", "#E9B740", "#BC0037"];
+      // var colorTable = ["#3E85A5", "#E8B03B", "#C93354"];
+      var colorTable = ["#0693C0", "#E8B03B", "#C93354"];
       // the animations use a colorChange class, if an element has the class, it has it's color changed
       var c = document.getElementsByClassName('colorChange');
 
