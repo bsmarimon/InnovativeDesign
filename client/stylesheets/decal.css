@@ -50,9 +50,9 @@ https://github.com/shanawho/decal
         opacity: 1; } }
   .square-blurb:hover {
     opacity: 1;
-    background-color: rgba(38, 41, 48, 0.9); }
+    background-color: rgba(6, 147, 192, 0.7); }
     .square-blurb:hover .lesson-title {
-      opacity: 1; }
+      opacity: 1 !important; }
 
 .square-1 {
   background: url("img/lesson1.png");
@@ -140,24 +140,24 @@ https://github.com/shanawho/decal
 .download {
   position: relative;
   display: block;
-  color: #0693C0;
+  color: white;
   text-align: center;
-  border: 1px #0693C0 solid;
+  border: 1px white solid;
   margin: auto;
   padding: 15px;
   width: 190px;
   margin-top: -25px;
-  background: white;
+  background: #0693C0;
   font-family: "Source Sans Pro", sans-serif; }
   @media (max-width: 450px) {
     .download {
       width: 150px;
       font-size: 0.6em; } }
 
-.download:hover {
-  color: white;
-  background-color: #0693C0; 
-}
+/*.download:hover {
+  color: #0693C0;
+  background-color: white;
+}*/
 
 .rest {
   width: 70%;
@@ -179,9 +179,9 @@ https://github.com/shanawho/decal
   margin-left: 30px; }
 
 .title {
-  background-color: white;
+  background-color: #0693C0;
   padding: 60px 15%;
-  color: #0693C0;
+  color: white;
   margin: 0 auto;
   text-align: center; }
   @media (max-width: 1000px) {

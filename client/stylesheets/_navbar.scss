@@ -1,7 +1,7 @@
 nav {
 	box-shadow: none !important;
 /*	recruitment  */
-  background-color: #0693C0;
+  background-color: $primary-blue;
 
 /*	holidays */
 /*	background-color: white; */
@@ -24,7 +24,7 @@ nav {
 }
 
 .mdi-navigation-menu {
-	/* color: #0693C0; */
+	/* color: $primary-blue; */
 	/*	recruitment  */
 	color: white;
 
@@ -35,18 +35,18 @@ nav {
 	font-size: 15px !important;
 	/*	recruitment  */
 
-	background-color: #0693C0;
+	background-color: $primary-blue;
 	color: white;
 
 	/*	holidays */
-	
+
 	/* background-color: white;
-	color: #0693C0; */
+	color: $primary-blue; */
 }
 
 #dropdown2 > li {
 /*	recruitment  */
-	background-color: #0693C0;
+	background-color: $primary-blue;
 
 /*	holidays */
 	/* background-color: white; */
@@ -57,18 +57,18 @@ nav {
 	font-size: 15px !important;
 	/*	recruitment  */
 
-	background-color: #0693C0;
+	background-color: $primary-blue;
 	color: white;
 
 	/*	holidays */
-	
+
 	/* background-color: white;
-	color: #0693C0; */
+	color: $primary-blue; */
 }
 
 #dropdown1 > li {
 /*	recruitment  */
-	background-color: #0693C0;
+	background-color: $primary-blue;
 
 /*	holidays */
 	/* background-color: white; */
@@ -81,7 +81,7 @@ nav {
 
 .navText > li {
 	/*	recruitment  */
-	background-color: #0693C0;
+	background-color: $primary-blue;
 
 	/*	holidays */
 	/* background-color: white; */
@@ -93,18 +93,18 @@ nav {
 
 
 .navText > li > a {
-	
+
 	font-size: 15px !important;
 
 	/*	recruitment  */
 
-	background-color: #0693C0;
+	background-color: $primary-blue;
 	color: white;
 
 	/*	holidays */
 
 	/* background-color: white;
-	color: #0693C0; */
+	color: $primary-blue; */
 
 	margin-left: 20px;
 	margin-right: 20px;
@@ -117,7 +117,7 @@ nav {
 
 .navText > li:hover {
 	/*	recruitment  */
-	background-color: #0693C0;
+	background-color: $primary-blue;
 
 	/*	holidays */
 	/* background-color: white; */
@@ -129,7 +129,7 @@ nav {
 .navText > li > a:hover {
 
 	/*	recruitment  */
-	background-color: #0693C0;
+	background-color: $primary-blue;
 
 	/*	holidays */
 	/* background-color: white; */
@@ -139,7 +139,7 @@ nav {
 }
 
 .openRequests:hover {
-	background-color: #0693C0;
+	background-color: $primary-blue;
 	cursor: pointer;
 }
 
@@ -155,7 +155,7 @@ nav {
 }
 
 .submitbtn {
-	background-color: #0693C0 !important;
+	background-color: $primary-blue !important;
 	margin-bottom: 25px;
 	color: white;
 }
@@ -172,11 +172,11 @@ nav {
 }
 
 .picker__nav--prev:hover {
-	background-color: #0693C0 !important;
+	background-color: $primary-blue !important;
 }
 
 .picker__nav--next:hover {
-	background-color: #0693C0 !important;
+	background-color: $primary-blue !important;
 }
 
 .additionalInfo {

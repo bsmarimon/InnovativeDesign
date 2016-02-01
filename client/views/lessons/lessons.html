@@ -4,6 +4,7 @@
       <span class="preheader">Lesson {{this.lesson}}</span>
       <h1></h1>
     </section>
+    {{#if show}}
     <a class="download" ng-if="download" href="{{this.link}}" target="_blank">Download files</a>
     <br><br>
     <div class="row">
@@ -12,7 +13,7 @@
           <div class="section-img">
             <img src="/img/lesson{{this.lesson}}.png" />
           </div>
-          
+
           <h2>Tutorial</h2>
           <p>{{this.description}}</p>
 
@@ -26,6 +27,14 @@
         </section>
       </div>
     </div>
+    {{else}}
+    <div class="row">
+      <div class="col l6 offset-l3 center">
+        <br><br><br><br> <!-- I'm lazy -->
+        <h3>This lesson will become available later on in the semester.</h3>
+      </div>
+    </div>
+    {{/if}}
   </div>
 </template>
 
@@ -105,7 +114,7 @@
         <section class="line">
           <div class="section-img">
             <img src="/img/lesson{{this.lesson}}.png" />
-          </div> 
+          </div>
           <h2>Tutorial</h2>
           <p>{{this.description}}</p>
         </section>

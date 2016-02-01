@@ -1,3 +1,8 @@
+$primary-blue: #0693C0;
+
+@import "navbar";
+@import "materialFixes";
+
 video {
 	max-width: 100%;
 	display: block;
@@ -70,7 +75,7 @@ label {
 }
 
 .btn {
-	background-color: #0693C0 !important;
+	background-color: $primary-blue !important;
 	margin-bottom: 25px;
 }
 
@@ -83,7 +88,7 @@ label {
 }
 
 .fa {
-	color: #0693C0;
+	color: $primary-blue;
 	font-size: 15px;
 }
 
