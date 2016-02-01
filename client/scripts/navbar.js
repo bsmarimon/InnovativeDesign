@@ -1,10 +1,12 @@
 // Initialize almost every plug-in the site uses.
 
 Template.navbar.onRendered(function () {
+  document.title = "Innovative Design";
+
   Session.set("submitted", false);
   $('.datepicker').pickadate({
     selectMonths: true,
-    selectYears: 15 
+    selectYears: 15
   });
   $('.dropdown-button').dropdown({
     inDuration: 300,
@@ -19,7 +21,7 @@ Template.navbar.onRendered(function () {
   $('input#input_text, textarea#textarea1').characterCounter();
   $('input#input_text, textarea#textarea2').characterCounter();
   $('input#input_text, textarea#textarea3').characterCounter();
-  $(".button-collapse").sideNav();  
+  $(".button-collapse").sideNav();
   $('.materialboxed').materialbox();
   $('ul.tabs').tabs();
 });
@@ -29,10 +31,10 @@ Template.navbar.events({
     // janky fix to make sure the datepicker code runs
     $('.datepicker').pickadate({
       selectMonths: true,
-      selectYears: 15 
+      selectYears: 15
     });
 
-    // janky fix to stop animations when you change to another page, that is not the request form 
+    // janky fix to stop animations when you change to another page, that is not the request form
     var name = event.target.id;
     if (name === "requestclick") {
       Session.set("pagechange", false);
