@@ -1,7 +1,6 @@
 // Initialize almost every plug-in the site uses.
 
 Template.navbar.onRendered(function () {
-  document.title = "Innovative Design";
 
   Session.set("submitted", false);
   $('.datepicker').pickadate({
@@ -42,8 +41,6 @@ Template.navbar.events({
     } else {
       Session.set("pagechange", true);
       Session.set("alreadyRan", true);
-      $(document).snowfall('clear');
-      $('html').snowfall('clear');
     }
   },
 });
