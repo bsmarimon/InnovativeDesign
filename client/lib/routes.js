@@ -41,7 +41,7 @@ Router.route('/web',  {
 
 Router.route('/product',  {
   onAfterAction: function() {
-    this.render('officers');
+    this.render('product');
     document.title = 'Graphic | Innovative Design';
   }
 });

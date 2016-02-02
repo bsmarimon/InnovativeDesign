@@ -6,7 +6,7 @@ TO-DOs
 * move Orion CMS into file outside server/client
 * add marketing tab
 * add alumni tab
-* Sass-ify 
+* Sass-ify
 * ~~club page redesign~~
 * ~~member page redesign~~
 * tweak to decal page squares, add description as it's own square
@@ -17,7 +17,7 @@ TO-DOs
 * ~~break up templates into smaller templates~~
 * all h3 tages should be h2 tags, and vice versa, oops
 
-Download meteor https://www.meteor.com/install, clone the repository, cd to root directory and run "meteor". For deploying to heroku, read http://justmeteor.com/blog/deploy-to-production-on-heroku/. 
+Download meteor https://www.meteor.com/install, clone the repository, cd to root directory and run "meteor". For deploying to heroku, read http://justmeteor.com/blog/deploy-to-production-on-heroku/.
 
 Package for deploying to Heroku:
 https://github.com/jordansissel/heroku-buildpack-meteor.git
@@ -36,17 +36,13 @@ Package List:
 * orionjs:image-attribute
 * orionjs:s3
 
-Uploading relative larger file sizes (>5 MB) causes Chromium/Chrome to crash. Video doesn't work on Safari, updating to Meteor 1.2 fixes issue but causes problems with packages. Saving AWS config can also cause a crash. You can always run 
+Uploading relative larger file sizes (>5 MB) causes Chromium/Chrome to crash. Video doesn't work on Safari, updating to Meteor 1.2 fixes issue but causes problems with packages. Saving AWS config can also cause a crash. You can always run
 
 heroku restart -a app_name
 
-Setting up AWS, read https://themeteorchef.com/recipes/uploading-files-to-amazon-s3/#tmc-setting-up-amazon-s3. 
+Setting up AWS, read https://themeteorchef.com/recipes/uploading-files-to-amazon-s3/#tmc-setting-up-amazon-s3.
 
 Important base classes:
 * rowFix - sets margin-bottom for row to 0px
 * removeLeftPadding, removeRightPadding - removes padding for columns
 * img-responsive - sets max-width to 100%
-
-
-
-
