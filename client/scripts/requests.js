@@ -124,7 +124,7 @@ Template.request.helpers({
 
   // Change to true to open the requests form, false to close
   open: function() {
-    return false;
+    return true;
   },
 
   photo: function() {
