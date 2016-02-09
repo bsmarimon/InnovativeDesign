@@ -2,11 +2,6 @@ Meteor.subscribe("events");
 
 Template.events.helpers({
   events: function() {
-    return Session.get("events");
+    return Events.find({});
   },
-});
-
-Template.events.onCreated(function() {
-  eventList = Events.find({}).fetch();
-  Session.set("events", eventList);
 });
