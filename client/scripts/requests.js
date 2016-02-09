@@ -26,11 +26,15 @@ Template.requestFix.onRendered(function () {
 Template.request.onRendered(function () {
   $('.datepicker').pickadate({
     selectMonths: true,
-    selectYears: 15 
+    selectYears: 15,
+    min: 20,
+    max: false
   });
   $('input[name=ProposedDeadline').pickadate({
     selectMonths: true,
-    selectYears: 15 
+    selectYears: 15,
+    min: 20,
+    max: false
   });
   $('.modal-trigger').leanModal({
     dismissible: true, // Modal can be dismissed by clicking outside of the modal
@@ -70,6 +74,7 @@ Template.request.events({
     var questions1 = $('#textarea3').val();
 
     var send = {
+      timestamp: (new Date()).toString().slice(4,24),
       contactName: contactName1,
       contactEmail: contactEmail1,
       contactNum: contactNum1,

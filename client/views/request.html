@@ -62,16 +62,11 @@
                     <label class="tierSelect">&nbsp;</label>
                     <select id="dropdown3" name="On/Off campus" class="browser-default tierSelect">
                         <option value="" disabled="" selected="">Are you on or off campus?</option>
-                        <option value="on">On</option>
-                        <option value="off">Off</option>
+                        <option value="on_rso">On campus, we are a registered student organization (RSO)</option>
+                        <option value="on_other">On campus, we are a university program</option>
+                        <option value="off">Off campus</option>
                     </select>
                   </div>
-                  <div class="input-field col l6 m6">
-                    <input id="date" type="date" name="ProposedDeadline" placeholder="Proposed Deadline" class="datepicker">
-                    <label for="date"></label>
-                  </div>
-                </div>
-                <div class="row rowFix">
                   <div class="col l6 m6">
                     <label class="tierSelect">&nbsp;</label>
                     <select id="dropdown2" name="Design Category" class="browser-default tierSelect">
@@ -81,6 +76,12 @@
                       <option value="graphicdesign">Graphic Design</option>
                       <option value="webdesign">Web Design</option>
                     </select>
+                  </div>
+                </div>
+                <div class="row rowFix">
+                  <div class="input-field col l12 m12 s12">
+                    <input id="date" type="date" name="ProposedDeadline" class="datepicker">
+                    <label for="date">Proposed Deadline (3 week minimum turnaround)</label>
                   </div>
                 </div>
               {{#if video}}
