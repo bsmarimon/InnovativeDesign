@@ -30,7 +30,7 @@ Template.request.onRendered(function () {
     min: 20,
     max: false
   });
-  $('input[name=ProposedDeadline').pickadate({
+  $('input[name=ProposedDeadline]').pickadate({
     selectMonths: true,
     selectYears: 15,
     min: 20,
