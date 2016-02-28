@@ -2,70 +2,37 @@
 
   {{> header}}
 
-<!--   This is a janky fix for the color animations on the site, when you go to the mobile version you basically "hide"
-  the part of the site that is animating, and you get this site nav is just blue. -->
-  <div class="row rowFix hide-on-large-only">
-    <nav>
-      <div class="nav-wrapper ">
-        <a href="/" class="brand-logo"><img class="logo hide-on-med-and-down" src="/img/logo-white.png"></a>
-        <ul class="right hide-on-med-and-down navText ">
-        </ul>
-        <ul id="slide-out" class="side-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/club">Club</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/decal">Decal</a></li>
-          <li><a class="modal-trigger" href="#modal1">Requests</a></li>
-          <li><a href="/photo">Photo</a></li>
-          <li><a href="/graphic">Graphic</a></li>
-          <li><a href="/video">Video</a></li>
-          <li><a href="/web">Web</a></li>
-          <li><a href="/product">Product</a></li>
-        </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-      </div>
-    </nav>
-  </div>
-
-  <!-- I couldn't figure out which element was causing a problem in the color change, so I just added the damn class to everything
-  oh well :\ -->
-
-  <div class="row colorChange rowFix hide-on-med-and-down">
-    <ul id="dropdown1" class="colorChange dropdown-content">
-      <li class="colorChange"><a class="colorChange" href="/photo">Photo</a></li>
-      <li class="colorChange"><a class="colorChange" href="/graphic">Graphic</a></li>
-      <li class="colorChange"><a class="colorChange" href="/video">Video</a></li>
-      <li class="colorChange"><a class="colorChange" href="/web">Web</a></li>
-      <li class="colorChange"><a class="colorChange" href="/product">Product</a></li>
+  <div class="row rowFix">
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="/photo">Photo</a></li>
+      <li><a href="/graphic">Graphic</a></li>
+      <li><a href="/video">Video</a></li>
+      <li><a href="/web">Web</a></li>
+      <li><a href="/product">Product</a></li>
     </ul>
-    <ul id="dropdown2" class="dropdown-content colorChange">
-      <li class="colorChange"><a class="colorChange" href="/officers">Officers</a></li>
-      <li class="colorChange"><a class="colorChange" href="/members">Members</a></li>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="/officers">Officers</a></li>
+      <li><a href="/members">Members</a></li>
     </ul>
-    <nav class="colorChange centerThings">
-      <div class="nav-wrapper colorChange">
+    <nav class="centerThings">
+      <div class="nav-wrapper">
         <a href="/" class="brand-logo hide-on-med-and-down"><img class="logo hide-on-med-and-down" src="/img/logo-white.png"></a>
-        <ul class="right hide-on-med-and-down navText colorChange">
-          <li class="colorChange"><a class="dropdown-button colorChange" href="#!" data-activates="dropdown1">Work</a></li>
-          <li class="colorChange"><a class="colorChange" href="/club">Club</a></li>
-          <li class="colorChange"><a class="dropdown-button colorChange" href="#!" data-activates="dropdown2">People</a></li>
-          <li class="colorChange"><a class="colorChange" href="/events">Events</a></li>
-          <li class="colorChange"><a class="colorChange" href="/decal">Decal</a></li>
-          <li class="colorChange"><a id="requestclick" class="modal-trigger colorChange" href="#modal1">Requests</a></li>
+        <ul class="right hide-on-med-and-down navText">
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Work</a></li>
+          <li><a href="/club">Club</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown2">People</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/decal">Decal</a></li>
+          <li><a id="requestclick" class="modal-trigger" href="#modal1">Requests</a></li>
         </ul>
         <ul id="slide-out" class="side-nav">
           <li><a href="/">Home</a></li>
           <li><a href="/club">Club</a></li>
           <li><a href="/events">Events</a></li>
           <li><a href="/decal">Decal</a></li>
-          <li><a class="modal-trigger" href="#modal1">Requests</a></li>
           <li><a href="/officers">Officers</a></li>
           <li><a href="/members">Members</a></li>
-          <li><a href="/photo">Photo</a></li>
-          <li><a href="/graphic">Graphic</a></li>
-          <li><a href="/video">Video</a></li>
-          <li><a href="/web">Web</a></li>
-          <li><a href="/product">Product</a></li>
+          <li><a class="modal-trigger" href="#modal1">Requests</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       </div>
