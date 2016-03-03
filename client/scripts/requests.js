@@ -45,6 +45,7 @@ Template.request.onRendered(function () {
   Session.set("alreadyRan", false);
   var pageName = window.location.href;
   Session.set("pageName", pageName);
+  Session.set("submitting", false);
 });
 
 Template.request.events({
@@ -90,12 +91,22 @@ Template.request.events({
 
     var canSend = true;
     if (canSend) { 
-      Session.set("submitted", true);
+      Session.set("submitting", true);
       $.ajax({
         url: "https://script.google.com/macros/s/AKfycbyWo6AfGdMPBVawrg2-3jrUxgFBkDItq4q73M0v6NZqt2jXGTk/exec",
         data: send,
         type: "POST",
-        dataType: "xml",
+        dataType: "json",
+        success: function(data, text) {
+          Session.set("submitted", true);
+        },
+        error: function (request, status, error) {
+          alert("There was an error submitting your request. Please try again.");
+          console.error(error);
+        },
+        complete: function () {
+          Session.set("submitting", false);
+        }
       });
     }   
   },
@@ -125,6 +136,10 @@ Template.request.helpers({
   submitted: function() {
     var test = Session.get("submitted");
     return test;
+  },
+
+  submitting: function() {
+    return Session.get("submitting");
   },
 
   // Change to true to open the requests form, false to close
