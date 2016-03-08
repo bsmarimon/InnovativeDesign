@@ -67,10 +67,6 @@ Router.route('/club',  {
   }
 });
 
-Router.route('/request', function() {
-  this.render('requestFix');
-});
-
 Router.route('/decal',  {
   onAfterAction: function() {
     this.render('decal');
@@ -78,8 +74,20 @@ Router.route('/decal',  {
   }
 });
 
+Router.route('/request', function() {
+  this.render('requestFix');
+});
+
+Router.route('/requests', function() {
+  this.render('requestFix');
+});
+
 Router.route('/thanks', function() {
   this.render('thankyou');
+});
+
+Router.route('/red', function() {
+  this.render('red');
 });
 
 Router.route('/decal/lesson/1',  {
