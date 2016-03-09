@@ -86,8 +86,11 @@ Router.route('/thanks', function() {
   this.render('thankyou');
 });
 
-Router.route('/red', function() {
-  this.render('red');
+Router.route('/red', {
+  onAfterAction: function() {
+    this.render('red');
+    document.title = 'Red Tier | Innovative Design';
+  }
 });
 
 Router.route('/decal/lesson/1',  {
