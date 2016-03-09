@@ -1,0 +1,52 @@
+<template name="red">
+  <div class="row rowTopSpacing rowBottomSpacing25">
+    <div class="col l4 offset-l4 m10 offset-m1">
+      {{#if applied}}
+          <h2>
+            Thank you for applying. Unfortunately, at this time,
+            due to an unforeseen influx of new applicants, your
+            application will be indefinitely tabled.
+          </h2>
+      {{else}}
+          <h2>Red Tier</h2>
+          <p style="text-align: justify;">
+          Red Tier is UC Berkeley’s premiere exclusive student driven tier nested in the
+          midst of the largest ASUC sponsored design club on all of campus. Our red tier
+          members have experience in both projected simulcasts and real world solutionmaking.
+          Red tier promotes growth and exploration among members as well as
+          dedication and social motivation. We emphasize contemporary values over
+          dated and pedantic traditionalistic views, as we are always in the forefront of
+          novel applications in the UC Berkeley community. Over the course of its history,
+          red tier has developed and grown to become a renowned organization that
+          others use as an example for Berkeley leadership and ideals.</p>
+
+          <p>In the words of our founder:</p>
+          <blockquote>
+          <p>It is not the person who becomes the master of trades, but the
+          entrepreneurial spirit that drives the impetus of creation and due
+          process of all mankind.</p>
+          <footer class="center-align"><b><cite>Johnathon Gathard</cite></b></footer>
+          </blockquote>
+
+          <p>Take advantage of the unique opportunities offered by Red Tier and apply now!</p>
+
+          {{#if applying}}
+          <button id="redapply" class="btn waves-effect waves-light red disabled" name="Apply">Apply</button>
+          <div class="preloader-wrapper small active">
+            <div class="spinner-layer spinner-red-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+          {{else}}
+          <button id="redapply" class="btn waves-effect waves-light red" name="Apply">Apply</button>
+          {{/if}}
+        {{/if}}
+    </div>
+  </div>
+</template>
