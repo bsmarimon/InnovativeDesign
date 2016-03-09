@@ -101,8 +101,12 @@ Template.request.events({
           Session.set("submitted", true);
         },
         error: function (request, status, error) {
-          alert("There was an error submitting your request. Please try again.");
-          console.error(error);
+          /* http://stackoverflow.com/questions/15093281/safari-ajax-cors-request-not-following-redirect */
+          var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+          if(isSafari) {
+            /* just have to hope it worked!! safari won't tell us anything about why it failed!!!!!!!!! */
+            Session.set("submitted", true);
+          }
         },
         complete: function () {
           Session.set("submitting", false);
