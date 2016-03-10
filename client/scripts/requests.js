@@ -106,6 +106,9 @@ Template.request.events({
           if(isSafari) {
             /* just have to hope it worked!! safari won't tell us anything about why it failed!!!!!!!!! */
             Session.set("submitted", true);
+          } else {
+            alert("There was an error submitting your request. Please try again. If the issue persists, please contact an officer!");
+            console.error(error);
           }
         },
         complete: function () {
