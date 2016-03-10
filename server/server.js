@@ -18,6 +18,9 @@ Meteor.startup(function () {
   Meteor.publish("gold", function () {
     return Gold.find();
   });
+  Meteor.publish("request_types", function () {
+    return RequestTypes.find();
+  });
 });
 
 
@@ -55,97 +58,4 @@ Meteor.methods({
     var designList = Decal.find({}).fetch();
     return designList;
   },
-});
-
-Blue = new orion.collection('blue', {
-  singularName: 'blue',
-  pluralName: 'blues',
-  link: {
-    title: 'Blue Tier'
-  },
-  tabular: {
-    columns: [
-      { data: "title", title: "Title" },
-      orion.attributeColumn('image', 'image', 'Image'),
-    ]
-  }
-});
-
-Events = new orion.collection('events', {
-  singularName: 'event',
-  pluralName: 'events',
-  link: {
-    title: 'Events'
-  },
-  tabular: {
-    columns: [
-      { data: "title", title: "Title" },
-      { data: "location", title: "Location" },
-      { data: "date", title: "Date" },
-      { data: "time", title: "Time" },
-      { data: "facebook_url", title: "Facebook Link" },
-      orion.attributeColumn('image', 'image', 'Image'),
-    ]
-  }
-});
-
-Gold = new orion.collection('gold', {
-  singularName: 'gold',
-  pluralName: 'golds',
-  link: {
-    title: 'Gold Tier'
-  },
-  tabular: {
-    columns: [
-      { data: "title", title: "Title" },
-      orion.attributeColumn('image', 'image', 'Image'),
-    ]
-  }
-});
-
-Photo = new orion.collection('photo', {
-  singularName: 'photo',
-  pluralName: 'photos',
-  link: {
-    title: 'Photo Tier'
-  },
-  tabular: {
-    columns: [
-      { data: "title", title: "Title" },
-      orion.attributeColumn('image', 'image', 'Image'),
-    ]
-  }
-});
-
-Officers = new orion.collection('officer', {
-  singularName: 'officer',
-  pluralName: 'officers',
-  link: {
-    title: 'Officers'
-  },
-  tabular: {
-    columns: [
-      { data: "name", title: "Full Name" },
-      { data: "position", title: "Position" },
-      { data: "major", title: "Major" },
-      { data: "grad", title: "Graduation Year" },
-      { data: "quote", title: "Blurb" },
-      { data: "tier", title: "Tier" },
-      orion.attributeColumn('image', 'image', 'Image'),
-    ]
-  }
-});
-
-Decal = new orion.collection('decal', {
-  singularName: 'decal',
-  pluralName: 'decals',
-  link: {
-    title: 'Decal'
-  },
-  tabular: {
-    columns: [
-    { data: "lesson", title: "Lesson" },
-    { data: "shown", title: "Viewable on website?" },
-  ]
-  }
 });
