@@ -18,6 +18,9 @@ Meteor.startup(function () {
   Meteor.publish("gold", function () {
     return Gold.find();
   });
+  Meteor.publish("request_types", function () {
+    return RequestTypes.find();
+  });
 });
 
 

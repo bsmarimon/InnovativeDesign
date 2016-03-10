@@ -1,3 +1,5 @@
+Meteor.subscribe("request_types");
+
 Template.thankyou.events({
   "click #submitagain": function(event) {
     $('#modal1').openModal(); 
@@ -117,13 +119,33 @@ Template.request.events({
 });
 
 Template.request.helpers({
-  video: function() {
-    var test = Session.get("type")
-    if (test === "videography") {
-      return true;
+  requestTypes: function() {
+    return RequestTypes.find({});
+  },
+
+  anyRequestTypesClosed: function() {
+    return RequestTypes.find({request_status: false}).fetch().length > 0;
+  },
+
+  closedRequestTypes: function() {
+    types = RequestTypes.find({request_status: false}).fetch();
+    types = types.map(function(doc) { return doc.request_type });
+    if(types.length == 0) {
+      return "";
+    } else if(types.length == 1) {
+      return types[0];
     } else {
-      return false;
+      var arr = types.slice(0), last = arr.pop();
+      return arr.join(', ')  + ' and ' + last;
     }
+  },
+
+  photo: function() {
+    return  Session.get("type") === "Photography";
+  },
+
+  video: function() {
+    return Session.get("type") === "Videography";
   },
 
   phrase: function() {
@@ -149,14 +171,5 @@ Template.request.helpers({
   // Change to true to open the requests form, false to close
   open: function() {
     return true;
-  },
-
-  photo: function() {
-    var test = Session.get("type")
-    if (test === "photography") {
-      return true;
-    } else {
-      return false;
-    }
   },
 });

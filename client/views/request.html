@@ -25,6 +25,9 @@
               <div class="row rowFix">
                 <div class="col l12 m10 offset-m1">
                   <h3 class="h3black">Please submit design requests through the form below.</h3>
+                  {{#if anyRequestTypesClosed}}
+                    <p>Note: Requests for <span class="red-text text-darken-3">{{ closedRequestTypes }}</span> are currently closed. You may still submit requests, but we might not be able to complete them this semester.</p>
+                  {{/if}}
                 </div>
               </div>
               <br>
@@ -71,10 +74,13 @@
                     <label class="tierSelect">&nbsp;</label>
                     <select id="dropdown2" name="Design Category" class="browser-default tierSelect">
                       <option value="" disabled="" selected="">Project Category</option>
-                      <option value="photography">Photography</option>
-                      <option value="videography">Videography</option>
-                      <option value="graphicdesign">Graphic Design</option>
-                      <option value="webdesign">Web Design</option>
+                      {{#each requestTypes}}
+                        {{#if request_status}}
+                          <option value={{request_type}}>{{request_type}}</option>
+                        {{else}}
+                          <option value="{{request_type}}">{{request_type}} (currently closed)</option>
+                        {{/if}}
+                      {{/each}}
                     </select>
                   </div>
                 </div>
